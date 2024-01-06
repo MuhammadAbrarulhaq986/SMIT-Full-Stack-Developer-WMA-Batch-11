@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1>User Registration Form</h1>
+    <form>
+        <p>Name:
+            <input type="text" name="name" required>
+        </p>
+        <p>Father name:
+            <input type="text" name="Father name" required>
+        </p>
+        <p>Password:
+            <input type="password" name="password" required>
+        </p>
+        <p>Enter your Email
+            <input type="email" name="email" required>
+        </p>
+        <p>Birthday:<input type="date" required>
+        </p>
+        <textarea name="comments" cols="30" rows="5">Comments...</textarea>
+        <hr>
+        <p>Select your Gender:
+            <br>Male
+            <input type="radio" name="gender" value="male" checked="checked" required>
+            <br>Female
+            <input type="radio" name="gender" value="female" required>
+            <br>other
+            <input type="radio" name="gender" value="other" required>
+        </p>
+        <hr>
+        <p>Select your Activities/Hobbies:
+            <br>Guiter
+            <input type="radio" name="guiter" value="guiter" required>
+            <br>Sports
+            <input type="radio" name="sports" value="sports" required>
+            <br>Mountain bicking
+            <input type="radio" name="mountain bicking" value="mountain bicking" required>
+            <br>Wood carving
+            <input type="radio" name="wood carving" value="wood carving" required>
+        </p>
+        <hr>
+        <p>Which Mobile company phone do you have</p>
+        <select name="mobile">
+            <option value="samsung">Samsung</option>
+            <option value="iphone">Iphone</option>
+            <option value="nokia ">Nokia </option>
+            <option value="infinix">Infinix </option>
+            <option value="huawei ">Huawei</option>
+        </select>
+        <hr>
+        <p>Do you play any of the following instruments?
+            <!-- (You can select more than one option by holding
+            down control on a PC or command key on a Mac
+            while selecting different options.)-->
+        </p>
+        <select name="instruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">
+                Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard" selected="selected">Keyboard</option>
+            <option value="bass">Bass</option>
+        </select>
+        <hr>
+        <p>Uplode your Documents in PDF format</p>
+        <input type="file" name="documents" placeholder="documents" required>
+        <br />
+        <input type="submit" value="uplode" required>
+        <hr>
+        <p>Pick the color for your Car</p>
+        <input type="color">
+        <input type="range">
+        <input type="date">
+        <br>
+        <hr>
+        <button type="submit">Done</button>
+        <br>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
