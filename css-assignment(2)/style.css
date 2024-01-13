@@ -1,0 +1,26 @@
+body {
+    color: lightgreen;
+    background-color: grey;
+}
+
+h1 {
+    color: darkcyan;
+    background-color: lightblue;
+}
+
+li {
+    color: red;
+    background-color: rgb(125, 214, 125);
+    border: 2px solid gray;
+}
+
+p {
+    color: linen;
+}
+
+h6 {
+    color: darkorange;
+    background-color: lightyellow;
+    font-size: 20px;
+    font-style: initial;
+}
