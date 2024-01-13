@@ -1,0 +1,12 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: blue;
+    align-items: center;
+    font-style: normal;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
