@@ -5,18 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            background-color: black;
+        }
+
+        h2 {
+            color: aqua;
+        }
+
+        table {
+            background-color: red;
+            border: 5px solid aqua;
+            width: 100%;
+        }
+
+        thead {
+            color: rgb(0, 0, 0);
+            background-color: yellow;
+            border: 5px solid black;
+            text-align: left;
+
+        }
+
+        tbody {
+            color: rgb(0, 0, 0);
+            background-color: lightblue;
+            border: 5px solid black;
+            text-align: left;
+        }
+
+        th {
+            background-color: lawngreen;
+            padding: 10px;
+            /* Adjust the value as needed */
+            border: 2px solid black;
+            text-align: left;
+        }
+
+        td {
+            /* background-color: lightyellow; */
+            padding: 10px;
+            /* Adjust the value as needed */
+            border: 2px solid black;
+            text-align: left;
+        }
     </style>
-    <title>Creating a Table</title>
+    <title>Practice</title>
 </head>
 
 <body>
 
-    <h2>Online Web Development and App Designing Timetable</h2>
+    <h2>Creating a Time Table</h2>
 
-    <table border="10" cellspcing="10" >
+    <table border="5" cellspacing="5">
         <thead>
-            <th>Days</th>
-            <th>Time Slot</th>
+            <th>Days & Time Slot</th>
+            <td>7am to 9am</td>
             <td>9am to 11am</td>
             <td>11am to 1pm</td>
             <th rowspan="10">Namaz Time</th>
@@ -27,67 +71,66 @@
         </thead>
         <tbody>
 
-
-            <tr colspan="10">
+            <tr>
                 <th>Monday</th>
-                <td>Web and app (Sir Haider)</td>
-                <td>Web and app (Sir Haider)</td>
-                <td>Web and app (Sir Haider)</td>
+                <td class="wa">Web and app</td>
+                <td>Video Editing</td>
+                <td>Graphic Designing</td>
                 <th rowspan="10">Namaz Time</th>
-                <td>Web and app (Sir Haider)</td>
-                <td>Web and app (Sir Haider)</td>
-                <td>Web and app (Sir Haider)</td>
+                <td>AI and programing </td>
+                <td>Computer languages </td>
+                <td>Animation</td>
                 <td>Web and app</td>
             </tr>
             <tr>
                 <th>Tuesday</th>
                 <td>Web and app</td>
-                <td>Web and app</td>
-                <td>Web and app</td>
-                <td>Web and app</td>
-                <td>Web and app</td>
-                <td>Web and app</td>
+                <td>Video Editing</td>
+                <td>Graphic Designing</td>
+                <td>AI and programing</td>
+                <td>Computer languages</td>
+                <td>Animation</td>
                 <td>Web and app</td>
             </tr>
             <tr>
                 <th>Wednesday</th>
-                <td>Video Editing Section(A) (Sir Abrar)</td>
-                <td>Graphic Designing Section-C</td>
-                <td>Video Editing Section(A) (Sir Abrar)</td>
-                <td>Graphic Designing Section-C</td>
-                <td>Video Editing Section(A) (Sir Abrar)</td>
-                <td>Graphic Designing Section-B</td>
-                <td>Video Editing Section(B) (Sir Talha)</td>
+                <td>Web and app</td>
+                <td>Video Editing</td>
+                <td>Graphic Designing</td>
+                <td>AI and programing</td>
+                <td>Computer languages</td>
+                <td>Animation</td>
+                <td>Web and app</td>
             </tr>
             <tr>
                 <th>Thursday</th>
-                <td>Graphic Designing Section-C</td>
-                <td>Video Editing Section(A) (Sir Abrar)</td>
-                <td>Graphic Designing Section-B</td>
-                <td>AI and Chatbot Section-A</td>
-                <td>Graphic Designing Section-B</td>
-                <td>AI and Chatbot Section-A</td>
-                <td>AI and Chatbot Section-B (Sir Noman)</td>
+                <td>Web and app</td>
+                <td>Video Editing</td>
+                <td>Graphic Designing</td>
+                <td>AI and programing</td>
+                <td>Computer languages</td>
+                <td>Animation</td>
+                <td>Web and app</td>
             </tr>
             <tr>
                 <th>Friday</th>
-                <td>AI and Chatbot Section-A</td>
-                <td>Graphic Designing Section-C</td>
-                <td>Web and App</td>
-                <td>Web and App</td>
-                <td>Web and App</td>
-                <td>Web and App</td>
-                <td>Web and App</td>
+                <td>Web and app</td>
+                <td>Video Editing</td>
+                <td>Graphic Designing</td>
+                <td>AI and programing</td>
+                <td>Computer languages</td>
+                <td>Animation</td>
+                <td>Web and app</td>
             </tr>
             <tr>
                 <th>Saturday</th>
-                <td>Web and App</td>
-                <td>AI and Chatbot Section-A</td>
-                <td>Web and App</td>
-                <td>AI and Chatbot Section-A</td>
-                <td>Web and App</td>
-                <td>Web and App</td>
-                <td>Web and App</td>
+                <td>Web and app</td>
+                <td>Video Editing</td>
+                <td>Graphic Designing</td>
+                <td>AI and programing</td>
+                <td>Computer languages</td>
+                <td>Animation</td>
+                <td>Web and app</td>
             </tr>
         </tbody>
     </table>
