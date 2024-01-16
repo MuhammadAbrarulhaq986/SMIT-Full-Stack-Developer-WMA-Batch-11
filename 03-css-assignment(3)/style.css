@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Lato&family=Open+Sans&family=Questrial&display=swap');
+/*  */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Lato:ital@0;1&family=Open+Sans&family=Questrial&display=swap');
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Lato:ital@0;1&family=Open+Sans&family=Oswald&family=Questrial&display=swap');
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Lato:ital@0;1&family=Lemon&family=Open+Sans&family=Oswald&family=Questrial&display=swap');
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=IBM+Plex+Mono:wght@200&family=Lato:ital@0;1&family=Lemon&family=Open+Sans&family=Oswald&family=Questrial&display=swap');
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=IBM+Plex+Mono:wght@200&family=Lato:ital@0;1&family=Lemon&family=Noto+Sans+Indic+Siyaq+Numbers&family=Open+Sans&family=Oswald&family=Questrial&display=swap');
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=IBM+Plex+Mono:wght@200&family=Lato:ital@0;1&family=Lemon&family=Noto+Sans+Indic+Siyaq+Numbers&family=Noto+Sans+JP&family=Open+Sans&family=Oswald&family=Questrial&display=swap');
+
 body {
-    background-color: whitesmoke;
+    background-color: rgb(201, 194, 194);
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 h1 {
@@ -9,4 +25,30 @@ h1 {
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
+    font-family: 'Questrial', sans-serif;
+}
+
+.he {
+    color: darkred;
+    font-family: 'Questrial', sans-serif;
+}
+
+.she {
+    color: darkblue;
+    font-family: 'Questrial', sans-serif;
+}
+
+.it {
+    color: darkgreen;
+    font-family: 'Questrial', sans-serif;
+}
+
+.urdu {
+    color: darkmagenta;
+    font-family: 'Questrial', sans-serif;
+}
+
+.japan {
+
+    font-family: 'Questrial', sans-serif;
 }
