@@ -16,7 +16,7 @@ body {
     background-color: lightblue;
 
 }
-
+/* 
 img {
     color: #16a085;
     background-color: rgba(0, 0, 0, 0.3) #16a085;
@@ -30,7 +30,7 @@ img {
     width: 20%;
     border: 10px;
     position: sticky;
-}
+} */
 
 div {
     color: black;
@@ -57,3 +57,5 @@ div>button {
     background-color: #ecf0f1;
     border-radius: 15px;
 }
+/* asdaskdjbasdkjlahsdlkajsdhlkajshdakljsdhak */
+/* Apply a white background to all elements */

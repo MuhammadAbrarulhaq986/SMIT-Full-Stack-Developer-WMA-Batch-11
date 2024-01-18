@@ -1,36 +1,47 @@
-/* Apply a white background to all elements */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
 * {
-    background-color: lightgrey;
+    background-color: lightgray;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
-/* Styles for the logo */
-.logo {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #16a085;
-    text-align: center;
-    padding: 10px;
-    display: block;
-    margin: 0 auto; /* Center the logo horizontally */
-    border-radius: 30px;
-    width: 100px;
-    border: 10px solid #16a085;
+
+div {}
+
+.container1 {
+    align-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-/* Styles for tables, th, and td */
+.three-line {
+    display: inline-block;
+    align-items: baseline;
+
+}
+
+.container2 {}
+
 table {
     border-collapse: collapse;
     margin-top: 20px;
-    width: 100%; /* Adjusted to full width */
+    width: 100%;
+    /* Adjusted to full width */
 }
 
 th,
 td {
     border: 5px solid lightgreen;
     padding: 10px;
-    text-align: center; /* Center content within cells */
+    text-align: center;
+    /* Center content within cells */
 }
 
-/* Styles for specific td and th */
 td {
     background-color: lightgray;
 }
@@ -39,20 +50,25 @@ th {
     background-color: lightgray;
 }
 
-/* Styles for h2 headings */
+
 h2 {
     color: white;
     background-color: black;
     border: 5px solid black;
-    padding: 10px;
     display: inline-block;
+    padding: 10px;
     border-radius: 10px;
+
 }
 
-/* Styles for paragraphs */
-p {
-    width: 100%; /* Adjusted to full width */
-    margin: 10px 0; /* Adjusted margin for better spacing */
+h3 {
+    border: 5px solid lightgreen;
     padding: 10px;
     border-radius: 10px;
+
+}
+
+
+p {
+    width: 100%;
 }
