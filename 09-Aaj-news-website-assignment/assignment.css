@@ -2,7 +2,7 @@
 
 
 * {
-    background-color: lightgray;
+    background-color: white;
     color: black;
     margin: 0px;
     padding: 0px;
@@ -36,18 +36,18 @@ table {
 
 th,
 td {
-    border: 5px solid lightgreen;
+    border: 2px solid black;
     padding: 10px;
     text-align: center;
     /* Center content within cells */
 }
 
 td {
-    background-color: lightgray;
+    background-color: white;
 }
 
 th {
-    background-color: lightgray;
+    background-color: white;
 }
 
 
@@ -62,13 +62,13 @@ h2 {
 }
 
 h3 {
-    border: 5px solid lightgreen;
+    border: 2px solid black;
     padding: 10px;
     border-radius: 10px;
-
 }
 
 
 p {
     width: 100%;
+    align-content: space-between;
 }
