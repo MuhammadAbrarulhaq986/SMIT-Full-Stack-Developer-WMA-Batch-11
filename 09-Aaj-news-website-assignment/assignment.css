@@ -31,6 +31,7 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
     width: 100%;
+
     /* Adjusted to full width */
 }
 
@@ -38,7 +39,8 @@ th,
 td {
     border: 2px solid black;
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
+
     /* Center content within cells */
 }
 
@@ -72,3 +74,11 @@ p {
     width: 100%;
     align-content: space-between;
 }
+
+.social {
+    padding: 10px;
+    align-items: center;
+    display: inline-block;
+
+}
+
