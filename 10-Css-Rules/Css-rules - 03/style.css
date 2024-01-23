@@ -1,0 +1,52 @@
+body {
+    background-color: aquamarine;
+}
+
+/* ********************************************************************** */
+div .box {
+    background-color: darkcyan;
+    height: 300px;
+    width: 300px;
+    display: none;
+
+
+}
+
+p {
+    background-color: lightblue;
+    height: 75%;
+    width: 75%;
+}
+
+/* ********************************************************************** */
+td.description {
+    min-width: 450px;
+    max-width: 650px;
+    text-align: left;
+    padding: 5px;
+    margin: 0px;
+}
+
+/* ********************************************************************** */
+
+p.one {
+    overflow: hidden;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+p.two {
+    overflow: scroll;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+
+
+
+/* ********************************************************************** */
+
+p.three {
+    border: 10px solid;
+    border-color: #c4c400 #111111 #ff005d #009dff;
+}
