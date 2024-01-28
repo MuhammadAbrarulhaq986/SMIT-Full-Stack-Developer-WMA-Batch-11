@@ -1,0 +1,49 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: "Courier New", monospace;
+}
+
+i {
+    color: green;
+    /* this is how Cascading works */
+    color: red;
+}
+
+b {
+    color: pink;
+}
+
+p b {
+    color: violet;
+    /* !important tag will over write even if Cascading is applied  */
+    color: blue !important;
+}
+
+
+p#intro {
+    font-size: 100%;
+}
+
+p {
+    font-size: 75%;
+}
+
+/* **************************** 239 INTRODUCING CSS ***************************************** */
+
+/* Body tag will applied on all the css */
+body {
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+    padding: 10px;
+}
+
+.page {
+    border: 1px solid #665544;
+    background-color: #efefef;
+    padding: inherit;
+}
+
+/* **************************** 240 INTRODUCING CSS ***************************************** */
