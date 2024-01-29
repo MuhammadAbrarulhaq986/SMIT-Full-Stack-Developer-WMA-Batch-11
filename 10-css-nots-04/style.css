@@ -1,0 +1,98 @@
+p.one {
+    background-color: #eeeeee;
+    color: #09ff00;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+p.two {
+    background-color: #dddddd;
+    color: #ff0000;
+    text-shadow: 1px 1px 3px #666666;
+}
+
+p.three {
+    background-color: #cccccc;
+    color: #e5ff00;
+    text-shadow: 2px 2px 7px #111111;
+}
+
+p.four {
+    background-color: #bbbbbb;
+    color: #00f7ff;
+    text-shadow: -1px -2px #666666;
+}
+
+p.five {
+    background-color: #aaaaaa;
+    color: #c300ff;
+    text-shadow: -1px -1px #666666;
+}
+
+/* *******************************TEXT 288********************************************** */
+
+
+
+/* :first-letter :first-line these are elements for CSS */
+
+p.intro:first-letter {
+    font-size: 200%;
+}
+
+p.intro:first-line {
+    font-weight: bold;
+}
+
+/* *******************************TEXT 289********************************************** */
+
+span {
+    color: deeppink;
+
+}
+
+a:link {
+    color: deeppink;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: deeppink;
+    text-decoration: underline;
+}
+
+a:active {
+    color: darkcyan;
+}
+
+/* *******************************TEXT 290********************************************** */
+
+
+
+
+form {
+    padding: 6px 12px 6px 12px;
+    border: 5px solid #665544;
+    color: #f00000;
+}
+
+form.submit:hover {
+    background-color: #ff8000;
+}
+
+form.submit:active {
+    background-color: rgb(255, 106, 0);
+
+}
+
+form.text {
+    color: #ff0000;
+}
+
+form.text:focus {
+    color: #ff8000;
+}
+
+/* *******************************291 TEX********************************************** */
