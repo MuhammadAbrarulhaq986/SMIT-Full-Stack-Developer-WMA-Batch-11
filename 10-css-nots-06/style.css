@@ -1,0 +1,67 @@
+div.box {
+    height: 300px;
+    width: 300px;
+    background-color: #ff0000;
+}
+
+p {
+    height: 75%;
+    width: 75%;
+    background-color: #0088dd;
+    border: 5px solid yellow;
+}
+
+/* **************************** 303 BOXES********************************************* */
+td.description {
+    min-width: 450px;
+    max-width: 650px;
+    text-align: left;
+    padding: 5px;
+    margin: 0px;
+}
+
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+table {
+    background-color: lightseagreen;
+}
+
+/* **************************** 304 BOXES********************************************* */
+
+
+
+h3,
+p {
+    width: 400px;
+    font-size: 90%;
+    line-height: 1.5em;
+}
+
+h3 {
+    color: #ff0000;
+    border-bottom: 5px solid #000000;
+}
+
+/* p {
+    min-height: 10px; 
+    max-height: 30px;
+} */
+
+/* **************************** 305 BOXES********************************************* */
+
+p.one {
+    overflow: hidden;
+
+}
+
+p.two {
+    overflow: scroll;
+    height: 200px;
+    width: 200px;
+}
+
+/* **************************** 306 BOXES********************************************* */
