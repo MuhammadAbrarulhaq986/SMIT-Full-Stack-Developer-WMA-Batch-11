@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+}
+
+.nor {
+    background-color: #efefef;
+    padding: 10px;
+}
+
+.normal {
+    border: 2px solid gray;
+    width: 450px;
+}
+
+/* ************************365 LAYOUT************************************************** */
+
+
+.relative {
+    border: 2px solid gray;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+/* ************************366 LAYOUT************************************************** */
+
+.abs {
+    top: 10px;
+    /* position: absolute; */
+    top: 0px;
+    left: 500px;
+    width: 250px;
+    background-color: #006eff;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.absolute {
+    width: 450px;
+}
+
+/* ************************366 LAYOUT************************************************** */
+/* position:fixed */
+
+.fix {
+    /* Fixed means stick to y-xes or x-xes */
+    position: fixed;
+    top: 0px;
+    left: 50px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    background-color: #efefef;
+}
+
+p.fixed {
+    margin-top: 100px;
+    border: 2px solid gray;
+
+}
+
+/* ************************367 LAYOUT************************************************** */
+
+
+
+
+/* Overlapping Elements */
+
+.z {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    background-color: #efefef;
+    z-index: 10;
+}
+
+.z-index {
+    position: relative;
+    top: 70px;
+    left: 70px;
+}
+
+/* ************************368 LAYOUT************************************************** */
