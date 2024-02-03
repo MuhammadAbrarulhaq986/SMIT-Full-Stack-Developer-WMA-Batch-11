@@ -4,6 +4,7 @@ body {
     letter-spacing: 2px;
     background-color: white;
     background-image: url(background.jpg);
+    
 
 }
 
@@ -17,6 +18,7 @@ a {
 a:hover,
 a.on {
     color: white;
+    border-radius: 20px;
     background: rgb(1, 22, 25);
     background: linear-gradient(103deg, rgba(1, 22, 25, 1) 0%, rgba(0, 249, 249, 1) 99%);
 

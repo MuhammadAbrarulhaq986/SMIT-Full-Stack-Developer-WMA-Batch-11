@@ -1,0 +1,92 @@
+body {
+    background-color: burlywood;
+    background-image: url(background-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img.large {
+    width: 500px;
+    height: 500px;
+}
+
+img.medium {
+    width: 250px;
+    height: 250px;
+}
+
+img.small {
+    width: 100px;
+    height: 100px;
+}
+
+/* *************************IMAGES 410****************************************** */
+img.align-left {
+    float: left;
+    margin-right: 10px;
+}
+
+img.align-right {
+    float: right;
+    margin-left: 10px;
+}
+
+img.medium {
+    width: 250px;
+    height: 250px;
+}
+
+/* *************************IMAGES 411****************************************** */
+
+img.align-center {
+    display: block;
+    margin: 0px auto;
+}
+
+img.medium {
+    width: 250px;
+    height: 250px;
+}
+
+/* *************************IMAGES 412****************************************** */
+
+p.back {
+    background-image: url(background.jpg);
+}
+
+/* *************************IMAGES 413****************************************** */
+a.button {
+    height: 10px;
+    width: 10px;
+    background-image: url(Logo.jpg);
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+a#add-to-basket {
+    width: 174px;
+    background-position: 0px 0px;
+}
+
+a#framing-options {
+    width: 210px;
+    background-position: -175px 0px;
+}
+
+a#add-to-basket:hover {
+    background-position: 0px -40px;
+}
+
+a#framing-options:hover {
+    background-position: -175px -40px;
+}
+
+a#add-to-basket:active {
+    background-position: 0px -80px;
+}
+
+a#framing-options:active {
+    background-position: -175px -80px;
+}
+
+/* *************************IMAGES 417****************************************** */
