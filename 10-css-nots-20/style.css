@@ -1,0 +1,44 @@
+body {
+    background-color: wheat;
+}
+
+h2 {
+    background-color: lightblue;
+}
+
+h3 {
+    background-color: lightcyan;
+}
+
+h4 {
+    background-color: lightsalmon;
+}
+
+header,
+footer {
+    border: 5px solid blueviolet;
+}
+
+nav>ul {
+    border: 5px solid brown;
+}
+
+article {
+    border: 5px solid rgb(255, 153, 0);
+}
+
+aside {
+    border: 5px solid magenta;
+}
+
+section {
+    border: 5px solid lightsalmon;
+}
+
+hgroup {
+    border: 5px solid yellowgreen;
+}
+
+figure {
+    border: 5px solid darkcyan;
+}
