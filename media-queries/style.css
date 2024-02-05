@@ -1,0 +1,60 @@
+body {
+    background-color: darkseagreen;
+}
+
+/* ************************************************************************** */
+/* Style the navigation bar */
+nav {
+    background-color: darkorchid;
+}
+
+/* Style the list items */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+/*  nav bar styling */
+nav ul li {
+    display: inline-block;
+    /* Display list items horizontally */
+    margin: 0 10px;
+    /* Add space between list items */
+}
+
+/* Style the links */
+nav>ul>li>a {
+    /* Set text color */
+    color: black;
+    /* Remove underline */
+    text-decoration: none;
+    /* Add padding around links */
+    padding: 10px 15px;
+    /* Make links block-level for better spacing */
+    display: block;
+}
+
+nav ul li a:hover {
+    /* Change background color on hover */
+    background-color: #555;
+}
+
+/* *********************** Nav bar decoration *************************************************** */
+.box-1{
+    background-color: antiquewhite;
+    border-radius: 30px;
+    text-align: center;
+    border: 5px solid blue;
+}
+.box-2{
+    background-color: antiquewhite;
+    border-radius: 30px;
+    text-align: center;
+    border: 5px solid blue;
+}
+.box-3{
+    background-color: antiquewhite;
+    border-radius: 30px;
+    text-align: center;
+    border: 5px solid blue;
+}
