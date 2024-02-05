@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    background-color: khaki;
+}
+
+h2 {
+    background-color: aqua;
+}
+
+p {
+    visibility: hidden
+}
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+/* ******************************* Box Color ****************************************** */
+#one {
+    background-color: red;
+    color: black;
+}
+
+#two {
+    background-color: yellow;
+    color: black;
+}
+
+#three {
+    background-color: green;
+    color: black;
+
+}
+
+#four {
+    background-color: blue;
+    color: black;
+
+}
+
+
+/* ************************************ Box Positions ************************************* */
+#ak {
+    /* static: This is the default value.
+     Elements are positioned according to the normal flow of the document.*/
+    position: static;
+    display: inline-block;
+    border: 5px solid black;
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+#do {
+    /* relative: Elements are positioned 
+    relative to their normal position in the document flow. */
+    position: relative;
+    display: inline-block;
+    border: 5px solid black;
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+#theen {
+    /* absolute: Elements are removed from the normal document flow and
+    positioned relative to their closest positioned ancestor. */
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    border: 5px solid black;
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+#char {
+    /* fixed: Elements are removed from the normal document
+    flow and remain at the same position even when the page is scrolled.
+    They are positioned relative to the viewport */
+    position: fixed;
+    top: 100px;
+    left: 900px;
+    display: inline-block;
+    border: 5px solid black;
+    background-color: lightgreen;
+    margin: 5px;
+    padding: 5px;
+}
+
+#pach {
+    /* sticky: Elements are treated as relative positioned until they
+     reach a specified threshold (usually the top of the viewport),
+      at which point they become fixed positioned. */
+    position: static;
+    display: inline-block;
+    border: 5px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* ******************************* Examples ************************************** */
