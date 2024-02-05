@@ -40,21 +40,141 @@ nav ul li a:hover {
 }
 
 /* *********************** Nav bar decoration *************************************************** */
-.box-1{
+.box-1 {
     background-color: antiquewhite;
     border-radius: 30px;
     text-align: center;
     border: 5px solid blue;
 }
-.box-2{
+
+.box-2 {
     background-color: antiquewhite;
     border-radius: 30px;
     text-align: center;
     border: 5px solid blue;
 }
-.box-3{
+
+.box-3 {
     background-color: antiquewhite;
     border-radius: 30px;
     text-align: center;
     border: 5px solid blue;
 }
+
+/* *********************** box decoration *************************************************** */
+
+table,
+th,
+td {
+    border: 5px solid blueviolet;
+}
+
+table {
+
+    border: 5px solid black;
+    background-color: chocolate;
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    height: 70px;
+}
+
+td {
+    height: 50px;
+    text-align: center;
+}
+
+/* *********************** table decoration *************************************************** */
+@media screen and (max-width:1800px) {
+    body {
+        background-color: red;
+    }
+
+    table {
+        background-color: darkgreen;
+    }
+
+    .box-1 {
+        background-color: brown;
+    }
+
+    .box-2 {
+        background-color: brown;
+    }
+
+    .box-3 {
+        background-color: brown;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    body {
+        background-color: blue;
+    }
+
+    table {
+        background-color: darkred;
+    }
+
+    .box-1 {
+        background-color: rgb(200, 255, 0);
+    }
+
+    .box-2 {
+        background-color: rgb(200, 255, 0);
+    }
+
+    .box-3 {
+        background-color: rgb(200, 255, 0);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: darkcyan;
+    }
+
+    table {
+        background-color: darkkhaki;
+    }
+
+    .box-1 {
+        background-color: rgb(0, 255, 242);
+    }
+
+    .box-2 {
+        background-color: rgb(0, 255, 242);
+    }
+
+    .box-3 {
+        background-color: rgb(0, 255, 242);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: darkorange;
+    }
+
+    table {
+        background-color: darkseagreen;
+    }
+
+    .box-1 {
+        background-color: rgb(255, 0, 106);
+    }
+
+    .box-2 {
+        background-color: rgb(255, 0, 106);
+    }
+
+    .box-3 {
+        background-color: rgb(255, 0, 106);
+    }
+}
+
+/* *********************** decoration from media queries *************************************************** */
