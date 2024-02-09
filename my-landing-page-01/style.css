@@ -1,0 +1,38 @@
+body {
+    background-image: url(background.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #333;
+}
+.container{
+    margin-top: 20px;
+    padding-top: 10px;
+    position: relative;
+}

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Flexbox properties for the first container */
+.first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b3ff00;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Flexbox properties for the second container */
+.second-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #44ff00;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Flexbox properties for the third container */
+.third-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #ff0400;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Flexbox properties for the fourth container */
+.fourth-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #0088ff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+}
