@@ -1,0 +1,165 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: o;
+}
+
+.bell {
+    justify-content: center;
+    text-align: center;
+    display: flex
+}
+
+.bell-1 {
+    justify-content: right;
+    text-align: right;
+    display: flex
+}
+
+.bell-2 {
+    justify-content: left;
+    text-align: left;
+    display: flex
+}
+
+/* ****************************************************************************** */
+.bell>img {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(255, 0, 0);
+    border-radius: 10px;
+}
+
+.bell-1>img {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(30, 255, 0);
+    border-radius: 10px;
+    /* margin-right: 20px; */
+}
+
+.bell-2>img {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(217, 255, 0);
+    border-radius: 10px;
+    /* margin-left: 20px; */
+}
+
+/* ***************************************************************** */
+.ball {
+    border: 20px solid red;
+    justify-content: center;
+    border-radius: 40px;
+    margin-bottom: -88px;
+    margin-left: 340px;
+    flex-wrap: wrap;
+    display: inline-block;
+    position: relative;
+}
+
+.ball-1 {
+    border: 20px solid rgb(30, 255, 0);
+    justify-content: center;
+    border-radius: 40px;
+    margin-bottom: -88px;
+    margin-left: 980px;
+    flex-wrap: wrap;
+    display: inline-block;
+    position: relative;
+}
+
+.ball-2 {
+    border: 20px solid rgb(217, 255, 0);
+    justify-content: center;
+    border-radius: 40px;
+    margin-bottom: -88px;
+    margin-left: 167px;
+    flex-wrap: wrap;
+    display: inline-block;
+    position: relative;
+}
+
+/* ************************************************************************** */
+@media screen and (max-width:1800px) {
+    .ball {
+
+        /* display: block; */
+        border: 20px solid red;
+        justify-content: center;
+        border-radius: 40px;
+        /* margin-bottom: auto; */
+        margin-bottom: -88px;
+        margin-left: 710px;
+        flex-wrap: wrap;
+        display: inline-block;
+        position: relative;
+    }
+
+    .ball-1 {
+        border: 20px solid rgb(30, 255, 0);
+        justify-content: center;
+        border-radius: 40px;
+        margin-bottom: -88px;
+        margin-left: 1280px;
+        flex-wrap: wrap;
+        display: inline-block;
+        position: relative;
+    }
+
+    .ball-2 {
+        border: 20px solid rgb(217, 255, 0);
+        justify-content: center;
+        border-radius: 40px;
+        margin-bottom: -88px;
+        margin-left: 130px;
+        flex-wrap: wrap;
+        display: inline-block;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .ball {
+
+        /* display: block; */
+        border: 20px solid red;
+        justify-content: center;
+        border-radius: 40px;
+        /* margin-bottom: auto; */
+        margin-bottom: -88px;
+        margin-left: 380px;
+        flex-wrap: wrap;
+        display: inline-block;
+        position: relative;
+    }
+
+    .ball-1 {
+        border: 20px solid rgb(30, 255, 0);
+        justify-content: center;
+        border-radius: 40px;
+        margin-bottom: -88px;
+        margin-left: 600px;
+        flex-wrap: wrap;
+        display: inline-block;
+        position: relative;
+    }
+
+    /*
+    .ball-2 {
+        border: 20px solid rgb(217, 255, 0);
+        justify-content: center;
+        border-radius: 40px;
+        margin-bottom: -88px;
+        margin-left: 340px;
+        flex-wrap: wrap;
+        display: inline-block;
+        position: relative;
+    } */
+}
