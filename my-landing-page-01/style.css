@@ -17,6 +17,9 @@ body {
     /* Adjust padding as needed */
     justify-content: flex-end;
     border-radius: 30px;
+    box-shadow: 0 2px 10px darkviolet;
+
+
 }
 
 .navbar ul {
@@ -39,9 +42,17 @@ body {
 
 /* *************************** Navbar  ************************************************* */
 
-h2 {
-    /* text-align: center; */
-    /* margin: 0 0 20px; */
+.headline {
+    color: aliceblue;
+    margin-left: -3px;
+    margin-top: -500px;
+    justify-content: center;
+    display: inline-flexbox;
+    text-align: left;
+    align-items: center;
+    padding: auto;
+    width: 400px;
+
 }
 
 .container {
@@ -49,10 +60,12 @@ h2 {
     margin-top: 45px;
     text-align: center;
     /* background-color:; */
-    border-radius: 5px;
+    border-radius: 30px;
     box-shadow: 0 2px 10px darkviolet;
     color: aliceblue;
-    border: 5px solid black;
+    border: 2px solid black;
+    background: rgb(255, 176, 0);
+    background: linear-gradient(161deg, rgba(255, 176, 0, 1) 0%, rgba(255, 0, 128, 1) 40%, rgba(172, 0, 255, 1) 60%, rgba(112, 0, 255, 1) 100%);
     width: 400px;
     height: 500px;
 }
@@ -101,10 +114,15 @@ h2 {
     padding: 5px;
 }
 
+
+
 button {
+    /* border: 5px solid darkviolet; */
+    box-shadow: 0 2px 10px linear-gradient(306deg, rgba(252, 76, 42, 1) 0%, rgba(161, 249, 255, 1) 0%, rgba(131, 58, 180, 1) 60%, rgba(253, 29, 29, 1) 100%);
+    ;
     cursor: pointer;
-    background-color: rgb(85, 83, 83);
-    border: 2px solid lightskyblue;
+    background: rgb(255, 176, 0);
+    background: linear-gradient(161deg, rgba(255, 176, 0, 1) 0%, rgba(255, 0, 128, 1) 40%, rgba(172, 0, 255, 1) 60%, rgba(112, 0, 255, 1) 100%);
     border-radius: 5px;
     color: rgb(255, 255, 255);
     display: block;
@@ -113,6 +131,7 @@ button {
     margin-top: 20px;
     padding: 10px;
     width: 100%;
+
 }
 
 
@@ -128,10 +147,36 @@ button {
         border-radius: 5px;
         box-shadow: 0 2px 10px darkviolet;
         color: aliceblue;
-        border: 5px solid black;
+        border: 2px solid black;
         width: 400px;
         height: 500px;
     }
+
+    .headline>h3 {
+        font-weight: bold;
+        font-size: large;
+        margin-left: -3px;
+        margin-top: -500px;
+    }
+
+    button {
+        box-shadow: 0 2px 10px darkviolet;
+        cursor: pointer;
+        background: rgb(255, 176, 0);
+        background: linear-gradient(161deg, rgba(255, 176, 0, 1) 0%, rgba(255, 0, 128, 1) 40%, rgba(172, 0, 255, 1) 60%, rgba(112, 0, 255, 1) 100%);
+        border: 2px solid linear-gradient(306deg, rgba(252, 76, 42, 1) 0%, rgba(161, 249, 255, 1) 0%, rgba(131, 58, 180, 1) 60%, rgba(253, 29, 29, 1) 100%);
+        ;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+
+    }
+
 
 }
 
@@ -148,9 +193,35 @@ button {
         border-radius: 5px;
         box-shadow: 0 2px 10px darkviolet;
         color: aliceblue;
-        border: 5px solid black;
+        border: 2px solid black;
         width: 400px;
         height: 500px;
     }
+
+    .headline>h3 {
+        font-weight: bold;
+        font-size: large;
+        margin-left: -200px;
+        margin-top: -500px;
+    }
+
+    button {
+        box-shadow: 0 2px 10px darkviolet;
+        cursor: pointer;
+        background: rgb(255, 176, 0);
+        background: linear-gradient(161deg, rgba(255, 176, 0, 1) 0%, rgba(255, 0, 128, 1) 40%, rgba(172, 0, 255, 1) 60%, rgba(112, 0, 255, 1) 100%);
+        border: 2px solid linear-gradient(306deg, rgba(252, 76, 42, 1) 0%, rgba(161, 249, 255, 1) 0%, rgba(131, 58, 180, 1) 60%, rgba(253, 29, 29, 1) 100%);
+        ;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+
+    }
+
 
 }
