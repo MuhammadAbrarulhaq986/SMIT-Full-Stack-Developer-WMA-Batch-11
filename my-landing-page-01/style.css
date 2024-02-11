@@ -1,14 +1,22 @@
 body {
     background-image: url(background.jpg);
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .navbar {
-    background-color: black;
-    position: fixed;
-    top: 0;
-    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: rgb(255, 176, 0);
+    background: linear-gradient(161deg, rgba(255, 176, 0, 1) 0%, rgba(255, 0, 128, 1) 40%, rgba(172, 0, 255, 1) 60%, rgba(112, 0, 255, 1) 100%);
+    /* Set your desired background color */
+    margin-left: -10px;
+    padding: 10px;
+    /* Adjust padding as needed */
+    justify-content: flex-end;
+    border-radius: 30px;
 }
 
 .navbar ul {
@@ -18,21 +26,131 @@ body {
 }
 
 .navbar ul li {
-    float: left;
+    display: inline;
 }
 
 .navbar ul li a {
-    display: block;
-    padding: 15px 20px;
     color: white;
+    /* Set your desired text color */
     text-decoration: none;
+    padding: 10px;
+    /* Adjust padding as needed */
 }
 
-.navbar ul li a:hover {
-    background-color: #333;
+/* *************************** Navbar  ************************************************* */
+
+h2 {
+    /* text-align: center; */
+    /* margin: 0 0 20px; */
 }
-.container{
-    margin-top: 20px;
-    padding-top: 10px;
+
+.container {
+    margin-left: 900px;
+    margin-top: 45px;
+    text-align: center;
+    /* background-color:; */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px darkviolet;
+    color: aliceblue;
+    border: 5px solid black;
+    width: 400px;
+    height: 500px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
     position: relative;
+
+}
+
+.form {
+    padding: 30px 40px
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+#form {
+    display: inline-block;
+    justify-content: space-around;
+    width: 50%;
+    height: 10%;
+}
+
+#username {
+    margin: 5px;
+    padding: 5px;
+}
+
+#email {
+    margin: 5px;
+    padding: 5px;
+}
+
+#password {
+    margin: 5px;
+    padding: 5px;
+}
+
+#password2 {
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(85, 83, 83);
+    border: 2px solid lightskyblue;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+/* ************************************************************************* */
+@media screen and (max-width:1800px) {
+
+
+    .container {
+        margin-left: 900px;
+        margin-top: 45px;
+        text-align: center;
+        /* background-color:; */
+        border-radius: 5px;
+        box-shadow: 0 2px 10px darkviolet;
+        color: aliceblue;
+        border: 5px solid black;
+        width: 400px;
+        height: 500px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:900px) {
+
+    .container {
+        margin-left: 230px;
+        margin-top: 45px;
+        text-align: center;
+        /* background-color:; */
+        border-radius: 5px;
+        box-shadow: 0 2px 10px darkviolet;
+        color: aliceblue;
+        border: 5px solid black;
+        width: 400px;
+        height: 500px;
+    }
+
 }
