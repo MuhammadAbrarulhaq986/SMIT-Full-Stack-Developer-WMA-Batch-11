@@ -67,7 +67,6 @@ ul {
 }
 
 
-/* ***************************************************************** */
 
 
 :root {
@@ -89,6 +88,8 @@ ul {
 .navbar-nav {
     gap: 30px;
 }
+
+/* ***************************************************************** */
 
 /* .nav-link>a {
     font-size: 17.16px;
@@ -125,18 +126,19 @@ ul {
     /* Top left corner */
 }
 
-.left {
+.left-side {
     width: 557px;
+    margin-left: 10px;
 }
 
-.left>h4 {
+.left-side>h4 {
     font-size: 60px;
     font-weight: 800;
     margin: 65px 0px;
 
 }
 
-.left>p {
+.left-side>p {
     color: #9E9DA2;
     font-size: 24px;
     line-height: 28px;
@@ -157,7 +159,7 @@ ul {
     padding: 15px 50px;
     background-color: black;
     color: var(--white);
-    border-radius: 5px;
+    border-radius: 30px;
     width: 50%;
     height: 60px;
     margin: 10px;
@@ -181,10 +183,151 @@ ul {
     height: 580px !important;
 }
 
+/* *************************************************************************************** */
 
+.download-bar {
+    top: 897px;
+    left: 80px;
+    height: 170px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    width: auto;
+    height: 100%;
+    box-shadow:
+        5px 5px 5px rgba(255, 255, 0, 0.5),
+        /* Bottom right corner */
+        -5px 5px 5px rgba(255, 255, 0, 0.5),
+        /* Bottom left corner */
+        5px -5px 5px rgba(255, 255, 0, 0.5),
+        /* Top right corner */
+        -5px -5px 5px rgba(255, 255, 0, 0.5);
+    /* Top left corner */
+}
+
+/* .download-bar {} */
+
+.text-3 {
+    width: 209px;
+    height: 56px;
+    margin-left: 100px;
+    display: inline-block;
+    /* Ensure the element is displayed inline-block */
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    /* Vertically align the element */
+}
+
+.text-num-line>button {
+    display: inline-flex;
+    align-items: center;
+    background-color: black;
+    color: var(--white);
+    border-radius: 30px;
+    height: 60px;
+    width: 100px;
+    width: fit-content;
+    padding: 20px 50px;
+}
+
+.btn-bar {
+    margin-top: 27px;
+    margin-left: 10px;
+    border-radius: 30px;
+    /* display: inline; */
+}
+
+.text-num-line>input {
+    width: 277px;
+    height: 45px;
+    margin-left: 432px;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow:
+        5px 5px 5px rgba(255, 255, 0, 0.5),
+        /* Bottom right corner */
+        -5px 5px 5px rgba(255, 255, 0, 0.5),
+        /* Bottom left corner */
+        5px -5px 5px rgba(255, 255, 0, 0.5),
+        /* Top right corner */
+        -5px -5px 5px rgba(255, 255, 0, 0.5);
+    /* Top left corner */
+}
 
 /* ******************************************************************************* */
 
+.container-2 {
+    padding: 20px;
+    background-color: rgb(99, 99, 99);
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow:
+        5px 5px 5px rgba(255, 255, 0, 0.5),
+        /* Bottom right corner */
+        -5px 5px 5px rgba(255, 255, 0, 0.5),
+        /* Bottom left corner */
+        5px -5px 5px rgba(255, 255, 0, 0.5),
+        /* Top right corner */
+        -5px -5px 5px rgba(255, 255, 0, 0.5);
+    /* Top left corner */
+}
+
+span {
+    color: #75BF7A;
+}
+
+.text-heading>h5 {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.text-heading>p {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ****************************************************** */
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: calc(50% - 20px);
+    /* 50% width with space between */
+    padding: 20px;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+.left-box,
+.right-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mine-container {
+    padding: 10px;
+    text-align: center;
+}
+
+.mine-headings-1 img {
+    margin-bottom: 10px;
+}
+
+/* ******************************************************************************* */
 @media (max-width: 420px) {
     .hero-section {
         flex-direction: column-reverse;
