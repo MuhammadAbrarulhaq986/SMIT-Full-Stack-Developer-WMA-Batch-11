@@ -1,0 +1,149 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+.pala {
+    background-color: #74C69D;
+}
+
+nav {
+    color: #74C69D;
+    border-radius: 30px;
+    border: 5px solid  #74C69D;
+}
+
+.container-fluid {
+    background-color: #74C69D;
+    border-radius: 30px;
+    color: #74C69D;
+}
+
+.navbar .nav-link-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+
+}
+
+.navbar .nav-link {
+    color: white;
+    /* background-color: #74C69D; */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    padding: 10px;
+}
+
+/* *************************************************************************** */
+
+.head-text {
+    /* background-color: #74C69D; */
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    height: 50%;
+    width: 100%;
+
+}
+
+.head-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-top: -428px;
+    /* background-color: #74C69D; */
+}
+
+
+h5 {
+    font-weight: 700;
+    line-height: 50px;
+    color: white;
+    /* background-color: #74C69D; */
+    margin: 10px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column column-reverse;
+    justify-content: space-between;
+}
+
+div>h4 {
+    display: flex;
+    /* display: flex; */
+    flex-direction: column column-reverse;
+    justify-content: space-between;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    color: white;
+    /* background-color: #74C69D; */
+    width: 500px;
+    height: 100px;
+    margin: 10px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+}
+
+div>p {
+    display: flex;
+    /* display: flex; */
+    flex-direction: column column-reverse;
+    justify-content: space-between;
+    color: white;
+    /* background-color: #74C69D; */
+    margin: 10px;
+    width: 380px;
+    height: 200px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+/* *************************************************************************** */
+
+/* Styles for screens with a minimum width of 768 pixels (e.g. tablets) */
+/* @media screen and (min-width: 768px) {
+    .head-text {
+        font-size: 24px;
+    }
+
+    .head-img {
+        float: right;
+        display: flex;
+
+    }
+} */
+
+/* Styles for screens with a minimum width of 992 pixels (e.g. laptops) */
+/* @media screen and (min-width: 992px) {
+    .head-text {
+        font-size: 36px;
+    }
+
+    .head-img {
+        margin-left: 50px;
+        margin-top: -100px;
+    }
+} */
+
+/* Styles for screens with a minimum width of 1200 pixels (e.g. desktops) */
+/* @media screen and (min-width: 1200px) {
+    .head-text {
+        font-size: 48px;
+    }
+
+    .head-img {
+        margin-left: 100px;
+        margin-top: -150px;
+    }
+} */
+
+/* *************************************************************************** */
