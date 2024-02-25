@@ -241,6 +241,7 @@ h6 {
 .mine-icons {
     display: inline;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .last-words {
