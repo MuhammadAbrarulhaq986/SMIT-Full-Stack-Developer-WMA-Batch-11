@@ -1,6 +1,6 @@
 body {
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 
 
@@ -36,7 +36,7 @@ nav {
 
 /* *************************************************************************** */
 .head-text {
-    width: 30%;
+    /* width: 30%; */
     margin: auto;
     box-shadow: 5px 5px 5px #c5c5c5,
         -5px 5px 5px #c5c5c5,
@@ -44,7 +44,7 @@ nav {
         5px -5px 5px#c5c5c5;
 }
 
-h6 {
+h3 {
     text-align: center;
     text-transform: capitalize;
     color: #74C69D;
@@ -52,41 +52,71 @@ h6 {
     font-weight: 600;
 }
 
-h2 {
+h4 {
     text-align: center;
     font-weight: 700;
     font-size: 40px;
 }
 
-.head-text>p {
+#text-head>p {
     text-align: center;
+    margin: auto;
+    width: 60%;
 
 }
 
 /* *************************************************************************** */
-.img-sections {
+.hero-setion {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
-
-}
-
-.img-sections>img {
-    padding: 10px;
-    overflow: hidden;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+    gap: 10px;
     box-shadow: 5px 5px 5px #c5c5c5,
         -5px 5px 5px #c5c5c5,
         -5px -5px 5px #c5c5c5,
         5px -5px 5px#c5c5c5;
 }
 
+.card-container {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px #98FB98,
+        -5px 5px 5px #98FB98,
+        -5px -5px 5px #98FB98,
+        5px -5px 5px #98FB98;
+}
+
+.card-title {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    line-height: 1.8;
+}
+
+span {
+    opacity: .5;
+}
+
+p {
+    text-align: center;
+    width: auto;
+}
+
+
+.card-list {
+    text-align: center;
+    list-style-type: none;
+}
+
+ul {
+    list-style: none;
+}
+
 
 /* *************************************************************************** */
 button {
     color: white;
-    background: black;
+    background-color: black;
     border-radius: 30px;
     width: 150px;
     height: 50px;
@@ -97,11 +127,10 @@ button {
         5px -5px 5px #98FB98;
 }
 
-span {
+.btn-1 {
     margin-top: 10px;
-    color: #74C69D;
+    color: white;
     text-transform: uppercase;
-    display: flex;
     justify-content: center;
     font-size: 20px;
     font-weight: 600;
