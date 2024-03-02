@@ -85,9 +85,45 @@ alert(2 + 2);
 // In JavaScript, the plus (+) operator adds numbers together. However, when it comes to strings  (letters), the plus operator concatenates them               
 var popularNumberOne = 12 - 24;
 
-
-// Division 
-
-
 // Multiplication
 var popularNumberTwo = 3 * 12;
+
+// Division 
+var popularNumberThree = 60 / 8;
+var popularNumberFour = 50 / 5;
+// The result will be displayed as:  8
+
+// incremented 
+var numOne = 5;
+var newNumOne = ++numOne;  // numOne is incremented to 2, and newNumOne is assigned the value 2
+
+var numTwo = 10;
+var newNumTwo = numTwo++;  // numTwo is incremented to 5, but newNumTwo is assigned the original value of numTwo, which is 4
+
+// ****************************
+
+var numThree = 15;
+var newNumThree = --numThree;  // newNumOne is assigned the original value of numOne, which is 1, and then numOne is incremented to 2
+
+var numFour = 2;
+var newNumFour = numFour--;  // newNumTwo is assigned the original value of numTwo, which is 4, and then numTwo is decremented to 3
+
+
+// Math expressions:
+// Eliminating ambiguity
+var totalCost = 5 + 5 * 4;
+
+var totalCostOne = (5 + 5) / 4;
+// var totalCostOne = 5 + 5 / 4; This type of division will not give the correct answars
+
+var totalCostTwo = 1 + (3 * 4);
+
+var totalCostThree = 6 + (9 / 4);
+
+var resultOfComputation = (2 * 4) * 4 + 2;
+
+var numberToSquare = 7;
+var squaredNumber = numberToSquare ** 2;
+
+console.log("The square of " + numberToSquare + " is " + squaredNumber);
+
