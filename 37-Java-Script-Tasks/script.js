@@ -23,7 +23,7 @@ alert("Hello... I'can run JS through my Web Browser's Console");
 console.log("Hello... I'can run JS through my Web Browser's Console");
 // *******************************************************************************************************************
 // TASK VARIABLES FOR STRINGS  
-var firstName = "Edward ";
+var firstName = "Edward";
 var lastName = " Elric";
 var fullname = firstName + lastName;
 alert(fullname);
@@ -33,6 +33,34 @@ var age = " Age 19";
 alert(age);
 console.log(age);
 
+var certified = "Certified  JavaScript Developer";
+alert(certified);
+console.log(certified);
 
+var nameOne = "PIZZA\n";
+var nameTwo = "PIZZ\n";
+var nameThree = "PIZ\n";
+var nameFour = "PI\n";
+var nameFive = "P\n";
+var names = nameOne + nameTwo + nameThree + nameFour + nameFive;
+alert(names);
+console.log(names);
 
-// *******************************************************************************************************************
+var email = "My Email Address is example123@example.come";
+alert(email);
+console.log(email);
+
+var Book = "A Smarter WayTo Learn JavaScript";
+alert(Book);
+console.log(Book);
+
+var display = "Yah! I can write HTML Content through JavaScript"
+document.write(display);
+console.log(display);
+
+var special = "“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”";
+alert(special);
+console.log(special);
+
+// ********************** VARIABLES FOR STRINGS TASKS COMPLETED*********************************************************************************************
+
