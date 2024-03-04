@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(87, 150, 150);
+    color: darkred;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: bold;
+}
+
+h1 {
+    text-align: center;
+    color: tomato;
+    background-color: black;
+}
