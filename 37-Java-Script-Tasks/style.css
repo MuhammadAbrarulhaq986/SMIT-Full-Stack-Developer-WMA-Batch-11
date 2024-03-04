@@ -1,5 +1,12 @@
+*{
+    margin: auto;
+    padding: auto;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 body {
-    background-color: darkviolet;
+    background-color: burlywood;
 }
 
 h1 {
@@ -7,3 +14,4 @@ h1 {
     background-color: black;
     text-align: center;
 }
+
