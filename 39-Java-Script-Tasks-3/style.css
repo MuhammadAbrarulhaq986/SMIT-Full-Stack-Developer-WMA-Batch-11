@@ -1,11 +1,11 @@
-body{
+body {
     background-color: darkgoldenrod;
     margin: auto;
     padding: auto;
     border: 10px solid darkcyan;
 }
 
-h1{
+h1 {
     text-align: center;
     background-color: darkcyan;
     color: crimson;
