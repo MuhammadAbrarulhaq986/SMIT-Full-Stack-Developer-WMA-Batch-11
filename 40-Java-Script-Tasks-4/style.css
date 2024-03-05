@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(148, 219, 25);
+    text-align: center;   
+    font-size: 30px; 
+}
+
+h1{
+    background-color: gainsboro;
+    color: darkgreen;
+    text-align: center;
+}
