@@ -1,40 +1,73 @@
-// Define the shopping cart as an array of objects
-const cartItems = [
-    {name: 'item 1', price: 10, quantity: 2},
-    {name: 'item 2', price: 20, quantity: 3}
-];
+// ********************************* E-commerce website ***********************************************************************************************
+// Ask the user what they are buying
+document.write("<h1>E-commerce </h1>");
+var item1Name = prompt("What is the name of Item Shirt");
+var item1Price = parseFloat(prompt(" The price of One Shirt is 100. How many  do you want?", "100"));
+var item1Quantity = parseInt(prompt("How many Shirts do you want?", "1"));
 
-// Calculate subtotal
-function calculateSubtotal() {
-    let subtotal = 0;
-    for (let i = 0; i < cartItems.length; i++) {
-        subtotal += cartItems[i].price * cartItems[i].quantity;
-    }
-    return subtotal;
-}
+var item2Name = prompt("What is the name of Item T-Shirt");
+var item2Price = parseFloat(prompt("The price of One T-Shirt is 200. How many  do you want?", "200"));
+var item2Quantity = parseInt(prompt("Which Brand are you Looking for ?", "1"));
 
-// Calculate tax
-function calculateTax(subtotal) {
-    const tax = 0.08;
-    return subtotal * tax;
-}
+// Calculate the cost of each item
+var item1Cost = item1Price * item1Quantity;
+var item2Cost = item2Price * item2Quantity;
 
-// Calculate Total
-function calculateTotal() {
-    const subtotal = calculateSubtotal();
-    const taxAmount = calculateTax(subtotal);
-    const total = subtotal + taxAmount;
-    return total;
-}
+// Calculate the shopping rate
+var shoppingRate = 500;
 
-// Implement checkout process
-function checkout() {
-    // Clear shopping cart
-    cartItems = [];
+// Calculate the total cost
+var totalCost = item1Cost + item2Cost + shoppingRate;
 
-    // Display Confirmation message 
-    alert("Checkout complete! Your total was: $" + calculateTotal().toFixed(2));
-}
+// Display the receipt
+document.write("<h1>Receipt</h1>");
+document.write("<p>Price of " + item1Name + ": $" + item1Price.toFixed(2) + "</p>");
+document.write("<p>Quantity of " + item1Name + ": " + item1Quantity + "</p>");
+document.write("<p>Price of " + item2Name + ": $" + item2Price.toFixed(2) + "</p>");
+document.write("<p>Quantity of " + item2Name + ": " + item2Quantity + "</p>");
+document.write("<p>Shopping Cost: $" + shoppingRate + "</p>");
+document.write("<p>Total Cost of your order is: $" + totalCost.toFixed(2) + "</p>");
+document.write("Thank You For Shopping!");
+// ********************************* E-commerce website Completed ***********************************************************************************************
 
-// Example usage
-checkout();
+
+// ********************************* Marks Sheet Calculator ***********************************************************************************************
+document.write("<h1>Marks Sheet</h1>");
+// Define the total marks
+var totalMarks = 500;
+// Ask the user for the obtained marks
+var obtainedMarks = prompt("Enter your Total Marks");
+// var obtainedMarks = prompt("Enter your Total Marks");
+var percentage = obtainedMarks / totalMarks;
+var totalPercentage = percentage * 100;
+document.write("<p>Total Marks: " + totalMarks + "</p>");
+document.write("<p>Obtained Marks: " + obtainedMarks + "</p>");
+document.write("<p>Percentage:" + totalPercentage + "</p>");
+// ********************************* Marks Sheet Calculator Completed ***********************************************************************************************
+
+// ********************************* Currency Exchanger ***********************************************************************************************
+document.write("<h1>Currency Exchanger</h1>");
+// Define the exchange rate from Riyals to Dollars
+var rupeeToDollarRate = 283;
+
+// Ask the user for the amount in Riyals
+var amountInRupee = prompt("Enter the amount in Rupee");
+
+// Convert the amount to a number
+var amountInDollars = parseFloat(amountInRupee) * rupeeToDollarRate;
+
+// Display the results
+document.write("<p>Amount in Rupee: " + amountInRupee);
+document.write("<p>Amount in Dollars: " + amountInDollars.toFixed(2));
+// ********************************* Currency Exchanger Completed ***********************************************************************************************
+
+// ********************************* Age Calculator  ***********************************************************************************************
+document.write("<h1>Age Calculator </h1>");
+var birthYear = 2000;
+var currentYear = 2024;
+var age = currentYear - birthYear;
+document.write("<p>Current Year:" + currentYear + "</p>");
+document.write("<p>Birth Year:" + birthYear + "</p>");
+document.write("<p>Age:" + age + "</p>");
+
+// ********************************* Age Calculator Completed ***********************************************************************************************
