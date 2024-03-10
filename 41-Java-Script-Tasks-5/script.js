@@ -63,11 +63,45 @@ document.write("<p>Amount in Dollars: " + amountInDollars.toFixed(2));
 
 // ********************************* Age Calculator  ***********************************************************************************************
 document.write("<h1>Age Calculator </h1>");
-var birthYear = 2000;
+var birthYear = 1990;
 var currentYear = 2024;
 var age = currentYear - birthYear;
 document.write("<p>Current Year:" + currentYear + "</p>");
 document.write("<p>Birth Year:" + birthYear + "</p>");
 document.write("<p>Age:" + age + "</p>");
-
 // ********************************* Age Calculator Completed ***********************************************************************************************
+
+// ********************************* The Geometrizer ***********************************************************************************************
+
+// Prompt the user for the radius of the circle
+document.write("<h1>The Geometrizer </h1>");
+var radius = prompt("Enter the radius of the circle:");
+
+// Convert the input to a number
+radius = parseFloat(radius);
+
+// Calculate the circumference
+var circumference = 2 * Math.PI * radius;
+
+// Calculate the area
+var area = Math.PI * Math.pow(radius, 2);
+
+// Display the result
+document.write("<p>Radius: " + radius + "</p>");
+document.write("<p>Circumference: " + circumference.toFixed(2) + "</p>");
+document.write("<p>Area: " + area.toFixed(2) + "</p>");
+// ********************************* The Geometrizer Completed ***********************************************************************************************
+
+// ********************************* The LifeTime Supply Calculator***********************************************************************************************
+document.write("<h1>The Life Time Supply Calculator </h1>");
+var favouriteSnack = "potatoFry";
+var lifeTimeAge = 20;
+var maximumLifeTimeAge = 60;
+var perdayPercentage = 5;
+var totalPotatoFry = 10 * perdayPercentage;
+document.write("<p> Favourite Snack: " + favouriteSnack + "</p>");
+document.write("<p> Current Age:" + lifeTimeAge + "</p>");
+document.write("<p> Maximum Life Time Age:" + maximumLifeTimeAge + "</p>");
+document.write("<p> Per Day Percentage:" + perdayPercentage + "</p>");
+document.write("<p>You Will Need  " + totalPotatoFry + " this much PotatoFry to last until you retire </p>");
+// ********************************* The LifeTime Supply CalculatorCompleted ***********************************************************************************************
