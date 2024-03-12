@@ -1,12 +1,14 @@
 // ***************** USER INPUT & CONDITIONAL STATEMENT *************************************************************************************8
 
-// ***************** Citys Example  *************************************************************************************8
+// ***************** City Example  *************************************************************************************8
 var cityName1 = "Karachi";
 var cityName2 = "Lahour";
 var cityName3 = "Islamabad";
 var cityName4 = "Quetta";
 
-var cityName = prompt("Enter your City Name:");
+var cityName = prompt(
+  "Enter your City Name: Karachi, Lahour, Islamabad, Quetta"
+);
 
 if (cityName === cityName1) {
   document.write(
@@ -42,3 +44,39 @@ if (gender === genderMale) {
   document.write("<h1>Please Enter Male or Female</h1>");
 }
 // ***************** Gender Example  *************************************************************************************
+
+// ***************** Marks Sheet *************************************************************************************
+var subjectName1 = prompt("Enter First Subject");
+var subjectName2 = prompt("Enter Second Subject");
+var subjectName3 = prompt("Enter Third Subject");
+
+var enterMarks = "Enter Your Marks";
+var subject1 = +prompt(enterMarks);
+var subject2 = +prompt(enterMarks);
+var subject3 = +prompt(enterMarks);
+
+var subjectNum1 = subject1;
+var subjectNum2 = subject3;
+var subjectNum3 = subject3;
+
+var totalSubjectMarks = 100;
+var overAllMarks = 300;
+
+var resultSubject1 = (subject1 / totalSubjectMarks) * 100;
+var resultSubject2 = (subject2 / totalSubjectMarks) * 100;
+var resultSubject3 = (subject3 / totalSubjectMarks) * 100;
+
+var obtainedMarks = subjectName1 + subjectName2 + subjectName3;
+var overAllResuls = (obtainedMarks / overAllMarks) * 100;
+
+document.write(
+  "<h1>Subjects  Total Marks  Obtained Marks    Result</h1><br>" +
+  "<p>" + subjectName1 + "  " + totalSubjectMarks + "  " + subject1 + "  " + resultSubject1 + "% </p> <br>"
+);
+document.write("<p>" + subjectName2 + "  " + totalSubjectMarks + "  " + subject2 + "  " + resultSubject2 + "% </p> <br>"
+);
+document.write("<p>" + subjectName3 + "  " + totalSubjectMarks + "  " + subject3 + "  " + resultSubject3 + "% </p> <br>"
+);
+document.write("<p>" + overAllMarks + "  " + obtainedMarks + "  " + overAllResuls + "% </p> <br>"
+);
+// ***************** Marks Sheet Completed *************************************************************************************
