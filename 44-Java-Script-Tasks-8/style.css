@@ -1,0 +1,17 @@
+body{
+    background-color: yellowgreen;
+}
+
+h1{
+    color:  lawngreen;
+    background-color: darkgreen;
+    border: 5px solid goldenrod;
+    text-align: center;
+}
+h2{
+    color:  rgb(0, 255, 157);
+    background-color: darkgreen;
+    border: 5px solid goldenrod;
+    text-align: center;
+    font-size: 40px;
+}
