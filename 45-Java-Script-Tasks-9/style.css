@@ -1,0 +1,44 @@
+body {
+    background-color: coral;
+    text-align: center;
+    color: lavender;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid gold;
+
+
+}
+
+h1 {
+    color: lavender;
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+h2 {
+    color: darkcyan;
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    color: black;
+    background-color: yellow;
+}
+
+tr {
+    color: black;
+    background-color: darkkhaki;
+}
