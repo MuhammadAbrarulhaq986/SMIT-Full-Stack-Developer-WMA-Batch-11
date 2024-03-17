@@ -1,0 +1,47 @@
+body {
+    background-color: slategrey;
+    text-align: center;
+    border: 10px solid lightyellow;
+
+    select {
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        color: yellow;
+        background-color: black;
+        border: 1px solid lightgreen;
+        border-radius: 5px;
+        padding: 5px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        option {
+            padding: 10px;
+            background-color: black;
+
+            &:hover {
+                color: rebeccapurple;
+                background-color: black;
+            }
+        }
+    }
+}
+
+h1 {
+    background-color: springgreen;
+    color: darkorange;
+}
+
+h2 {
+    background-color: black;
+    color: orange;
+    font-size: 40px;
+}
+
+h3 {
+    background-color: lightblue;
+    color: purple;
+    font-size: 40px;
+}
