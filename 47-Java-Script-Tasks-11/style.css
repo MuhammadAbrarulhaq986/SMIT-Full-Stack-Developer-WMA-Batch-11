@@ -1,0 +1,23 @@
+body {
+    background-color: darkblue;
+    text-align: center;
+    border: 10px solid rgb(255, 255, 255);
+    color: yellow;
+    font-size: 40px;
+    text-shadow: 3px 3px 10px yellow;
+}
+
+
+h1 {
+    color: lime;
+    text-shadow: 3px 3px 10px crimson;
+    background-color: black;
+    font-size: 30px;
+}
+
+h2 {
+    color: blueviolet;
+    text-shadow: 3px 3px 10px crimson;
+    background-color: black;
+    font-size: 40px;
+}
