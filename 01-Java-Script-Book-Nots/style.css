@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    /* border: 10px  outset  black; */
+    background-color: crimson;
+    color: gold;
+    text-shadow: 10px 10px 15px rgb(0, 0, 0);
+}
+
+h1{
+    text-align: center;
+    border: 10px  outset  black;
+    background-color: crimson;
+    color: gold;
+    text-shadow: 10px 10px 15px rgb(0, 0, 0);
+}
