@@ -13,3 +13,13 @@ h1{
     color: gold;
     text-shadow: 10px 10px 15px rgb(0, 0, 0);
 }
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    border: 10px  outset  black;
+    background-color: crimson;
+    color: seagreen;
+    text-shadow:  10px 10px 15px rgb(0, 0, 0);
+    
+}
