@@ -1,0 +1,44 @@
+body{
+    background-color:dimgray;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background-color: darkred;
+}
+h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background-color: darkorange;
+}
+
+h3{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background-color: darkgreen;
+}
+
+h4{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background-color: darkcyan;
+}
+
+h5{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background-color: darkmagenta;
+}
+
+h6{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background-color: darkturquoise;
+}
+
