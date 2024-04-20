@@ -1,0 +1,45 @@
+body {
+    background-color: darkslategrey;
+}
+
+h1 {
+    color: black;
+    background-color: aqua;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    background-color: lime;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    background-color: crimson;
+    font-size: 50px;
+    text-align: center;
+}
+
+h4 {
+    color: black;
+    background-color: darkorchid;
+    font-size: 50px;
+    text-align: center;
+}
+
+h5 {
+    color: black;
+    background-color: orange;
+    font-size: 50px;
+    text-align: center;
+}
+
+h6 {
+    color: black;
+    background-color: yellowgreen;
+    font-size: 50px;
+    text-align: center;
+}
