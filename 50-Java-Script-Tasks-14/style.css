@@ -1,0 +1,51 @@
+body{
+    background-color: chocolate;
+}
+
+h1{
+    background-color:aliceblue;
+    color: goldenrod;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2{
+    background-color:aliceblue;
+    color: darkcyan;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 50px;
+}
+
+h3{
+    background-color:aliceblue;
+    color: darkgreen;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 50px;
+}
+
+h4{
+    background-color:aliceblue;
+    color: darkmagenta;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 50px;
+}
+
+h5{
+    background-color:aliceblue;
+    color: darkred;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 50px;
+}
+
+h6{
+    background-color:aliceblue;
+    color: darkslategrey;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 50px;
+}
