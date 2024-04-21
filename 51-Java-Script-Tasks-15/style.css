@@ -1,0 +1,57 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(90, 9, 121, 1) 31%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1 {
+  background-color: black;
+  color: goldenrod;
+  border: 5px solid aliceblue;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  background-color: black;
+  color: rgb(7, 253, 253);
+  border: 5px solid aliceblue;
+  text-align: center;
+  font-size: 50px;
+}
+
+h3 {
+  background-color: black;
+  color: rgb(13, 253, 13);
+  border: 5px solid aliceblue;
+  text-align: center;
+  font-size: 50px;
+}
+
+h4 {
+  background-color: black;
+  color: rgb(225, 15, 225);
+  border: 5px solid aliceblue;
+  text-align: center;
+  font-size: 50px;
+}
+
+h5 {
+  background-color: black;
+  color: rgb(255, 14, 14);
+  border: 5px solid aliceblue;
+  text-align: center;
+  font-size: 50px;
+}
+
+h6 {
+  background-color: black;
+  color: rgb(7, 247, 247);
+  border: 5px solid aliceblue;
+  text-align: center;
+  font-size: 50px;
+}
