@@ -1,0 +1,55 @@
+body{
+    background: rgb(153,0,255);
+    background: linear-gradient(90deg, rgba(153,0,255,1) 0%, rgba(211,255,0,1) 100%);
+    color: black;
+    text-align: center;
+    font-size: 50px;
+  }
+h1 {
+    background-color:green;
+    color: rgb(255, 183, 0);
+    border: 5px solid aliceblue;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h2 {
+    background-color:green;
+    color: rgb(7, 253, 253);
+    border: 5px solid aliceblue;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h3 {
+    background-color:green;
+    color:violet;
+    border: 5px solid aliceblue;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h4 {
+    background-color:green;
+    color: lawngreen;
+    border: 5px solid aliceblue;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h5 {
+    background-color:green;
+    color: rgb(247, 106, 6);
+    border: 5px solid aliceblue;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h6 {
+    background-color:green;
+    color: royalblue;
+    border: 5px solid aliceblue;
+    text-align: center;
+    font-size: 50px;
+  }
+  
