@@ -1,0 +1,137 @@
+.border-width {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+p.ak {
+    border-width: 2px;
+    border: 5px solid darkorange;
+}
+
+p.do {
+    border-width: thick;
+    border: 5px solid darkgreen;
+
+}
+
+p.then {
+    border-width: 1px 4px 12px 4px;
+    border: 5px solid darkorchid;
+}
+
+/* **************************** 309 BOXES ************************************** */
+
+.border-style {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(306deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(253, 50, 35, 1) 100%, rgba(252, 76, 42, 1) 100%);
+}
+
+p.one {
+    border-style: solid;
+    color: red;
+}
+
+p.two {
+    border-style: dotted;
+    color: blue;
+}
+
+p.three {
+    border-style: dashed;
+    color: green;
+
+}
+
+p.four {
+    border-style: double;
+    color: yellow;
+}
+
+p.five {
+    border-style: groove;
+    color: aqua;
+}
+
+p.six {
+    border-style: ridge;
+    color: darkcyan;
+}
+
+p.seven {
+    border-style: inset;
+    color: navy;
+}
+
+p.eight {
+    border-style: outset;
+    color: lawngreen;
+}
+
+/* **************************** BOXES 310 ************************************** */
+.border-color {
+    background: rgb(5, 0, 255);
+    background: radial-gradient(circle, rgba(5, 0, 255, 1) 0%, rgba(251, 63, 63, 1) 100%);
+}
+
+p.border-color-1 {
+    border: 5px solid;
+    border-color: #0088dd;
+}
+
+p.border-color-2 {
+    border: 5px solid;
+    border-color: #ffff00 #111111 #ff0000 #0088dd;
+}
+
+/* **************************** BOXES 311 ************************************** */
+
+
+p.normal {
+    width: 275px;
+    border: 2px solid #0088dd;
+    background-color: lightgreen;
+}
+
+p.example {
+    padding: 10px;
+    width: 275px;
+    border: 2px solid #0088dd;
+    background-color: lightgreen;
+}
+
+
+/* **************************** BOXES 313 ************************************** */
+
+p.no-margin {
+    width: 200px;
+    border: 2px solid #0088dd;
+    padding: 10px;
+}
+
+p.margin {
+    margin: 20px;
+    width: 200px;
+    border: 2px solid #0088dd;
+    padding: 10px;
+}
+
+/* **************************** BOXES 314 ************************************** */
+
+
+
+.no-centering {
+    width: 300px;
+    padding: 50px;
+    border: 20px solid #0088dd;
+}
+
+.centering {
+    margin: 10px auto 10px auto;
+    text-align: left;
+    border: 20px solid #0088dd;
+    width: 300px;
+    padding: 50px;
+
+}
+
+/* **************************** BOXES 315 ************************************** */

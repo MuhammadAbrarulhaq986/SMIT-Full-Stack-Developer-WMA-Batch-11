@@ -1,0 +1,80 @@
+ol {
+    list-style-type: lower-roman;
+    border: 2px solid brown;
+    background: rgb(0, 255, 91);
+    background: radial-gradient(circle, rgba(0, 255, 91, 1) 0%, rgba(213, 233, 148, 1) 100%);
+}
+
+/* **********************************333 LISTS, TABLES AND FORMS************************************** */
+
+
+.border {
+    border: 2px solid royalblue;
+
+}
+
+ul {
+    border: 2px solid royalblue;
+    /* list-style-image: url("icon.webp"); */
+    background: rgb(252, 76, 42);
+    background: linear-gradient(306deg, rgba(252, 76, 42, 1) 0%, rgba(131, 58, 180, 1) 38%, rgba(161, 249, 255, 1) 76%, rgba(253, 29, 29, 1) 100%, rgba(253, 50, 35, 1) 100%);
+}
+
+div>ul>li {
+    /* margin: 10px 0px 0px 0px; */
+    margin: 10px 0 0 0;
+    /* Adjust margin as needed */
+    background-image: url("icon.webp");
+    background-size: 20px 20px;
+    /* Set width and height of the background image */
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
+    padding-left: 25px;
+    /* Add padding to accommodate the image */
+
+}
+
+/* **********************************334 LISTS, TABLES AND FORMS************************************** */
+
+
+.position {
+    width: 150px;
+}
+
+.position {
+    margin: 10px;
+}
+
+ul.illuminations {
+    list-style-position: outside;
+
+}
+
+ul.season {
+    list-style-position: inside;
+}
+
+/* **********************************335 LISTS, TABLES AND FORMS************************************** */
+
+.short {
+    list-style: inside circle;
+    width: 300px;
+
+}
+
+.short {
+    margin: 10px 0px 0px 0px;
+}
+
+.short {
+    list-style: inside circle;
+    /* Set list marker inside the circle */
+    width: 300px;
+    /* Set width of the list */
+    margin: 10px 0 0 0;
+    /* Adjust margin as needed */
+    list-style-image: none;
+    /* Remove any list-style-image */
+}
+
+/* **********************************336 LISTS, TABLES AND FORMS************************************** */

@@ -1,0 +1,63 @@
+/* color name */
+h2 {
+    color: DarkCyan;
+}
+
+/* hex code */
+h3 {
+    color: #ee3e80;
+}
+
+/* rgb value */
+.color {
+    color: rgb(100, 100, 90);
+}
+
+/* <!-- *****************************249 COLOR**************************************** --> */
+
+body {
+    background-color: rgb(200, 200, 200);
+}
+
+.red {
+    background-color: darkred;
+}
+
+.yellow {
+    background-color: darkgoldenrod;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+/* <!-- *****************************250 COLOR**************************************** --> */
+
+
+p.one {
+    background-color: rgb(217, 255, 0);
+    opacity: 0.5;
+}
+
+p.two {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+/* <!-- *****************************254 COLOR**************************************** --> */
+
+
+
+
+.hsl {
+    background-color: #C8C8C8;
+    background-color: hsl(0, 100%, 50%);
+}
+
+.hsla {
+    background-color: #ffffff;
+    background-color: hsla(167, 100%, 50%, 0.5);
+}
+
+/* <!-- *****************************256 COLOR**************************************** --> */

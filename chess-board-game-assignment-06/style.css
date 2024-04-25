@@ -33,12 +33,12 @@ h1 {
 .white-box {
     background-color: orange;
     border: solid black 2px;
+    height: 150px;
+    width: 150px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6),
         -3px -3px 8px rgba(0, 0, 0, 0.6),
         3px -3px 8px rgba(0, 0, 0, 0.6),
         -3px 3px 8px rgba(0, 0, 0, 0.6);
-    height: 150px;
-    width: 150px;
 
 }
 

@@ -1,0 +1,58 @@
+body {
+    background-color: lightslategray;
+}
+
+p {
+    /* styles for paragraphs */
+    color: chartreuse;
+}
+
+.one {
+    /* styles for elements with class="myClass" */
+    color: yellow;
+}
+
+#two {
+    /* styles for the element with id="myID" */
+    color: aqua;
+}
+
+div p {
+    /* styles for paragraphs inside div elements */
+    color: chocolate;
+}
+
+/* Targets any <p> element withan attribute called class whose value is text */
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    color: darkorange;
+    background-color: darkred;
+}
+
+p[class~="two"] {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Apply styles to paragraphs with attribute starting with "d" */
+p[attr^="d"] {
+    color: red;
+    font-style: italic;
+}
+
+/* Apply styles to paragraphs with attribute containing "do" */
+p[attr*="to"] {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/* Apply styles to paragraphs with attribute ending with "g" */
+p[attr$="g"] {
+    color: green;
+    font-weight: bold;
+}
