@@ -1,0 +1,52 @@
+body {
+  background: rgb(22, 18, 17);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 18, 17, 1) 0%,
+    rgba(117, 49, 12, 1) 39%,
+    rgba(73, 45, 33, 1) 83%
+  );
+  text-align: center;
+}
+
+h1 {
+  background-color: rgb(141, 28, 0);
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+h2 {
+  background-color: darkcyan;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+h3 {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+h4 {
+  background-color: darkorange;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+h5 {
+  background-color: darksalmon;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+h6 {
+  background-color: darkkhaki;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
