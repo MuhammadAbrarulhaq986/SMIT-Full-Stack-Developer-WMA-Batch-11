@@ -1,0 +1,226 @@
+body {
+  background: rgb(89, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(89, 0, 0, 1) 0%,
+    rgba(73, 75, 0, 1) 100%
+  );
+  margin: 5px;
+  padding: 5px;
+}
+
+/* ***************************************************************************************************************************** */
+h1 {
+  background: rgb(22, 18, 17);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 18, 17, 1) 0%,
+    rgba(117, 49, 12, 1) 39%,
+    rgba(73, 45, 33, 1) 83%
+  );
+  border: 5px solid white;
+  color: yellow;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  background: rgb(41, 24, 11);
+  background: linear-gradient(
+    89deg,
+    rgba(41, 24, 11, 1) 0%,
+    rgba(43, 53, 25, 1) 98%
+  );
+  border: 5px solid white;
+  color: cyan;
+  text-align: center;
+  font-size: 50px;
+}
+
+h3 {
+  background: rgb(129, 0, 57);
+  background: radial-gradient(
+    circle,
+    rgba(129, 0, 57, 1) 0%,
+    rgba(0, 43, 94, 1) 100%
+  );
+  border: 5px solid white;
+  color: lime;
+  text-align: center;
+  font-size: 50px;
+}
+
+h4 {
+  background-color: maroon;
+  border: 5px solid white;
+  color: rgb(255, 0, 255);
+  text-align: center;
+  font-size: 50px;
+}
+
+h5 {
+  
+  background: rgb(0,105,48);
+  background: linear-gradient(180deg, rgba(0,105,48,1) 0%, rgba(108,39,0,1) 79%, rgba(85,30,0,1) 100%);  border: none;  
+  border: 5px solid black;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+h6 {
+  background-color: maroon;
+  border: 5px solid white;
+  color: lightblue;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* ***************************************************************************************************************************** */
+
+a {
+  color: orange;
+  text-shadow: -5px 3px 10px black;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+.phone-cases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  border-radius: 20px;
+  background: rgb(22, 18, 17);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 18, 17, 1) 0%,
+    rgba(117, 49, 12, 1) 39%,
+    rgba(73, 45, 33, 1) 83%
+  );
+}
+
+.phone-box > img {
+  width: 100px;
+  height: 150px;
+  padding: 15px;
+  align-items: center;
+  border-radius: 30px;
+  /* border: 5px solid black; */
+}
+/* .phone-cases > img{
+  width: 100px;
+  height: 150px;
+  padding: 15px;
+  align-items: center;
+} */
+/* ***************************************************************************************************************************** */
+
+#student-table {
+  font-size: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  background: rgb(41, 24, 11);
+  background: linear-gradient(
+    89deg,
+    rgba(41, 24, 11, 1) 0%,
+    rgba(43, 53, 25, 1) 98%
+  );
+}
+
+th {
+  font-weight: 600;
+}
+th,
+td {
+  color: white;
+  border: 2px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.delete-btn {
+  background-color: brown;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+/* ***************************************************************************************************************************** */
+.back {
+  background: rgb(129, 0, 57);
+  background: radial-gradient(
+    circle,
+    rgba(129, 0, 57, 1) 0%,
+    rgba(0, 43, 94, 1) 100%
+  );
+}
+
+.image-container {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+}
+.main-image,
+.hover-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.hover-image {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.image-container:hover.hover-image {
+  opacity: 1;
+}
+
+/* ***************************************************************************************************************************** */
+#increase,
+#decrease{
+  border-radius: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+
+  background: rgb(0,105,48);
+  background: linear-gradient(180deg, rgba(0,105,48,1) 0%, rgba(108,39,0,1) 79%, rgba(85,30,0,1) 100%);  border: none;  
+}
+
+.button:hover {
+  transition: background-color 0.3s ease;
+  background-color: #3e8e41;
+}
+
+.counter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:darkgoldenrod;
+  padding: 10px 20px;
+}
+
+
+/* ***************************************************************************************************************************** */
