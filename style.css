@@ -8,9 +8,21 @@ body {
   line-height: 2.5;
 }
 
+.assignmentone {
+  color:aqua;
+  font-weight: 700;
+}
+.htmlone {
+  color: orangered;
+  font-weight: 700;
+}
+.cssone {
+  color: aqua;
+  font-weight: 700;
+}
 span {
   color: yellow;
-  font-weight: 600;
+  font-weight: 700;
 }
 a {
   color: white;
@@ -34,8 +46,8 @@ a.on {
   background: rgb(1, 22, 25);
   background: linear-gradient(
     103deg,
-    rgba(1, 22, 25, 1) 0%,
-    rgba(0, 249, 249, 1) 99%
+    rgb(2, 61, 70) 0%,
+    rgb(1, 155, 155) 99%
   );
 }
 
@@ -46,7 +58,7 @@ h1 {
 }
 
 h2 {
-  color: aqua;
+  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 10px;
   padding: 10px;
