@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Practice</title>
-</head>
-<body>
-  
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <!-- *********************************************************************************** -->
+    <form action="" method="get" class="form-example">
+      <h2>Sign up form</h2>
+      <div class="form-example">
+        <label for="name"> Your name: </label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div class="form-example">
+        <label for="email"> Your email: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="form-example">
+        <label for="name"> Your password </label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <div class="form-example">
+        <label for="name">Confirm Password </label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <div class="form-example">
+        <input type="submit" value="Sign Up!" class="btn" />
+      </div>
+      <div class="form-example">
+        <p>
+          Item details go here. User can only see some details on first look.
+        </p>
+        <button class="readMore">Read more</button>
+      </div>
+    </form>
+    <!-- *********************************************************************************** -->
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Your Name</th>
+          <th>Your Email</th>
+          <th>Your Password</th>
+          <th>Confirm Password</th>
+          <th>Eliminate</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <!-- *********************************************************************************** -->
+
+    <script src="script.js"></script>
+  </body>
 </html>

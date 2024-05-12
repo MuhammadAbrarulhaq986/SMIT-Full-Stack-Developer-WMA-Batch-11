@@ -1,0 +1,109 @@
+/* *********************************************************************************** */
+body {
+  margin: 5px;
+  padding: 5px;
+  background: rgb(89, 45, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(89, 45, 0, 1) 0%,
+    rgba(96, 100, 0, 1) 100%
+  );
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+form {
+  background-color: goldenrod;
+  box-shadow: -5px -1px 20px white;
+
+  width: 350px;
+  height: 520px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  border-radius: 30px;
+}
+
+.form-example {
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.btn {
+  width: 90px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+/* *********************************************************************************** */
+
+.readMore,
+.readLess {
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+button,
+.btn {
+  margin: auto;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.content {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* ******************************************************\***************************** */
+#studentForm {
+  background-color: goldenrod;
+  width: 350px;
+  height: 520px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: -5px 2px 10px yellow;
+}
+#studentForm > .btn {
+  margin-top: 20px;
+}
+
+#studentForm label {
+  display: block;
+  margin: 10px auto;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  width: 80%;
+}
+
+#studentTable {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: goldenrod;
+  border-radius: 20px;
+}
+
+#studentTable th,
+#studentTable td {
+  padding: 8px;
+}
+
+/* *********************************************************************************** */
