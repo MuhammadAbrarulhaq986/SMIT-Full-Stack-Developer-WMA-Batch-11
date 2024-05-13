@@ -1,0 +1,56 @@
+body {
+  background: rgb(126, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(126, 0, 0, 1) 0%,
+    rgba(24, 128, 0, 1) 100%
+  );
+}
+
+h1 {
+  background-color: chocolate;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#form-content {
+  color: white;
+  background-color: limegreen;
+  text-align: center;
+  margin-left: 150px;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 300px;
+  height: 150px;
+}
+input{
+    border: none;
+    border-radius: 20px;
+}
+
+#append-button{
+    color: white;
+    background-color: crimson;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#main-content {
+  color: white;
+  background-color: crimson;
+  text-align: center;
+  padding: 10px;
+  margin-left: 150px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 300px;
+  height: 250px;
+}

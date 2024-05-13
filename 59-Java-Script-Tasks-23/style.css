@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(162, 89, 0);
+  color: white;
+  text-shadow: -1px 2px 20px lime;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  background-color: darkred;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+
+#form-content {
+  color: white;
+  background-color: darkcyan;
+  width: 350px;
+  height: 150px;
+  margin: auto;
+  padding: auto;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#main-content {
+  color: white;
+  background-color: darkgreen;
+  text-shadow: 2px 2px 5px lime;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
