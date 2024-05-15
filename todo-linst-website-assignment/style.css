@@ -22,26 +22,26 @@ body {
   /* !!! WIDTH !!! */ /* !!! HEIGHT !!! */
   overflow: auto;
   line-height: 1.6px;
-  margin: 0;
-  padding: 0;
+  margin: 2px;
+  padding: 2px;
 }
 
 /* Main Container  */
 
 .container {
-  background-color: rgba(0, 42, 255, 0.443);
+  background-color: rgba(98, 0, 255, 0.103);
   border: 2px solid black;
   max-width: 650px;
   min-width: 350px;
-  margin: 20px;
-  padding: 40px 35px;
+  margin: auto;
+  padding: 35px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   border-radius: 20px;
   gap: 25px;
-  box-shadow: -2px 5px 60px black;
+  box-shadow: -2px 5px 60px rgba(0, 0, 0, 0.283);
 }
 
 #main-heading {
