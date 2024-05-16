@@ -1,0 +1,6 @@
+body {
+    background-image: url(background.jpg);
+    background-size: cover; /* scales the image to cover the entire element, while maintaining its aspect ratio */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
