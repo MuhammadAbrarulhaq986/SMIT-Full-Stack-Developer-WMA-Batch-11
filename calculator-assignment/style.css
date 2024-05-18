@@ -1,18 +1,17 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body {
-  background-image: url(background.jpg);
+  background-image: url(./image/background.jpg);
   background-size: cover; /* scales the image to cover the entire element, while maintaining its aspect ratio */
   background-position: center;
   background-repeat: no-repeat;
-background-color: navy;
+  background-color: rgb(48, 2, 48);
 }
 
 .container {
-  
   width: 375px;
   margin: auto;
   padding: 30px 25px;
@@ -21,13 +20,13 @@ background-color: navy;
   flex-direction: column;
   gap: 10px;
   box-shadow: -1px 5px 15px rgb(0, 0, 0);
-  background-color: black;
-  box-shadow: -1px 5px 30px rgb(255, 106, 0);
+  background-color: rgba(0, 0, 0, 0.541);
+  box-shadow: -1px 2px 30px rgb(2, 96, 7);
 }
 
 #display-screen {
   width: 100%;
-  background-color: rgba(115, 0, 255, 0.311);
+  background-color: rgba(255, 0, 247, 0.187);
   padding: 15px 15px;
   font-size: 40px;
   font-weight: 300;
@@ -51,21 +50,20 @@ background-color: navy;
 #change,
 #btn-zero {
   color: white;
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.242);
   box-shadow: -1px 5px 15px rgb(255, 0, 0);
   border: none;
-
 }
 .cal-btn {
   width: 70px;
   height: 70px;
   font-size: 24px;
   font-weight: 600;
-  background-color: white;
-  border: none;
-  color: black;
-  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.242);
+  color: white;
   box-shadow: -1px 5px 15px rgb(47, 0, 255);
+  border: none;
+  border-radius: 30px;
 }
 
 #btn-zero {

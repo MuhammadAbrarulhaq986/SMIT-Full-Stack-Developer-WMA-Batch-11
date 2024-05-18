@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Practics</title>
-</head>
-<body>
-  <div class="container">
-    <div id="display-screen">0</div>
-    <div class="button-container">
-        <button class="cal-btn"  onclick="btnClicker('AC')">AC</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Practics</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="display-screen">0</div>
+      <div class="button-container">
+        <button class="cal-btn" onclick="btnClicker('AC')">AC</button>
         <button class="cal-btn" onclick="clearInput()">Del</button>
         <button class="cal-btn" onclick="btnClicker('%')">%</button>
         <button class="cal-btn" onclick="btnClicker('/')">/</button>
@@ -31,11 +31,13 @@
         <button class="cal-btn" id="change" onclick="btnClicker('3')">3</button>
         <!-- ********************************************************************************* -->
         <button class="cal-btn" onclick="btnClicker('+')">+</button>
-        <button class="cal-btn" id="btn-zero" onclick="btnClicker('0')">0</button>
+        <button class="cal-btn" id="btn-zero" onclick="btnClicker('0')">
+          0
+        </button>
         <button class="cal-btn" onclick="btnClicker('.')">.</button>
-        <button class="cal-btn" onclick="result()"> = </button>
+        <button class="cal-btn" onclick="result()">=</button>
+      </div>
     </div>
-</div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
