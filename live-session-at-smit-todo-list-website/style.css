@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+body {
+  background-image: url(./image/The\ middle\ of\ nowhere.jpg);
+  background-size: cover; /* scales the image to cover the entire element, while maintaining its aspect ratio */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(48, 2, 48);
+  background-color: rgb(46, 0, 9);
+}
+
+h1 {
+  color: white;
+  background-color: rgba(255, 0, 51, 0);
+  text-shadow: -1px 2px 30px black;
+  margin-left: 5px;
+  width: 490px;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 30px;
+}
+
+#container {
+  color: black;
+  border: 2px solid black;
+  text-shadow: -1px 2px 30px lime;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 30px;
+  /* padding: 10px 15px ; */
+}
+
+#todo {
+  width: 370px;
+  height: 30px;
+  border-radius: 30px;
+  margin-left: 10px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.541);
+  color: white;
+}
+
+input {
+  margin-left: 80px;
+  width: 300px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+}
+
+.edit-button {
+  margin-left: 100px;
+}
+
+#todo-list {
+  color: wheat;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.todo-item {
+  /* box-shadow: -1px 5px 30px #ff0000; */
+  border: none;
+
+  background-color: rgba(255, 0, 0, 0);
+  padding: 10px 20px;
+  text-align: left;
+  border-radius: 30px;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 15px;
+  background-color: crimson;
+  color: white;
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: rgba(255, 0, 0, 0);
+  border: 2px solid black;
+  color: black;
+  opacity: 0.8;
+}
