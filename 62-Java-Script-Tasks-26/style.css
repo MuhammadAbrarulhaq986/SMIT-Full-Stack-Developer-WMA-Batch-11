@@ -1,0 +1,123 @@
+body {
+  background-image: url(./image/Convert\ a\ screenshot\ from\ the\ game\ Flyff\ Universe\ .jpg);
+  background-size: cover; /* scales the image to cover the entire element, while maintaining its aspect ratio */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(43, 57, 3);
+  /* text-align: center; */
+  color: white;
+}
+h2 {
+  color: white;
+  text-shadow: -1px -2px 20px aquamarine;
+  font-size: 35px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.432);
+  text-align: center;
+}
+h1 {
+  color: white;
+  text-shadow: -2px 5px 20px aquamarine;
+  font-size: 35px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.432);
+  text-align: center;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          */
+/* ***********************************************************************************************************  */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!          */
+#form-container {
+  color: white;
+  background-color: rgba(0, 0, 128, 0);
+  text-shadow: -2px 5px 20px aquamarine;
+  box-shadow: -1px 5px 20px black;
+  font-weight: 600;
+  font-size: 20px;
+  /* border: 5px solid green; */
+  height: auto;
+  width: 450px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px 10px;
+  /* (((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))) */
+}
+input {
+  margin: auto;
+  padding: 10px;
+  line-height: 1.5;
+  width: 350px;
+  color: white;
+  background-color: rgba(0, 0, 128, 0);
+  box-shadow: -1px 5px 20px black;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+  /* width: 120px; */
+  text-align: right;
+  border-radius: 50px;
+}
+
+input[type="text"],
+input[type="radio"] {
+  padding: 10px;
+  /* border: 1px solid black; */
+  border-radius: 50px;
+  width: 300px;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+select {
+  padding: 10px;
+  border: 5px solid #ff000000;
+  border-radius: 50px;
+  /* width: 200px; */
+}
+
+option {
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 105px;
+  background-color: black;
+  color: aqua;
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: rgba(255, 0, 0, 0);
+  border: 2px solid aqua;
+  color: aqua;
+  opacity: 0.8;
+}
+
+#records-container {
+  margin: auto;
+  padding: 10px;
+  line-height: 1.5;
+  width: 500px;
+  color: white;
+  background-color: rgba(0, 0, 128, 0);
+  box-shadow: -1px 5px 20px black;
+  font-weight: 600;
+  font-size: 25px;
+  text-shadow: -1px -2px 20px rgb(170, 255, 0);
+}

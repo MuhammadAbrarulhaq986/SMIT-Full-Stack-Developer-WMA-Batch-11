@@ -24,6 +24,10 @@ span {
   color: yellow;
   font-weight: 700;
 }
+.live{
+  color: red;
+  font-weight: 700;
+}
 a {
   color: white;
   text-transform: uppercase;

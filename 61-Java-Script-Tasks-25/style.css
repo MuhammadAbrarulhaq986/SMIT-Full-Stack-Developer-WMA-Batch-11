@@ -1,0 +1,41 @@
+body {
+  background-image: url(./image/photo\ of\ halloween\ game.jpg);
+  background-size: cover; /* scales the image to cover the entire element, while maintaining its aspect ratio */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(48, 2, 48);
+  text-align: center;
+}
+h6 {
+  color: white;
+  text-shadow: -2px 5px 20px aquamarine;
+  font-size: 50px;
+
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+h1 {
+  color: white;
+  text-shadow: -1px 5px 20px black;
+  font-size: 40px;
+  font-weight: 600;
+  background-color: rgba(255, 166, 0, 0.279);
+}
+
+h2 {
+  color: white;
+  line-height: 1.5;
+  text-shadow: -1px 5px 20px black;
+  font-size: 40px;
+  font-weight: 600;
+  background-color: rgba(128, 0, 128, 0.479);
+}
+
+h3 {
+  color: white;
+  line-height: 1.5;
+  text-shadow: -1px 5px 20px black;
+  font-size: 40px;
+  font-weight: 600;
+  background-color: rgba(0, 128, 4, 0.479);
+}
