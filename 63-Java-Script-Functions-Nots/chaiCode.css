@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(165, 139, 8);
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(0, 191, 255);
+    text-align: center;
+    text-shadow: -1px 3px 20px black;
+  }
+  
+  h1 {
+    background: rgb(22, 18, 17);
+    background: linear-gradient(
+      90deg,
+      rgba(22, 18, 17, 1) 0%,
+      rgba(117, 49, 12, 1) 39%,
+      rgba(73, 45, 33, 1) 83%
+    );
+    border: 5px solid white;
+    color: yellow;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h2 {
+    background: rgb(41, 24, 11);
+    background: linear-gradient(
+      89deg,
+      rgba(41, 24, 11, 1) 0%,
+      rgba(43, 53, 25, 1) 98%
+    );
+    border: 5px solid white;
+    color: cyan;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h3 {
+    background: rgb(22, 18, 17);
+    background: linear-gradient(
+      90deg,
+      rgba(22, 18, 17, 1) 0%,
+      rgba(117, 49, 12, 1) 39%,
+      rgba(73, 45, 33, 1) 83%
+    );
+    border: 5px solid white;
+    color: lime;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h4 {
+    background: rgb(22, 18, 17);
+    background: linear-gradient(
+      90deg,
+      rgba(22, 18, 17, 1) 0%,
+      rgba(117, 49, 12, 1) 39%,
+      rgba(73, 45, 33, 1) 83%
+    );
+    border: 5px solid white;
+    color: rgb(255, 0, 255);
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h5 {
+    background: rgb(22, 18, 17);
+    background: linear-gradient(
+      90deg,
+      rgba(22, 18, 17, 1) 0%,
+      rgba(117, 49, 12, 1) 39%,
+      rgba(73, 45, 33, 1) 83%
+    );
+    border: 5px solid black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h6 {
+    background: rgb(22, 18, 17);
+    background: linear-gradient(
+      90deg,
+      rgba(22, 18, 17, 1) 0%,
+      rgba(117, 49, 12, 1) 39%,
+      rgba(73, 45, 33, 1) 83%
+    );
+    border: 5px solid white;
+    color: lightblue;
+    text-align: center;
+    font-size: 50px;
+  }
+  
