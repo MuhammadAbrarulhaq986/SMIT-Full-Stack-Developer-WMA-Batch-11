@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./for-style-and-js/transsition.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Practice</title>
+  </head>
+
+  <body>
+    <!--******** Log-in-form  ********-->
+    <div class="form-container" id="log-in-form">
+      <form class="form" onsubmit="catchLogValues()">
+        <p class="form-head">Log In</p>
+        <label for="log-in-email">
+          <p>Email Address</p>
+          <input
+            type="email"
+            name="log-in-email"
+            required
+            id="log-in-email"
+            placeholder="Enter your email here"
+          />
+        </label>
+        <label for="log-in-password">
+          <p>Password</p>
+          <input
+            type="password"
+            name="log-in-password"
+            id="log-in-password"
+            required
+            placeholder="Enter your password here"
+          />
+        </label>
+        <button type="submit" class="submit-btn">Log In</button>
+      </form>
+
+      <div class="text-container">
+        <h5>Welcome</h5>
+        <p>
+          Welcome ! We are so happy to have you here . It's great to have you
+          again . We hope you have had a safe and enjoyable time
+        </p>
+        <div class="alr">
+          <p>
+            Not have an account ?
+            <span id="path-sign-up">Sign Up</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--******** Sign Up/Registration Form ********-->
+    <div class="form-container" id="sign-up-form">
+      <form class="form" onsubmit="catchSignUpValues()">
+        <p class="form-head">Sign Up</p>
+        <label for="firstName">
+          <p>First Name</p>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Enter your First Name here"
+          />
+        </label>
+        <label for="lastName">
+          <p>Last Name</p>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Enter your Last Name here"
+          />
+        </label>
+        <label for="email">
+          <p>Email Address</p>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your Last Name here"
+          />
+        </label>
+        <label for="password">
+          <p>Password</p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Set your password"
+          />
+        </label>
+        <label for="re-password">
+          <p>Confirm Password</p>
+          <input
+            type="password"
+            name="password"
+            id="re-password"
+            placeholder="Re-enter your password"
+          />
+        </label>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+
+      <div class="text-container">
+        <h5>Welcome</h5>
+        <p>
+          Welcome ! We are so happy to have you here . We hope you have had a
+          safe and enjoyable time
+        </p>
+        <div class="alr">
+          <p>
+            Have an account ?
+            <span id="path-log-in">Log In</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="pop-up-msg"></div>
+  </body>
+  <script src="./for-style-and-js/script.js"></script>
+</html>

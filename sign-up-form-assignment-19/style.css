@@ -1,0 +1,246 @@
+body {
+  padding: 0%;
+  margin: 0%;
+  /* overflow-y: scroll; */
+  position: relative;
+  color: rgb(0, 0, 0);
+  /* background-color: rgb(69, 27, 69); */
+  background-image: url("./image/backhround.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+  /* background-color: #f7f7f7; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Roboto-font: "Roboto", "sans-serif";
+  --poesten-font: "Poetsen One", sans-serif;
+  --greyish-color: #000000;
+}
+
+/* Log in form  */
+#log-in-form {
+  height: 400px;
+  display: flex;
+}
+
+/* Sign Up form  */
+
+#sign-up-form {
+  display: none;
+}
+
+.form-container {
+  min-width: 350px;
+  max-width: 840px;
+  height: 565px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: -1px 2px 30px purple;
+  background-color: rgba(0, 0, 0, 0.351);
+}
+
+.form {
+  width: 50%;
+  height: 100%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: var(--Roboto-font);
+  box-shadow: -1px 2px 20px purple;
+}
+
+.form-head {
+  margin: 0%;
+  font-family: var(--Roboto-font);
+  font-weight: 800;
+  font-size: 35px;
+  color: white;
+  text-shadow: -1px 2px 30px rgb(255, 183, 0);
+}
+
+.form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form > label > input {
+  width: 350px;
+  height: 35px;
+  padding: 0px 10px;
+  font-size: 15px;
+  color: var(--greyish-color);
+  border: none;
+  outline: none;
+  box-shadow: -1px 2px 20px rgba(0, 255, 115, 0.452);
+  border-radius: 5px;
+}
+
+.form > label > input:hover {
+  border: 2px solid goldenrod;
+}
+
+.form > label > input:focus {
+  border: 2px solid green;
+}
+
+.form > label > p {
+  margin: 0%;
+  font-weight: 500;
+  color: var(--greyish-color);
+  font-size: 20px;
+  text-shadow: -1px 2px 20px goldenrod;
+  color: white;
+}
+
+.form > .submit-btn {
+  width: 350px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  box-sizing: content-box;
+  transition: background-color 0.5s ease;
+  background-color: rgba(0, 255, 221, 0.389);
+
+  color: white;
+  box-shadow: -1px 2px 20px purple;
+}
+
+.form > .submit-btn:hover {
+  background-color: rgba(17, 0, 255, 0.497);
+  border: 2px solid purple;
+  color: white;
+  opacity: 0.8;
+}
+
+.text-container {
+  width: 50%;
+  padding: 30px 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #fbfbfb;
+  text-shadow: -1px 2px 20px goldenrod;
+  font-family: var(--Roboto-font);
+
+  /* background: rgba(0, 0, 0, 0.322); */
+}
+
+.text-container > h5 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0%;
+  text-shadow: -1px 2px 20px goldenrod;
+}
+
+.text-container > p {
+  font-size: 20px;
+  text-align: center;
+  margin: 0%;
+  line-height: 25px;
+  text-shadow: -1px 2px 20px goldenrod;
+}
+
+.text-container > .alr {
+  padding: 12px 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: -1px 2px 20px goldenrod;
+}
+
+.alr > p {
+  margin: 0%;
+  color: #fbfbfb;
+  text-shadow: -1px 2px 20px goldenrod;
+}
+
+.alr > p > span {
+  text-decoration: none;
+  color: #fbfbfb;
+  text-shadow: -1px 2px 20px goldenrod;
+}
+
+.alr > p > span:hover {
+  font-size: 25px;
+  transition: font-size 0.3s linear;
+  text-shadow: -1px 2px 20px yellow;
+  font-weight: 600;
+}
+
+/* Pop up Message  */
+#pop-up-msg {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  padding: 40px 40px;
+  transform: translateX(50%);
+  color: white;
+  background-color: rgba(255, 0, 0, 0.511);
+  box-shadow: -1px 2px 20px rgba(255, 0, 0, 0.511);
+  border: 2px solid red;
+  border-radius: 10px;
+  display: none;
+}
+
+#pop-up-msg > .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card > i {
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.card > h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: var(--Roboto-font);
+  font-size: 30px;
+  margin: 0%;
+}
+
+.card > button {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 25px;
+  font-family: var(--Roboto-font);
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: #000000;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  box-shadow: -1px 2px 20px red;
+}
+
+.filter {
+  filter: blur(3px);
+}

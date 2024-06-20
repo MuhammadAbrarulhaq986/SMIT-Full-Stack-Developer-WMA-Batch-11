@@ -461,18 +461,47 @@
 // pets.splice(2,2, "falcon", "lion", "cheeta", "emu");
 // console.log(pets);
 
+
+// var pets = [];
+
+// pets[0] = "dog";
+// pets[1] = "cat";
+// pets[2] = "bird";
+// pets[3] = "lizard"; 
+// pets[4] = "fish";
+// pets[5] = "gerbil";
+// pets[6] = "snake";
+
+// pets.splice(2,0, "falcon", "lion", "cheeta", "emu");
+// console.log(pets);
+
+
+
+// var pets = [];
+
+// pets[0] = "dog";
+// pets[1] = "cat";
+// pets[2] = "bird";
+// pets[3] = "lizard"; //* These are removed in console and array
+// pets[4] = "fish"; //* These are removed in console and array
+// pets[5] = "gerbil";
+// pets[6] = "snake";
+
+// pets.splice(2, 2);
+// console.log(pets);
+
 var pets = [];
 
 pets[0] = "dog";
 pets[1] = "cat";
 pets[2] = "bird";
-pets[3] = "lizard"; 
+pets[3] = "lizard";
 pets[4] = "fish";
 pets[5] = "gerbil";
 pets[6] = "snake";
 
-pets.splice(2,2, "falcon", "lion", "cheeta", "emu");
-console.log(pets);
+var nopets = pets.slice(2, 4);
+console.log(nopets);
 
 
 
