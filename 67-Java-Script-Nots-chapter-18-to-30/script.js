@@ -243,13 +243,13 @@
 //         //* */ If it matches, alert that it's one of the cleanest cities
 //         alert("It's one of the cleanest cities");
 //         //* */ Break out of the loop since we've found a match
-//         break;      
+//         break;
 //     }
 // }
 
 // //* */ If the loop completes without finding a match, alert that it's not on the cleanest cities list
 // if (i === cleanestCities.length) {
-//     alert("It's not on the cleanest cities list");  
+//     alert("It's not on the cleanest cities list");
 // }
 
 
@@ -271,7 +271,7 @@
 //         //* */ If it matches, alert that it's one of the cleanest cities
 //         alert("It's one of the cleanest cities");
 //         //* */ Break out of the loop since we've found a match
-//         break;      
+//         break;
 //     }
 // }
 
@@ -292,13 +292,13 @@
 //         //* If it matches, alert that it's one of the cleanest cities
 //         alert("It's one of the cleanest cities");
 //         //* Break out of the loop since we've found a match
-//         break;      
+//         break;
 //     }
 // }
 
 // //* If the loop completes without finding a match, alert that it's not on the cleanest cities list
 // if (i === cleanestCities.length) {
-//     alert("It's not on the cleanest cities list");  
+//     alert("It's not on the cleanest cities list");
 // }
 
 // //* Copy the first character of the string using slice
@@ -613,3 +613,170 @@
 
 // //* Log the result to the console
 // console.log("The rounded number is: " + roundedNumber);
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// // //* Generate a random number between 0 and 1
+// var randomNumber = Math.random();
+// console.log(randomNumber); //* Output: a random floating-point number between 0 and 1, e.g. 0.8123
+
+// * Generate a random integer between 1 and 10
+// var randomNumber = Math.floor(randomNumber * 10) + 1;
+// console.log(randomNumber); //* Output: a random integer between 1 and 10, e.g. 8
+
+// //* Generate a random integer between 50 and 100
+// var randomNumber = Math.floor(randomNumber * 51) + 50;
+// console.log(randomNumber); //* Output: a random integer between 50 and 100, e.g. 73
+
+// //* Generate a random boolean value (true or false)
+// var randomNumber = randomNumber < 0.5;
+// console.log(randomNumber); //* Output: a random boolean value, e.g. true
+
+//* Generate an array of 5 random integers between 1 and 100
+// var randomNumber = Math.random();
+
+// var randomArray = [];
+// for (let i = 0; i < 5; i++) {
+//     var randomNumber = Math.random();
+//     randomArray.push(Math.floor(randomNumber * 100) + 1);
+// }
+// console.log(randomArray); //* Output: an array of 5 random integers, e.g. [14, 73, 28, 42, 91]
+
+// // *Generate a random number within a specific range (e.g. 200 to 300)
+// var randomNumber = Math.random();
+// var min = 100;
+// var max = 300;
+// var randomNumber = Math.floor(randomNumber * (max - min + 1)) + min;
+// console.log(randomNumber); //* Output: a random integer between 200 and 300, e.g. 247
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// //* Converting Strings to Integers
+
+// //* Example 1: Converting a string to an integer using parseInt()
+// var stringValue = "123"; //* Define a string variable
+// var integerValue = parseInt(stringValue); //* Use parseInt() to convert the string to an integer
+// console.log(integerValue); //* Output: 123
+
+// //* Example 2: Converting a string to an integer using Number()
+// var stringValue = "456"; //* Define a string variable
+// var integerValue = Number(stringValue); //* Use Number() to convert the string to an integer
+// console.log(integerValue); //* Output: 456
+
+// //* Example 3: Converting a string to an integer using the unary plus operator (+)
+// var stringValue = "789"; //* Define a string variable
+// var integerValue = +stringValue; //* Use the unary plus operator (+) to convert the string to an integer
+// console.log(integerValue); //* Output: 789
+
+// //* Example 4: Converting a string to an integer with a radix (base)
+// var stringValue = "A2"; //* Define a string variable in hexadecimal format
+// var integerValue = parseInt(stringValue, 16); //* Use parseInt() with a radix of 16 to convert the string to an integer
+// console.log(integerValue); //* Output: 162
+
+// ********************************************************************************************* **********************************************************************************************
+
+// //*  Converting Strings to Decimals
+// //*  Example 1: Converting a string to a decimal using parseFloat()
+// var stringValue = "12.34";
+// //*  Define a string variable
+// var decimalValue = parseFloat(stringValue);
+// //*  Use parseFloat() to convert the string to a decimal
+// console.log(decimalValue);
+// //*  Output: 12.34
+
+// //*  Example 2: Converting a string to a decimal using Number()
+// var stringValue = "56.78";
+// //*  Define a string variable
+// var decimalValue = Number(stringValue);
+// //*  Use Number() to convert the string to a decimal
+// console.log(decimalValue);
+// //*  Output: 56.78
+
+// //*  Example 3: Converting a string to a decimal using the unary plus operator (+)
+// var stringValue = "90.12";
+// //* Define a string variable
+// var decimalValue = +stringValue;
+// //*  Use the unary plus operator (+) to convert the string to a decimal
+// console.log(decimalValue);
+// //*  Output: 90.12
+
+// ********************************************************************************************* **********************************************************************************************
+
+// //* Error Handling
+// //* Example: Converting a string to an integer with error handling
+// var stringValue = "abc"; //* Define a string variable that cannot be converted to an integer
+// var integerValue = parseInt(stringValue); //* Try to convert the string to an integer
+// if (isNaN(integerValue)) { //* Check if the conversion failed
+//     console.log("Error: Cannot convert string to integer."); //* Output an error message
+// } else {
+//     console.log("Integer value: " + integerValue); //* Output the converted integer value
+// }
+// // *Output: Error: Cannot convert string to integer.
+
+
+// // *Example: Converting a string to a decimal with error handling
+// var stringValue = "def"; //* Define a string variable that cannot be converted to a decimal
+// var decimalValue = parseFloat(stringValue); //* Try to convert the string to a decimal
+// if (isNaN(decimalValue)) { //* Check if the conversion failed
+//     console.log("Error: Cannot convert string to decimal."); //* Output an error message
+// } else {
+//     console.log("Decimal value: " + decimalValue); //* Output the converted decimal value
+// }
+// //* Output: Error: Cannot convert string to decimal.
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+//* Converting Strings to Numbers
+
+//* Example 1: Converting a string to an integer using parseInt()
+
+// const stringValue = "123";
+// const integerValue = parseInt(stringValue);
+// console.log(integerValue); //* Output: 123
+
+// // *Example 2: Converting a string to a decimal using parseFloat()
+// const stringValue = "12.34";
+// const decimalValue = parseFloat(stringValue);
+// console.log(decimalValue); // Output: 12.34
+
+//  *Example 3: Converting a string to a number using the unary plus operator (+)*
+// const stringValue = "45";
+// const numberValueOne = +stringValue;
+// console.log(numberValueOne); // Output: 45
+
+// // * Example 4: Converting a string to a number using Number()
+// const stringValue = "67.89";
+// const numberValueTwo = Number(stringValue);
+// console.log(numberValueTwo); // Output: 67.89
+
+// ********************************************************************************************* **********************************************************************************************
+
+//* Converting Numbers to Strings
+
+// //* Example 1: Converting an integer to a string using toString()
+// const integerValue = 123;
+// const stringValue = integerValue.toString();
+// console.log(stringValue); // Output: "123"
+
+
+// // * Example 2: Converting a decimal to a string using toString()
+// const decimalValue = 12.34;
+// const stringValue = decimalValue.toString();
+// console.log(stringValue); // Output: "12.34"
+
+// // * Example 3: Converting a number to a string using string concatenation
+// const numberValue = 45;
+// const stringValue = "" + numberValue;
+// console.log(stringValue); // Output: "45"
+
+// // *Example 4: Converting a number to a string using String()
+// const numberValue = 67.89;
+// const stringValue = String(numberValue);
+// console.log(stringValue); // Output: "67.89"
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+

@@ -19,11 +19,7 @@ body {
   box-sizing: border-box;
 }
 
-:root {
-  --Roboto-font: "Roboto", "sans-serif";
-  --poesten-font: "Poetsen One", sans-serif;
-  --greyish-color: #000000;
-}
+
 
 /* Log in form  */
 #log-in-form {
@@ -59,13 +55,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  font-family: var(--Roboto-font);
   box-shadow: -1px 2px 20px purple;
 }
 
 .form-head {
   margin: 0%;
-  font-family: var(--Roboto-font);
   font-weight: 800;
   font-size: 35px;
   color: white;
@@ -143,7 +137,6 @@ body {
   gap: 12px;
   color: #fbfbfb;
   text-shadow: -1px 2px 20px goldenrod;
-  font-family: var(--Roboto-font);
 
   /* background: rgba(0, 0, 0, 0.322); */
 }
@@ -222,7 +215,6 @@ body {
 .card > h3 {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: var(--Roboto-font);
   font-size: 30px;
   margin: 0%;
 }
@@ -231,7 +223,6 @@ body {
   width: 100%;
   padding: 10px 5px;
   font-size: 25px;
-  font-family: var(--Roboto-font);
   font-weight: 600;
   border: none;
   outline: none;
