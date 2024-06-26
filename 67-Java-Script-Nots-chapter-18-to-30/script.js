@@ -775,8 +775,54 @@
 // console.log(stringValue); // Output: "67.89"
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// //* Example 1: Calculating the total price with sales tax
 
+// var price = 9.95;//* The price of the item is $9.95
+// var taxRate = 0.065;//* The sales tax rate is 6.5% (as a decimal value)
 
+// //* Calculate the total price by adding the price and the sales tax amount
+// //* The sales tax amount is calculated by multiplying the price with the tax rate
+// var total = price + (price * taxRate);
+// console.log(total); //* Output: 10.59675
 
+// //* Round the total price to 2 decimal places using the toFixed method
+// var prettyTotal = total.toFixed(2);
+// console.log(prettyTotal); //* Output: "10.60"
 
+// //* Add a dollar sign to the total price to format it as currency
+// var currencyTotal = "$" + prettyTotal;
+// console.log(currencyTotal); //* Output: "$10.60"
 
+// *****************************************************
+// //* Example 2: Rounding a number to no decimal places
+
+// //* Initialize a number variable with a decimal value
+// var num = 10.59675;
+
+// //* Round the number to the nearest integer using the toFixed method with no arguments
+// var prettyNum = num.toFixed();
+// console.log(prettyNum); //* Output: "11"
+
+// *****************************************************
+// //* Example 3: Fixing the toFixed method for decimals ending in 5
+
+// //* Initialize a number variable with a decimal value that ends in 5
+// var num = 1.555;
+
+// //* Convert the number to a string to manipulate its decimal part
+// var str = num.toString();
+
+// //* Check if the last character of the string is "5"
+// if (str.charAt(str.length - 1) === "5") {
+//   //* If it is, remove the last character and append "6" instead to fix the rounding issue
+//   str = str.slice(0, str.length - 1) + "6";
+// }
+
+// //* Convert the modified string back to a number
+// num = Number(str);
+
+// //* Round the fixed number to 2 decimal places using the toFixed method
+// var prettyNum = num.toFixed(2);
+// console.log(prettyNum); //* Output: "1.56"
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
