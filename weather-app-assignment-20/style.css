@@ -1,0 +1,177 @@
+* {
+  margin: 2px;
+  padding: 2px;
+}
+
+body {
+  font-size: 30px;
+  font-family: sans-serif;
+  background-color: black;
+  background-image: url("./images/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.search-bar-container {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.search-bar-container input,
+.search-bar-container button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+#search-input {
+  box-shadow: -1px 2px 30px goldenrod;
+  padding: 10px;
+  font-size: 20px;
+  text-shadow: -1px 2px -20px;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+}
+
+#search-btn {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  background-color: rgba(34, 0, 255, 0.414);
+  box-shadow: -1px 2px 30px goldenrod;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+#search-btn:hover {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 115, 255, 0.582);
+  color: rgba(34, 0, 255, 0.414);
+  opacity: 0.8;
+}
+
+/* Weather display styles */
+.weather-container {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: -1px 2px 20px blue;
+  background-color: #0000005e; /* white background */
+  box-shadow: -1px 2px 30px navy;
+  border: 1px solid blue;
+  max-width: 550px;
+  max-height: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#city {
+  color: white;
+  text-shadow: -1px 2px 20px gold;
+
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#weather {
+  color: white;
+  text-shadow: -1px 2px 20px gold;
+
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.temp-container {
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#temp {
+  color: white;
+  text-shadow: -1px 2px 20px gold;
+
+  font-size: 50px;
+  font-weight: bold;
+  font-weight: 600;
+}
+
+#max,
+#min {
+  color: white;
+  text-shadow: -1px 2px 20px gold;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#day-night {
+  color: white;
+  text-shadow: -1px 2px 20px gold;
+
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+/* ************* ************************** ************* **************************************************** */
+
+.weather-container {
+  /* ... other styles ... */
+  background-image: url("sun.png"), url("moon.png"), url("cloud.png"); /* replace with your image URLs */
+  background-size: 50px 50px, 50px 50px, 50px 50px; /* adjust the image size */
+  background-position: center, center, center; /* center the images */
+  background-repeat: no-repeat, no-repeat, no-repeat; /* prevent the images from repeating */
+}
+
+.weather-container.sun {
+  background-position: center 0; /* adjust the position of the sun image */
+}
+
+.weather-container.moon {
+  background-position: center 100px; /* adjust the position of the moon image */
+}
+
+.weather-container.cloud {
+  background-position: center 200px; /* adjust the position of the cloud image */
+}
+/* ************* ************************** ************* **************************************************** */
+
+.weather-icon.sun {
+  color: #ffcc00;
+  font-size: 30px;
+}
+
+.weather-icon.thermometer {
+  color: #87ceeb;
+  font-size: 30px;
+}
+
+.weather-icon.cloud {
+  color: #add8e6;
+  font-size: 30px;
+}
+
+.weather-icon.moon {
+  color: #c9e4ca;
+  font-size: 30px;
+}
