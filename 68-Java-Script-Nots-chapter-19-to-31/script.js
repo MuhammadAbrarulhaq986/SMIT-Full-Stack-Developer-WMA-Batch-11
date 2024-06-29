@@ -179,7 +179,7 @@ d.setFullYear(2001);
 
 // Log the updated Date object to the console
 console.log(d); // Output: 2001-07-25T14:30:00.000Z (assuming current date is July 25, 2022)
-
+      
 // ****************************************************************************************************************
 // * Example 2: Setting the Month
 
