@@ -273,34 +273,130 @@
 //   var watch = new Watch();
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+// //* Example 1: A Simple Function to Display the Current Time
 
+// //* Define a function to display the current time
+// function tellTime() {
+//     //* Create a new Date object
+//     var now = new Date();
+    
+//     //* Extract the hours and minutes from the Date object
+//     var theHr = now.getHours();
+//     var theMin = now.getMinutes();
+    
+//     //* Display an alert with the current time
+//     alert("Current time: " + theHr + ":" + theMin);
+//   }
+  
+//   //* Call the function to display the current time
+//   tellTime();
+  // ****************************************************************************************************************
+  
+// //*Example 2: A Function to Set the Year of a Date Object
+// //* Define a function to set the year of a Date object
+// function setYear(year) {
+//     //* Create a new Date object
+//     var d = new Date();
 
-
-
-
+//     //* Set the year of the Date object
+//     d.setFullYear(year);
+    
+//     //* Return the updated Date object
+//     return d;
+//   }
+  
+//   //* Call the function to set the year to 2001
+//   var d = setYear(2001);
+//   console.log(d); //* Output: 2001-07-25T14:30:00.000Z (assuming current date is July 25, 2022)
 
 // ****************************************************************************************************************
 
+// //*   Example 3: A Function to Set the Month of a Date Object
+// //* Define a function to set the month of a Date object
+// function setMonth(month) {
+//     //* Create a new Date object
+//     var d = new Date();
+
+//     //* Set the month of the Date object
+//     d.setMonth(month);
+
+//     //* Return the updated Date object
+//     return d;
+//   }
+
+//   //* Call the function to set the month to December (11)
+//   var d = setMonth(11);
+//   console.log(d); //* Output: 2022-12-25T14:30:00.000Z (assuming current date is July 25, 2022)
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// //* Example 1: A Simple Function
+// //* Define a function called greetUser that displays an alert message
+// function greetUser() {
+//     //* Display an alert message
+//     alert("Hello, there.");
+//   }
+  
+//   //* Call the function
+//   greetUser(); //* Output: "Hello, there."
 
 
+  // ****************************************************************************************************************
+  
+// //*   Example 2: A Function with an Argument
+  
+// //* Define a function called greetUser that takes a greeting as an argument
+// function greetUser(greeting) {
+//     //* Display an alert message using the greeting argument
+//     alert(greeting);
+//   }
+  
+//   //* Call the function with an argument
+//   greetUser("Hello, there."); //* Output: "Hello, there."
+  // ****************************************************************************************************************
+  
+// //*   Example 3: Passing a Variable as an Argument
+//   //* Define a function called greetUser that takes a greeting as an argument
+// function greetUser(greeting) {
+//     //* Display an alert message using the greeting argument
+//     alert(greeting);
+//   }
+  
+//   //* Declare a variable and assign it a value
+//   var greeting = "Hello, there.";
+  
+//   //* Call the function with the variable as an argument
+//   greetUser(greeting); //* Output: "Hello, there."
+  
+  // ****************************************************************************************************************
+// //*   Example 4: Passing a Number as an Argument
+// //* Define a function called showBigNum that takes a number as an argument
+// function showBigNum(num) {
+//     //* Display an alert message using the num argument
+//     alert("The big number is: " + num);
+//   }
+  
+//   //* Declare a variable and assign it a value
+//   var almostAMil = 999999;
+  
+//   //* Call the function with the variable as an argument
+//   showBigNum(almostAMil); //* Output: "The big number is: 999999"
+  
+//   //* Alternatively, call the function with a literal number as an argument
+//   showBigNum(999999); //* Output: "The big number is: 999999"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // ****************************************************************************************************************
+//*   Example 5: Passing Multiple Arguments
+//* Define a function called showMessage that takes three arguments
+function showMessage(m, string, num) {
+    //* Display an alert message using the arguments
+    alert(m + string + num);
+  }
+  //* Declare a variable and assign it a value
+  var month = "March";
+  //* Call the function with multiple arguments
+  showMessage(month, "'s winner number is ", 23); //* Output: "March's winner number is 23"
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
