@@ -25,7 +25,7 @@
 //     });
 
 // ******************************************************************************************************************
-// Define API ID, unit of measurement, and default city and country code
+
 const appId = "6ade34e3eb8496ccb2b350b400d9d522";
 const unit = "metric"; // use metric units for temperature (e.g. Celsius)
 let city = "Karachi";
@@ -86,15 +86,16 @@ function fetchWeather() {
       const cityCurrentTime = currentTime + cityTimezoneOffset;
 
       if (cityCurrentTime > sunrise && cityCurrentTime < sunset) {
-        dayNightEle.innerHTML = "Day";
-        imageEle.src = 'day-time.webp'; // Show day time image
-        imageEle.className = "fas fa-sun weather-icon sun";
-        imageEle.style.color = "#ffc400";
-      } else {
+        
         dayNightEle.innerHTML = "Night";
         imageEle.src = 'night-time.jpg'; // Show night time image
         imageEle.className = "fas fa-moon weather-icon moon";
         imageEle.style.color = "#d6eaff";
+      } else {
+        dayNightEle.innerHTML = "Day";
+        imageEle.src = 'day-time.webp'; // Show day time image
+        imageEle.className = "fas fa-sun weather-icon sun";
+        imageEle.style.color = "#ffc400";
       }
     });
 }
