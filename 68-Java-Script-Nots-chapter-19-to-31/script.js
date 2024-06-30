@@ -168,93 +168,109 @@
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-// * Example 1: Setting the Year
+// // * Example 1: Setting the Year
 
-//* Create a new Date object for the current moment
-var d = new Date();
+// //* Create a new Date object for the current moment
+// var d = new Date();
 
-//* Set the year of the Date object to 2001, leaving all other elements intact
-d.setFullYear(2001);
+// //* Set the year of the Date object to 2001, leaving all other elements intact
+// d.setFullYear(2001);
 
-//* Log the updated Date object to the console
-console.log(d); //* Output: 2001-07-25T14:30:00.000Z (assuming current date is July 25, 2022)
-
-// ****************************************************************************************************************
-// * Example 2: Setting the Month
-
-// Create a new Date object for the current moment
-var d = new Date();
-
-// Set the month of the Date object to 11 (December), leaving all other elements intact
-d.setMonth(11);
-
-// Log the updated Date object to the console
-console.log(d); // Output: 2022-12-25T14:30:00.000Z (assuming current date is July 25, 2022)
+// //* Log the updated Date object to the console
+// console.log(d); //* Output: 2001-07-25T14:30:00.000Z (assuming current date is July 25, 2022)
 
 // ****************************************************************************************************************
-// * Example 3: Setting the Day of the Month
+// // * Example 2: Setting the Month
 
-// Create a new Date object for the current moment
-var d = new Date();
+// //* Create a new Date object for the current moment
+// var d = new Date();
 
-// Set the day of the month of the Date object to 15, leaving all other elements intact
-d.setDate(15);
+// //* Set the month of the Date object to 11 (December), leaving all other elements intact
+// d.setMonth(11);
 
-// Log the updated Date object to the console
-console.log(d); // Output: 2022-07-15T14:30:00.000Z (assuming current date is July 25, 2022)
+// //* Log the updated Date object to the console
+// console.log(d); //* Output: 2022-12-25T14:30:00.000Z (assuming current date is July 25, 2022)
 
 // ****************************************************************************************************************
+// // * Example 3: Setting the Day of the Month
 
-// * Example 4: Setting the Hours
+// //* Create a new Date object for the current moment
+// var d = new Date();
 
-// Create a new Date object for the current moment
-var d = new Date();
+// //* Set the day of the month of the Date object to 15, leaving all other elements intact
+// d.setDate(15);
 
-// Set the hours of the Date object to 13 (1 p.m.), leaving all other elements intact
-d.setHours(13);
-
-// Log the updated Date object to the console
-console.log(d); // Output: 2022-07-25T13:30:00.000Z (assuming current date is July 25, 2022)
+// //* Log the updated Date object to the console
+// console.log(d); //* Output: 2022-07-15T14:30:00.000Z (assuming current date is July 25, 2022)
 
 // ****************************************************************************************************************
 
-// * Example 5: Setting the Minutes
+// // * Example 4: Setting the Hours
 
-// Create a new Date object for the current moment
-var d = new Date();
+// //* Create a new Date object for the current moment
+// var d = new Date();
 
-// Set the minutes of the Date object to 5, leaving all other elements intact
-d.setMinutes(5);
+// //* Set the hours of the Date object to 13 (1 p.m.), leaving all other elements intact
+// d.setHours(13);
 
-// Log the updated Date object to the console
-console.log(d); // Output: 2022-07-25T14:35:00.000Z (assuming current date is July 25, 2022)
+// //* Log the updated Date object to the console
+// console.log(d); //* Output: 2022-07-25T13:30:00.000Z (assuming current date is July 25, 2022)
+
+// ****************************************************************************************************************
+
+// // * Example 5: Setting the Minutes
+
+// //* Create a new Date object for the current moment
+// var d = new Date();
+
+// //* Set the minutes of the Date object to 5, leaving all other elements intact
+// d.setMinutes(5);
+
+// //* Log the updated Date object to the console
+// console.log(d); //* Output: 2022-07-25T14:35:00.000Z (assuming current date is July 25, 2022)
 
 // ****************************************************************************************************************
 
-// * Example 6: Setting the Seconds
+// // * Example 6: Setting the Seconds
 
-// Create a new Date object for the current moment
-var d = new Date();
+// //* Create a new Date object for the current moment
+// var d = new Date();
 
-// Set the seconds of the Date object to 55, leaving all other elements intact
-d.setSeconds(55);
+// //* Set the seconds of the Date object to 55, leaving all other elements intact
+// d.setSeconds(55);
 
-// Log the updated Date object to the console
-console.log(d); // Output: 2022-07-25T14:30:55.000Z (assuming current date is July 25, 2022)
-
-// ****************************************************************************************************************
-// * Example 7: Setting the Milliseconds 
-
-// Create a new Date object for the current moment
-var d = new Date();
-
-// Set the milliseconds of the Date object to 867, leaving all other elements intact
-d.setMilliseconds(867);
-
-// Log the updated Date object to the console
-console.log(d); // Output: 2022-07-25T14:30:00.867Z (assuming current date is July 25, 2022)
+// //* Log the updated Date object to the console
+// console.log(d); //* Output: 2022-07-25T14:30:55.000Z (assuming current date is July 25, 2022)
 
 // ****************************************************************************************************************
+// // * Example 7: Setting the Milliseconds 
+
+// //* Create a new Date object for the current moment
+// var d = new Date();
+
+// //* Set the milliseconds of the Date object to 867, leaving all other elements intact
+// d.setMilliseconds(867);
+
+// //* Log the updated Date object to the console
+// console.log(d); //* Output: 2022-07-25T14:30:00.867Z (assuming current date is July 25, 2022)
+
+// ****** Watch ***********************
+// function Watch() {
+//     this.element = document.getElementById('watch');
+//     this.updateTime();
+//     setInterval(this.updateTime.bind(this), 1000);
+//   }
+  
+//   Watch.prototype.updateTime = function() {
+//     var currentTime = new Date();
+//     var hours = currentTime.getHours();
+//     var minutes = currentTime.getMinutes();
+//     var seconds = currentTime.getSeconds();
+//     var timeString = `${hours}:${minutes}:${seconds}`;
+//     this.element.innerText = timeString;
+//   };
+  
+//   var watch = new Watch();
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
@@ -263,6 +279,7 @@ console.log(d); // Output: 2022-07-25T14:30:00.867Z (assuming current date is Ju
 
 
 
+// ****************************************************************************************************************
 
 
 
