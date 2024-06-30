@@ -13,6 +13,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   background-attachment: fixed;
+  overflow-y: hidden;
 }
 
 .search-bar-container {
@@ -65,18 +66,18 @@ body {
 /* Weather display styles */
 .weather-container {
   color: white;
-  font-size: 30px;
-  font-weight: 600;
   text-shadow: -1px 2px 20px blue;
   background-color: #0000005e; /* white background */
-  box-shadow: -1px 2px 30px navy;
-  border: 1px solid blue;
+  box-shadow: -1px 2px 40px purple;
+  border: 5px solid rgba(0, 0, 255, 0.238);
+  font-size: 30px;
+  font-weight: 600;
   max-width: 550px;
   max-height: 700px;
   margin: 40px auto;
   padding: 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 #city {
@@ -174,4 +175,39 @@ body {
 .weather-icon.moon {
   color: #c9e4ca;
   font-size: 30px;
+}
+
+/* Target all elements with the class fa-sun */
+.fa-sun {
+  color: #ffc400;
+  text-shadow: -1px 2px 20px gold;
+}
+
+/* Target all elements with the classes fa and fa-sun */
+.fas.fa-sun {
+  color: #ffc400;
+  text-shadow: -1px 2px 20px gold;
+}
+
+/* Target all elements with the classes fa, fa-sun, and weather-icon */
+.fas.fa-sun.weather-icon {
+  color: #ffc400;
+  text-shadow: -1px 2px 20px gold;
+}
+
+/* Target all elements with the class fa-moon */
+.fa-moon {
+  color: #d6eaff;
+  text-shadow: -1px 2px 20px blue;
+}
+/* Target all elements with the classes fa and fa-moon */
+.fas.fa-moon {
+  color: #d6eaff;
+  text-shadow: -1px 2px 20px blue;
+}
+
+/* Target all elements with the classes fa, fa-moon, and weather-icon */
+.fas.fa-moon.weather-icon {
+  color: #d6eaff;
+  text-shadow: -1px 2px 20px blue;
 }

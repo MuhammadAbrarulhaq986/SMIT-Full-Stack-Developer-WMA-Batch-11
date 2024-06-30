@@ -168,18 +168,17 @@
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
 // * Example 1: Setting the Year
 
-// Create a new Date object for the current moment
+//* Create a new Date object for the current moment
 var d = new Date();
 
-// Set the year of the Date object to 2001, leaving all other elements intact
+//* Set the year of the Date object to 2001, leaving all other elements intact
 d.setFullYear(2001);
 
-// Log the updated Date object to the console
-console.log(d); // Output: 2001-07-25T14:30:00.000Z (assuming current date is July 25, 2022)
-      
+//* Log the updated Date object to the console
+console.log(d); //* Output: 2001-07-25T14:30:00.000Z (assuming current date is July 25, 2022)
+
 // ****************************************************************************************************************
 // * Example 2: Setting the Month
 
