@@ -243,7 +243,7 @@
 // console.log(d); //* Output: 2022-07-25T14:30:55.000Z (assuming current date is July 25, 2022)
 
 // ****************************************************************************************************************
-// // * Example 7: Setting the Milliseconds 
+// // * Example 7: Setting the Milliseconds
 
 // //* Create a new Date object for the current moment
 // var d = new Date();
@@ -260,7 +260,7 @@
 //     this.updateTime();
 //     setInterval(this.updateTime.bind(this), 1000);
 //   }
-  
+
 //   Watch.prototype.updateTime = function() {
 //     var currentTime = new Date();
 //     var hours = currentTime.getHours();
@@ -269,7 +269,7 @@
 //     var timeString = `${hours}:${minutes}:${seconds}`;
 //     this.element.innerText = timeString;
 //   };
-  
+
 //   var watch = new Watch();
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -279,19 +279,19 @@
 // function tellTime() {
 //     //* Create a new Date object
 //     var now = new Date();
-    
+
 //     //* Extract the hours and minutes from the Date object
 //     var theHr = now.getHours();
 //     var theMin = now.getMinutes();
-    
+
 //     //* Display an alert with the current time
 //     alert("Current time: " + theHr + ":" + theMin);
 //   }
-  
+
 //   //* Call the function to display the current time
 //   tellTime();
-  // ****************************************************************************************************************
-  
+// ****************************************************************************************************************
+
 // //*Example 2: A Function to Set the Year of a Date Object
 // //* Define a function to set the year of a Date object
 // function setYear(year) {
@@ -300,11 +300,11 @@
 
 //     //* Set the year of the Date object
 //     d.setFullYear(year);
-    
+
 //     //* Return the updated Date object
 //     return d;
 //   }
-  
+
 //   //* Call the function to set the year to 2001
 //   var d = setYear(2001);
 //   console.log(d); //* Output: 2001-07-25T14:30:00.000Z (assuming current date is July 25, 2022)
@@ -336,98 +336,182 @@
 //     //* Display an alert message
 //     alert("Hello, there.");
 //   }
-  
+
 //   //* Call the function
 //   greetUser(); //* Output: "Hello, there."
 
 
-  // ****************************************************************************************************************
-  
+// ****************************************************************************************************************
+
 // //*   Example 2: A Function with an Argument
-  
+
 // //* Define a function called greetUser that takes a greeting as an argument
 // function greetUser(greeting) {
 //     //* Display an alert message using the greeting argument
 //     alert(greeting);
 //   }
-  
+
 //   //* Call the function with an argument
 //   greetUser("Hello, there."); //* Output: "Hello, there."
-  // ****************************************************************************************************************
-  
+// ****************************************************************************************************************
+
 // //*   Example 3: Passing a Variable as an Argument
 //   //* Define a function called greetUser that takes a greeting as an argument
 // function greetUser(greeting) {
 //     //* Display an alert message using the greeting argument
 //     alert(greeting);
 //   }
-  
+
 //   //* Declare a variable and assign it a value
 //   var greeting = "Hello, there.";
-  
+
 //   //* Call the function with the variable as an argument
 //   greetUser(greeting); //* Output: "Hello, there."
-  
-  // ****************************************************************************************************************
+
+// ****************************************************************************************************************
 // //*   Example 4: Passing a Number as an Argument
 // //* Define a function called showBigNum that takes a number as an argument
 // function showBigNum(num) {
 //     //* Display an alert message using the num argument
 //     alert("The big number is: " + num);
 //   }
-  
+
 //   //* Declare a variable and assign it a value
 //   var almostAMil = 999999;
-  
+
 //   //* Call the function with the variable as an argument
 //   showBigNum(almostAMil); //* Output: "The big number is: 999999"
-  
+
 //   //* Alternatively, call the function with a literal number as an argument
 //   showBigNum(999999); //* Output: "The big number is: 999999"
 
-  // ****************************************************************************************************************
-//*   Example 5: Passing Multiple Arguments
-//* Define a function called showMessage that takes three arguments
-function showMessage(m, string, num) {
-    //* Display an alert message using the arguments
-    alert(m + string + num);
-  }
-  //* Declare a variable and assign it a value
-  var month = "March";
-  //* Call the function with multiple arguments
-  showMessage(month, "'s winner number is ", 23); //* Output: "March's winner number is 23"
+// ****************************************************************************************************************
+// //*   Example 5: Passing Multiple Arguments
+// //* Define a function called showMessage that takes three arguments
+// function showMessage(m, string, num) {
+//     //* Display an alert message using the arguments
+//     alert(m + string + num);
+//   }
+//   //* Declare a variable and assign it a value
+//   var month = "March";
+//   //* Call the function with multiple arguments
+//   showMessage(month, "'s winner number is ", 23); //* Output: "March's winner number is 23"
+
+
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+// //* Define a function to calculate the order total based on the merchandise total
+// function calcTot(merchTot) {
+//   //* Declare a variable to hold the order total
+//   var orderTot;
 
+//   //* Calculate the order total based on the merchandise total
+//   if (merchTot >= 100) {
+//     orderTot = merchTot;
+//   } else if (merchTot < 50.01) {
+//     orderTot = merchTot + 5;
+//   } else {
+//     orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+//   }
 
+//   //* Return the order total to the calling code
+//   return orderTot;
+// }
 
+// //* Example 1: Calculate the total to charge for a merchandise total of $79.99
+// var totalToCharge = calcTot(79.99);
+// console.log("Total to charge: $" + totalToCharge); //* Output: Total to charge: $84.99
 
+// //* Example 2: Use a function in an alert message
+// alert("Total to charge: $" + calcTot(79.99)); //* Output: Alert box with message "Total to charge: $84.99"
 
+// //* Example 3: Use a function in an expression
+// var merchTot = 50;
+// var orderTot = merchTot + calcTot(merchTot);
+// console.log("Order total: $" + orderTot);
+// //* Output: Order total: $55
 
+// //* Example 4: Use a function in a function call
+// function calc(price, taxCalcFunc) {
+//   return price + taxCalcFunc(price);
+// }
 
+// var merchTot = 50;
+// var orderTot = calc(merchTot, calcTot);
+// console.log("Order total: $" + orderTot); //* Output: Order total: $55
 
+// //* Example 5: Call a function within a function
+// function calcTot(price) {
+//   return price + calcShip(price);
+// }
 
+// function calcShip(price) {
+//   return 5 + (.03 * (price - 50));
+// }
 
+// var merchTot = 75;
+// var orderTot = calcTot(merchTot);
+// console.log("Order total: $" + orderTot); //* Output: Order total: $80.25
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+// // * Example 1: Global Variable
+// //* Declare a global variable
+// var theSum;
 
+// //* Call a function to assign a value to the global variable
+// addNumbers();
 
+// //* The function
+// function addNumbers() {
+//   //* Assign a value to the global variable
+//   theSum = 2 + 2;
+// }
 
+// //* The global variable can be accessed anywhere
+// alert(theSum); //* Output: 4
 
+// ****************************************************************************************************************
+// // * Example 2: Local Variable
+// //* The function
+// function addNumbers() {
+//   //* Declare a local variable
+//   var theSum = 2 + 2;
+// }
+// //* The local variable is only accessible within the function
+// alert(theSum); //* Error: theSum is not defined
 
+// ****************************************************************************************************************
+// //  * Example 3: Global and Local Variables with the Same Name
+// //* Declare a global variable
+// var theSum = 1000;
+// //* Call a function
+// addNumbers();
+// //* The function
+// function addNumbers() {
+//   //* Declare a local variable with the same name as the global variable
+//   var theSum = 2 + 2;
+// }
+// //* The global variable has a value of 1000
+// alert(theSum); //* Output: 1000
+// //* The local variable has a value of 4, but it's only accessible within the function
 
+// ****************************************************************************************************************
 
+// * Example 4: Returning a Value from a Function
+//* Declare a global variable
+var theSum = addNumbers();
+//* The function
+function addNumbers() {
+  //* Declare a local variable
+  var theSum = 2 + 2;
+  //* Return the value of the local variable
+  return theSum;
+}
+//* The global variable has the value returned from the function
+alert(theSum); //* Output: 4
 
-
-
-
-
-
-
-
-
-
-
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
