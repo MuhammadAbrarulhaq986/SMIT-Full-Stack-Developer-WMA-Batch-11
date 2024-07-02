@@ -498,23 +498,121 @@
 
 // ****************************************************************************************************************
 
-// * Example 4: Returning a Value from a Function
-//* Declare a global variable
-var theSum = addNumbers();
-//* The function
-function addNumbers() {
-  //* Declare a local variable
-  var theSum = 2 + 2;
-  //* Return the value of the local variable
-  return theSum;
-}
-//* The global variable has the value returned from the function
-alert(theSum); //* Output: 4
+// // * Example 4: Returning a Value from a Function
+// //* Declare a global variable
+// var theSum = addNumbers();
+// //* The function
+// function addNumbers() {
+//   //* Declare a local variable
+//   var theSum = 2 + 2;
+//   //* Return the value of the local variable
+//   return theSum;
+// }
+// //* The global variable has the value returned from the function
+// alert(theSum); //* Output: 4
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// //* Get the current day of the week
+// var dayOfWk = new Date().toLocaleString("en-PK", { weekday: "short" });
+
+// //* Example 1: Conditional Statements
+// if (dayOfWk === "Sat" || dayOfWk === "Sun") {
+
+//   //* If it's Saturday or Sunday, display "Whoopee!"
+//   //* This is a weekend day, so let's celebrate!
+//   alert("Whoopee!");
+// } else if (dayOfWk === "Fri") {
+//   //* If it's Friday, display "TGIF!"
+//   //* The weekend is almost here, let's get excited!
+//   alert("TGIF!");
+// } else {
+//   //* If it's a weekday, display "Shoot me now!"
+//   //* It's a regular day, let's just get through it...
+//   alert("Shoot me now!");
+// }
+// ****************************************************************************************************************************************************************************************
+
+// //* Example 2: Switch Statement
+// switch (dayOfWk) {
+//   //* Case 1: If dayOfWk is "Sat", display "Whoopee!"
+//   //* Saturday is a weekend day, let's celebrate!
+//   case "Sat":
+//     alert("Whoopee");
+//     //* Exit the switch statement, we're done!
+//     break;
+
+//   //* Case 2: If dayOfWk is "Sun", display "Whoopee!"
+//   //* Sunday is also a weekend day, let's celebrate!
+//   case "Sun":
+//     alert("Whoopee");
+//     //* Exit the switch statement, we're done!
+//     break;
+
+//   //* Case 3: If dayOfWk is "Fri", display "TGIF!"
+//   //* Friday is almost the weekend, let's get excited!
+//   case "Fri":
+//     alert("TGIF!");
+//     //* Exit the switch statement, we're done!
+//     break;
+
+//   //* Default case: If none of the above, display "Shoot me now!"
+//   //* It's a regular weekday, let's just get through it...
+//   default:
+//     alert("Shoot me now!");
+// }
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
+// // //* Get the current day of the week
+// var dayOfWk = new Date().toLocaleString("en-PK", { weekday: "short" });
 
+// // * Example 1: Switch Statement with Break
+// switch (dayOfWk) {
+//   //* Case 1: If dayOfWk is "Sat", display "Whoopee!"
+//   case "Sat":
+//     alert("Whoopee!"); //* execute this statement if dayOfWk is "Sat"
+//     break; //* exit the switch statement to avoid executing other cases
 
+//   //* Case 2: If dayOfWk is "Sun", display "Whoopee!"
+//   case "Sun":
+//     alert("Whoopee!"); //* execute this statement if dayOfWk is "Sun"
+//     break; //* exit the switch statement to avoid executing other cases
 
+//   //* Case 3: If dayOfWk is "Fri", display "TGIF!"
+//   case "Fri":
+//     alert("TGIF!"); //* execute this statement if dayOfWk is "Fri"
+//     break; //* exit the switch statement to avoid executing other cases
+
+//   //* Default case: If none of the above, display "Shoot me now!"
+//   default:
+//     alert("Shoot me now!"); //* execute this statement if dayOfWk is not "Sat", "Sun", or "Fri"
+// }
+
+// ****************************************************************************************************************************************************************************************
+
+// //* Get the current day of the week
+// var dayOfWk = new Date().toLocaleString("en-PK", { weekday: "short" });
+
+// // * Example 2: Switch Statement without Break ( warning: incorrect behavior )
+// switch (dayOfWk) {
+//   //* Case 1: If dayOfWk is "Sat", display "Whoopee!"
+//   case "Sat":
+//     alert("Whoopee!"); //* execute this statement if dayOfWk is "Sat"
+
+//   //* Case 2: If dayOfWk is "Sun", display "Whoopee!"
+//   case "Sun":
+//     alert("Whoopee!"); //* execute this statement if dayOfWk is "Sun"
+
+//   //* Case 3: If dayOfWk is "Fri", display "TGIF!"
+//   case "Fri":
+//     alert("TGIF!"); //* execute this statement if dayOfWk is "Fri"
+
+//   //* Default case: If none of the above, display "Shoot me now!"
+//   default:
+//     alert("Shoot me now!"); //* execute this statement if dayOfWk is not "Sat", "Sun", or "Fri"
+// }
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
