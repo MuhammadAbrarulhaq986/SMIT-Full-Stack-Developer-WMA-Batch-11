@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+  padding: 10px;
+}
+
+input {
+  background-color: darkred;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Style for anchor tags (a) */
+a {
+  text-decoration: none; /* remove underline */
+  color: #00698f; /* blue color */
+  transition: color 0.2s ease; /* smooth color transition on hover */
+}
+
+a:hover {
+  color: #0099cc; /* hover color */
+}
+
+/* Style for image tags (img) */
+img {
+  max-width: 100%; /* make images responsive */
+  height: auto; /* maintain aspect ratio */
+  border-radius: 10px; /* add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add subtle shadow */
+}
+
+/* Style for paragraph tags (p) */
+p {
+  font-size: 18px; /* set font size */
+  line-height: 1.5; /* set line height */
+  margin-bottom: 20px; /* add space between paragraphs */
+  color: white; /* set text color */
+}
+
+/* Style for heading 1 tags (h1) */
+h1 {
+  font-size: 36px; /* set font size */
+  font-weight: bold; /* make font bold */
+  margin-bottom: 10px; /* add space below heading */
+  color: #222; /* set text color */
+  text-align: center; /* center align heading */
+}

@@ -7,6 +7,106 @@
     <title>Practice</title>
   </head>
   <body>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- * Events: link  -->
+    <a href="#" onClick="alert('Hi');">Click</a>
+    <!-- *****************************************************     -->
+    <a href="JavaScript:void(0)" onClick="alert('Hi');">Click</a>
+    <!-- *****************************************************     -->
+    <!-- <a href="JavaScript:void(0)" onClick="var greet="hi'; alert(greet);">Click</a> -->
+    <hr />
+    <hr />
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- * Events: button -->
+    <input type="button" value="Click" onClick="alert('Hello world!');" />
+    <!-- *****************************************************     -->
+    <!-- *****************************************************     -->
+    <img src="./image/button.webp" onClick="alert('Hello world!');" />
+    <!-- *****************************************************     -->
+    <img src="./image/button2.webp" onClick="greetTheUser();" />
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <hr />
+    <hr />
+    <!-- * Events: mouse -->
+    <!-- * This is the markup that replaces the before picture with the after picture. -->
+    <img src="./image/house1.webp" onMouseover="src='./image/house2.webp'" />
+    <!-- *****************************************************     -->
+    <!-- <h1 onMouseover="alert('Be sure to get your shopping done today.');">
+      World Ends Tomorrow
+    </h1> -->
+    <!-- *****************************************************     -->
+    <a href="index.html" onMouseover="this.style.color='green';">Home Page</a>
+    <!-- *****************************************************     -->
+    <p id="loris" onMouseover="expand();">
+      Slow Loris: Mouse over for more info
+    </p>
+    <hr />
+    <hr />
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- * Events: fields -->
+    <br />Email:<br />
+    <input
+      type="text"
+      size="30"
+      onFocus="this.style.backgroundColor='yellow';"
+    />
+    <!-- *  THIS WILL CHANGE THE COLOR OF INPUT WHEN YOU CLICK IT  -->
+    <!-- *****************************************************     -->
+    <br />
+    Email:<br />
+    <input
+      type="text"
+      size="30"
+      onFocus="this.style.backgroundColor='yellow';"
+      onBlur="this.style.backgroundColor='white';"
+    />
+    <!-- *****************************************************     -->
+    <br />
+    Email: <br />
+    <input
+      type="text"
+      size="30"
+      onFocus="makeFieldYellow();"
+      onBlur="makeFieldWhite();"
+    />
+    <hr />
+    <hr />
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <br />
+    <form>
+      Email:
+      <input type="text" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <!-- *****************************************************     -->
+    <form>
+      Email:
+      <input type="text" id="email" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <!-- *****************************************************     -->
+    <!--* Next, I'm going to add an event-handler, using the keyword onSubmit. -->
+    <form onSubmit="checkAddress('email');">
+      Email:
+      <input type="text" id="email" />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <hr />
+    <form>
+      ZIP:<br />
+      <input type="text" id="zip" onBlur="fillCity();" /><br />
+      City:<br />
+      <input type="text" id="city" />
+      <input type="submit" value="Submit" />
+    </form>
+    <hr />
+
+    <!-- *****************************************************     -->
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <script src="script.js"></script>
   </body>
 </html>
