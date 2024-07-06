@@ -1,0 +1,58 @@
+body {
+  background-color: darkcyan;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* a:hover {
+    color: #0099cc;
+  } */
+
+/* Input styling */
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph styling */
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+  } */

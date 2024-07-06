@@ -4,6 +4,8 @@
 }
 
 body {
+  margin: 2px;
+  padding: 2px;
   overflow-y: hidden;
   overflow-x: hidden;
   font-size: 30px;
@@ -31,6 +33,7 @@ body {
 }
 
 #search-input {
+  width: auto;
   box-shadow: -1px 2px 30px purple;
   padding: 10px;
   font-size: 20px;
@@ -72,10 +75,10 @@ body {
   background-color: #0000005e; /* white background */
   box-shadow: -1px 2px 40px purple;
   border: 5px solid rgba(0, 0, 255, 0.238);
+  width: 570px;
+  height: 360px;
   font-size: 30px;
   font-weight: 600;
-  max-width: 580px;
-  max-height: 780px;
   margin: 20px auto;
   padding: 20px;
   text-align: center;
@@ -137,10 +140,27 @@ body {
   margin-bottom: 10px;
 }
 /* ************* ************************** ************* **************************************************** */
+/* Styling for paragraph elements */
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for h3 heading elements */
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #00698f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* ************* ************************** ************* **************************************************** */
 
 .weather-container {
   /* ... other styles ... */
-  background-image: url("sun.png"), url("moon.png"), url("cloud.png"); /* replace with your image URLs */
+  /* background-image: url("sun.png"), url("moon.png"), url("cloud.png"); replace with your image URLs */
   background-size: 50px 50px, 50px 50px, 50px 50px; /* adjust the image size */
   background-position: center, center, center; /* center the images */
   background-repeat: no-repeat, no-repeat, no-repeat; /* prevent the images from repeating */
