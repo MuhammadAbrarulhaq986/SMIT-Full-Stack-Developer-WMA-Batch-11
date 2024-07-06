@@ -84,7 +84,6 @@
 // // Initial fetch for default city (Karachi)
 // fetchWeather();
 // ******************************************************************************************************************
-
 // API key for OpenWeatherMap API
 const appId = "6ade34e3eb8496ccb2b350b400d9d522";
 
@@ -100,6 +99,7 @@ const temperature = document.getElementById("temp"); // element to display tempe
 const max = document.getElementById("max"); // element to display maximum temperature
 const min = document.getElementById("min"); // element to display minimum temperature
 const forecastList = document.getElementById("forecast-list"); // element to display forecast list
+const dayNightEle = document.getElementById("day-night"); // element to display day/night status
 
 // Add event listener to search button
 searchBtn.addEventListener("click", fetchWeather); // trigger fetchWeather function when search button is clicked
@@ -111,7 +111,7 @@ searchInput.addEventListener("keypress", function (event) {
   }
 });
 
-//  Function to fetch weather data from OpenWeatherMap API
+// Function to fetch weather data from OpenWeatherMap API
 function fetchWeather() {
   const city = searchInput.value.trim(); // get the city name from the input field
 
@@ -141,46 +141,50 @@ function fetchWeather() {
 
       // Calculate day/night difference based on sunrise and sunset times
       const cityTimezoneOffset = cityData.timezone; // in seconds
-
-      // Convert sunrise and sunset times to Date objects
       const sunriseDate = new Date((sunrise + cityTimezoneOffset) * 1000);
-      const sunsetDate = new Date((sunset + cityTimezoneOffset) * 1000);
-
-      // Calculate day/night difference based on current time
       const currentTime = Date.now() / 1000;
+      const currentTimeHour = new Date(currentTime * 1000).getHours();
+      const currentTimeMinute = new Date(currentTime * 1000).getMinutes();
 
-      if (currentTime >= sunriseDate.getTime() / 1000 && currentTime <= sunsetDate.getTime() / 1000) {
-        document.getElementById("day-night").innerHTML = "Day <i class='fas fa-sun'></i>"; // display day status
+      if (currentTime >= sunriseDate.getTime() / 1000 && currentTimeHour < 18) {
+        dayNightEle.innerHTML = `Daytime (${currentTimeHour}:${currentTimeMinute}) ☀️`;
       } else {
-        document.getElementById("day-night").innerHTML = "Night <i class='fas fa-moon'></i>"; // display night status
+        const timeUntilSunrise = Math.floor((sunriseDate.getTime() / 1000 - currentTime) / 60);
+        dayNightEle.innerHTML = `Nighttime (Sunrise in ${timeUntilSunrise} minutes)  🌕`;
       }
 
-      // Display forecast for each weekday
+      // Display forecast for each day of the week
       const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
       const today = new Date().getDay();
 
       forecastList.innerHTML = ''; // clear the forecast list
 
-      list.forEach((item, index) => {
-        const dayIndex = (today + index) % 7;
+      for (let i = 0; i < 7; i++) {
+        const dayIndex = (today + i) % 7;
         const day = days[dayIndex];
-        const temp = item.main.temp;
-        const weatherIcon = item.weather[0].icon;
-        const weatherDesc = item.weather[0].description;
+        const forecastData = list[i * 8]; // get the forecast data for each day (assuming 8 entries per day)
+        if (forecastData && forecastData.main && forecastData.weather) {
+          const temp = forecastData.main.temp;
+          const weatherIcon = forecastData.weather[0].icon;
+          const weatherDesc = forecastData.weather[0].description;
 
-        const forecastRow = document.createElement('div');
-        forecastRow.className = 'forecast-row';
-        forecastRow.innerHTML = `
-          <span>${day}:</span>
-          <span>${temp}°C</span>
-          <i class="fas fa-${weatherIcon} weather-icon" style="color: #ffc400"></i>
-          <span>${weatherDesc}</span>
-        `;
-        forecastList.appendChild(forecastRow);
-      });
+          const forecastRow = document.createElement('div');
+          forecastRow.className = 'forecast-row';
+          forecastRow.innerHTML = `
+            <span>${day}:</span>
+            <span>${temp}°C</span>
+            <i class="fas fa-${weatherIcon} weather-icon" aria-hidden="true"></i>
+            <span>${weatherDesc}</span>
+          `;
+
+          forecastList.appendChild(forecastRow);
+        }
+      }
     })
-    .catch(error => console.error(error)); // catch and log any errors
-}
-
+    .catch(error => {
+      console.error(error);
+      searchInput.placeholder = "City not found. Please try again.";
+    })
+};
 // Initial fetch for default city (Karachi)
 fetchWeather(); // fetch weather data for default city on page load
