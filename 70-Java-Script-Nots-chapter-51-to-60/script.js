@@ -29,12 +29,56 @@
 
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+// * Hiding an Image
+// * JavaScript
+// function makeInvisible() {
+//     // Get the element with the id "ugly" and assign it the class "hidden"
+//     document.getElementById("ugly").className = "hidden";
+// }
 
 //   ************************************************************************************************************************************************************
+
+// * JavaScript
+// function makeBig() {
+//     //* Get the element with the id "p1" and add the class "big" to its existing classes
+//     document.getElementById("p1").className += " big";
+// }
+
+//   ************************************************************************************************************************************************************
+//* Example 3: Replacing All Classes with a New One
+// function changeFont() {
+//     //* Get the element with the id "p2" and replace all its classes with "arial"
+//     document.getElementById("p2").className = "arial";
+// }
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// Function to swap the image with a specific id
+function swapPic() {
+    // Get the element with id "before" and change its source to forth.webp
+    document.getElementById("before").src = "./image/forth.webp";
+}
+
+//   ************************************************************************************************************************************************************
+
+// Function to swap the image with a given id and new image source
+function swapPic(eId, newPic) {
+    // Get the element with the given id
+    const elem = document.getElementById(eId);
+    // Check if the element exists and is an image
+    if (elem && elem.tagName === 'IMG') {
+        // Change the source of the image
+        elem.src = newPic;
+    } else {
+        // Log an error if the element is not found or is not an image
+        console.error(`Element with id "${eId}" not found or is not an image`);
+    }
+}
 
 
 
 
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+

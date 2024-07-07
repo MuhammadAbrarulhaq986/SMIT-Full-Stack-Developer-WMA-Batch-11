@@ -126,7 +126,6 @@ body {
 #min {
   color: white;
   text-shadow: -1px 2px 20px gold;
-
   font-size: 30px;
   font-weight: 600;
 }
@@ -233,4 +232,40 @@ h3 {
 .fas.fa-moon.weather-icon {
   color: #d6eaff;
   text-shadow: -1px 2px 20px blue;
+}
+/* ***************************************************************************************** */
+/* Add a class to the temperature span element */
+.forecast-row span:nth-child(2) {
+  /* Change the color for each day of the week */
+  /* Sunday */
+  &:nth-child(2):nth-of-type(1) {
+    color: #ff69b4; /* pink */
+  }
+  /* Monday */
+  &:nth-child(2):nth-of-type(2) {
+    color: white;
+    text-shadow: -1px 2px 20px gold;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  /* Tuesday */
+  &:nth-child(2):nth-of-type(3) {
+    color: #ffc107; /* orange */
+  }
+  /* Wednesday */
+  &:nth-child(2):nth-of-type(4) {
+    color: #8b9467; /* brown */
+  }
+  /* Thursday */
+  &:nth-child(2):nth-of-type(5) {
+    color: #4b5154; /* gray */
+  }
+  /* Friday */
+  &:nth-child(2):nth-of-type(6) {
+    color: #9b59b6; /* purple */
+  }
+  /* Saturday */
+  &:nth-child(2):nth-of-type(7) {
+    color: #2ecc71; /* green-blue */
+  }
 }
