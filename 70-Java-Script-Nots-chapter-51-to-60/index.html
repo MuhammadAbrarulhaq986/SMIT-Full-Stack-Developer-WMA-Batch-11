@@ -41,26 +41,28 @@
     <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <!--* Simple image swap on mouseover -->
     <!--* This image will swap to second.webp when the mouse is hovered over it -->
-    <img src="./image/first.webp" onMouseover="src='./image/second.webp'" />
+    <!-- <img src="./image/first.webp" onMouseover="src='./image/second.webp'" /> -->
+
     <!-- ********************************************************************************************************************* -->
+
     <!--* Image swap using a function and id -->
     <!--* This image will call the swapPic function when the mouse is hovered over it, passing the id "before" and the new image source "./image/third.webp" -->
-    <img
+    <!-- <img
       src="./image/first.webp"
       id="before"
       onMouseover="swapPic(id,'./image/third.webp');"
-    />
+    /> -->
     <!-- ********************************************************************************************************************* -->
 
     <!--* This image will also call the swapPic function when the mouse is hovered over it, passing the id "before" and the new image source "./image/forth.webp" -->
-    <img
+    <!-- <img
       src="./image/first.webp"
       id="before"
       onMouseover="swapPic('before','./image/forth.webp');"
-    />
+    /> -->
     <!-- ********************************************************************************************************************* -->
 
-    <script>
+    <!-- <script>
       //* Function to swap the image with a specific id (in this case, "before")
       function swapPic() {
         //* Get the element with id "before" and change its source to forth.webp
@@ -84,9 +86,121 @@
           );
         }
       }
-    </script>
+    </script> -->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- * Example 1: Swap Image 
+    <!-- HTML -->
+    <!-- <img id="before" src="./image/second.webp" alt="Before Picture" />
+
+    <!-- JavaScript -->
+    <!-- <script>
+      function swapPic() {
+        // Get the image element with id "before"
+        var pic = document.getElementById("before");
+        // Change the src attribute to "after-pic.jpg"
+        pic.src = "./image/third.webp";
+      }
+    </script> -->
+
+    <!-- Example 2: Get Link Address -->
+    <!-- HTML -->
+    <!-- <a id="link1" href="http://wikipedia.org">Wikipedia</a> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      function getAddress() {
+        // Get the link element with id "link1"
+        var link = document.getElementById("link1");
+        // Get the href attribute of the link
+        var address = link.href;
+        console.log(address); // Output: "http://wikipedia.org"
+      }
+    </script> -->
+
+    <!-- Example 3: Change Form Formatting -->
+    <!-- HTML -->
+    <!-- <form id="f12"> -->
+    <!-- form fields here -->
+    <!-- </form> -->
+
+    <!-- CSS -->
+    <!-- <style>
+      .jumbo {
+        font-size: 24px;
+      }
+    </style> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      function enlargeForm() {
+        // Get the form element with id "f12"
+        var frm = document.getElementById("f12");
+        // Change the class attribute to "jumbo"
+        frm.className = "jumbo";
+      }
+    </script> -->
     <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
+    <!-- HTML -->
+    <title>Style Properties Example</title>
+    <style>
+      /* CSS styles */
+      .big {
+        font-size: 30px;
+      }
+    </style>
+
+    <h1 id="heading">Heading</h1>
+    <p id="p1">This is a paragraph of text.</p>
+    <img id="pic99" src="./image/second.webp" alt="An image" />
+    <div id="div9">This div will be made invisible.</div>
+    <img id="mainPic" src="./image/third.webp" alt="Main image" />
+
+    <!-- JavaScript -->
+    <script>
+      function makeBig() {
+        // Add a CSS class to an element
+        document.getElementById("p1").className += " big";
+
+        // Alternatively, set a style property directly
+        document.getElementById("heading").style.fontSize = "30px";
+      }
+
+      function floatImage() {
+        document.getElementById("pic99").style.cssFloat = "left";
+      }
+
+      function hideDiv() {
+        document.getElementById("div9").style.visibility = "hidden";
+      }
+
+      function setMargins() {
+        document.getElementById("mainPic").style.margin = "0 10px 0 10px";
+      }
+
+      // Read style properties
+      function getMargin() {
+        var m = document.getElementById("mainPic").style.margin;
+        console.log("Inline margin:", m);
+
+        // Get all style properties, including CSS styles (not supported in IE < 9)
+        var computedStyle = window.getComputedStyle(
+          document.getElementById("mainPic")
+        );
+        console.log("Computed margin:", computedStyle.margin);
+      }
+    </script>
+
+    <!-- Call the functions -->
+    <button onclick="makeBig()">Make text big</button>
+    <button onclick="floatImage()">Float image</button>
+    <button onclick="hideDiv()">Hide div</button>
+    <button onclick="setMargins()">Set margins</button>
+    <button onclick="getMargin()">Get margin</button>
+
+    <!-- ****************************************************** -->
+
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <script src="script.js"></script>
   </body>
 </html>
