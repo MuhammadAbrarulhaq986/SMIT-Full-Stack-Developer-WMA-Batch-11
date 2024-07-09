@@ -14,6 +14,7 @@ async function fetchNews(category) {
         // Construct the API URL with the category and API key
         const url = `https://newsapi.org/v2/top-headlines?q=${category}&sortBy=popularity&apiKey=${apiKey}`;
         // Fetch the data from the API
+
         const response = await fetch(url);
         // Parse the response as JSON
         const data = await response.json();
