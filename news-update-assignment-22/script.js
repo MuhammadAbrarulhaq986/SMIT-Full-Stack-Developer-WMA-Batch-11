@@ -7,15 +7,21 @@ const newsContainer = document.getElementById('news-container');
 
 /**
  * Fetch news articles from News API
- * @param {string} category - Category of news to fetch (e.g. "general", "sports", etc.)
+//  * @param {string} category - Category of news to fetch (e.g. "general", "sports", etc.)
  */
 async function fetchNews(category) {
     try {
         // Construct the API URL with the category and API key
         const url = `https://newsapi.org/v2/top-headlines?q=${category}&sortBy=popularity&apiKey=${apiKey}`;
         // Fetch the data from the API
-
         const response = await fetch(url);
+        if (!response.ok) {
+            if (response.status === 426) {
+                throw new Error('The server refuses to perform the requested operation. Please check the API documentation and configuration.');
+            } else {
+                throw new Error(`Error fetching news: ${response.statusText}`);
+            }
+        }
         // Parse the response as JSON
         const data = await response.json();
         // Check if the API returned any articles
@@ -32,7 +38,7 @@ async function fetchNews(category) {
 
 /**
  * Display news articles in the news container
- * @param {array} articles - Array of news article objects
+//  * @param {array} articles - Array of news article objects
  */
 function displayNews(articles) {
     // Clear the news container
