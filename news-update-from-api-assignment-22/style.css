@@ -1,0 +1,137 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  /* margin: 2px;
+  padding: 2px; */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #ffffff; /* Use hex code for white */
+  background-color: #000000; /* Use hex code for black */
+}
+
+/* Header Styles */
+
+header {
+  text-shadow: -1px 2px 20px yellow;
+  background-color: #000000; /* Use hex code for black */
+  color: #ffffff; /* Use hex code for white */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  text-shadow: -1px 2px 20px yellow;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+
+nav ul {
+  color: white;
+  background-color: darkred;
+  text-shadow: -1px 2px 20px yellow;
+  font-size: 18px;
+  border-radius: 30px;
+  height: 40px;
+  width: auto;
+  list-style: none;
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  /* margin-right: 20px; */
+  margin: auto;
+  text-shadow: -1px 2px 20px yellow;
+}
+
+nav a {
+  text-shadow: -1px 2px 20px yellow;
+  color: white; /* Use hex code for dark gray */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  text-shadow: -1px 2px 20px yellow;
+  color: white; /* Use hex code for medium gray */
+}
+
+/* News Container Styles */
+
+#news-container {
+  color: #ffffff; /* Use hex code for white */
+  background-color: #000000; /* Use hex code for black */
+  box-shadow: -1px 2px 30px darkred;
+  border: 1px solid darkred;
+  /* Use hex code for light gray */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* News Card Styles */
+
+.card {
+  box-shadow: -1px 2px 20px yellow;
+  color: #ffffff; /* Use hex code for white */
+  background-color: #000000; /* Use hex code for black */
+  border-bottom: 1px solid #dddddd; /* Use hex code for light gray */
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card .card-body {
+  color: #ffffff; /* Use hex code for white */
+  background-color: #000000; /* Use hex code for black */
+  padding: 20px;
+}
+
+.card .card-title {
+  text-shadow: -1px 2px 20px yellow;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .card-text {
+  font-size: 18px;
+  color: #ffffff; /* Use hex code for white */
+  background-color: #000000; /* Use hex code for black */
+}
+
+.card .btn {
+  box-shadow: -1px 2px 20px black;
+  background-color: darkred;
+  transition: background-color 0.5s ease;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+.card .btn:hover {
+  box-shadow: -1px 2px 20px black;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid darkred;
+  color: darkred;
+  opacity: 0.8;
+}
