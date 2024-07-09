@@ -1,82 +1,42 @@
-// // script.js
-// const apiKey = '537cbe11ca604f30b4debda136041914';
-// let newsContainer = null;
-// // Initialize it here
 
-// // Function to fetch news articles from NewsAPI
-// async function fetchNews(category) {
-//     try {
-//         const response = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${apiKey}`);
-//         const data = await response.json();
-//         const articles = data.articles;
-//         displayNews(articles);
-//     } catch (error) {
-//         console.error(error);
-//     }
-// }
-
-// // Function to display news articles
-// function displayNews(articles) {
-//     newsContainer.innerHTML = ''; // Now this should work!
-//     articles.forEach((article) => {
-//         const newsCard = document.createElement('div');
-//         newsCard.className = 'card mb-3';
-//         newsCard.innerHTML = `
-//       <img src="${article.urlToImage}" class="card-img-top" alt="${article.title}">
-//       <div class="card-body">
-//         <h5 class="card-title">${article.title}</h5>
-//         <p class="card-text">${article.description}</p>
-//         <a href="${article.url}" target="_blank" class="btn btn-primary">Read More</a>
-//       </div>
-//     `;
-//         newsContainer.appendChild(newsCard);
-//     });
-// }
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     newsContainer = document.getElementById('news-container');// Assign it here
-//     const categoryLinks = document.querySelectorAll('.category-link');
-
-//     categoryLinks.forEach((link) => {
-//         link.addEventListener('click', (e) => {
-//             const category = e.target.getAttribute('data-category');
-//             fetchNews(category);
-//         });
-//     });
-
-//     // Move the initial fetch inside the DOMContentLoaded event handler
-//     newsContainer.innerHTML = ''; // Clear the container
-//     function initNewsContainer() {
-//         newsContainer = document.getElementById('news-container');
-//         fetchNews('general'); // Initial fetch on page load
-//     }
-
-//     document.addEventListener('DOMContentLoaded', initNewsContainer);
-// });
-
-
+// API key for News API
 const apiKey = '537cbe11ca604f30b4debda136041914';
-let newsContainer = null;
 
+// Get the news container element
+const newsContainer = document.getElementById('news-container');
+
+/**
+ * Fetch news articles from News API
+ * @param {string} category - Category of news to fetch (e.g. "general", "sports", etc.)
+ */
 async function fetchNews(category) {
     try {
-        const response = await fetch(`https://newsapi.org/v2/top-headlines?q=${category}&sortBy=popularity&apiKey=${apiKey}`);
-        if (!response.ok) {
-            throw new Error(`Error fetching data: ${response.status} ${response.statusText}`);
-        }
+        // Construct the API URL with the category and API key
+        const url = `https://newsapi.org/v2/top-headlines?q=${category}&sortBy=popularity&apiKey=${apiKey}`;
+        // Fetch the data from the API
+        const response = await fetch(url);
+        // Parse the response as JSON
         const data = await response.json();
-        const articles = data.articles;
-        console.log('Received articles:', articles);
-        displayNews(articles);
+        // Check if the API returned any articles
+        if (!data.articles) {
+            throw new Error('No articles found');
+        }
+        // Display the news articles
+        displayNews(data.articles);
     } catch (error) {
+        // Log any errors to the console
         console.error('Error fetching news:', error);
     }
 }
 
+/**
+ * Display news articles in the news container
+ * @param {array} articles - Array of news article objects
+ */
 function displayNews(articles) {
+    // Clear the news container
     newsContainer.innerHTML = '';
-    console.log('Displaying news articles:', articles);
+    // Loop through each article and create a news card
     articles.forEach((article) => {
         const newsCard = document.createElement('div');
         newsCard.className = 'card mb-3';
@@ -88,20 +48,20 @@ function displayNews(articles) {
         <a href="${article.url}" target="_blank" class="btn btn-primary">Read More</a>
       </div>
     `;
+        // Add the news card to the news container
         newsContainer.appendChild(newsCard);
     });
 }
 
+// Add event listeners to category links
 document.addEventListener('DOMContentLoaded', () => {
-    newsContainer = document.getElementById('news-container');
     const categoryLinks = document.querySelectorAll('.category-link');
-
     categoryLinks.forEach((link) => {
         link.addEventListener('click', (e) => {
             const category = e.target.getAttribute('data-category');
             fetchNews(category);
         });
     });
-
+    // Fetch general news by default
     fetchNews('general');
 });
