@@ -15,7 +15,7 @@ async function fetchNews(category) {
     }
     try {
         // Construct the API URL with the category and API key
-        const url = `https://newsapi.org/v2/top-headlines?category=${category}&country=us&apiKey=${apiKey}`;
+        const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apiKey}`;
         // Fetch the data from the API
         const response = await fetch(url);
         if (!response.ok) {
@@ -55,13 +55,13 @@ function displayNews(articles) {
         const newsCard = document.createElement('div');
         newsCard.className = 'card mb-3';
         newsCard.innerHTML = `
-   <img src="${article.urlToImage}" class="card-img-top" alt="${article.title}">
-   <div class="card-body">
-     <h5 class="card-title">${article.title}</h5>
-     <p class="card-text">${article.description}</p>
-     <a href="${article.url}" target="_blank" class="btn btn-primary">Read More</a>
-   </div>
- `;
+            <img src="${article.urlToImage}" class="card-img-top" alt="${article.title}">
+            <div class="card-body">
+                <h5 class="card-title">${article.title}</h5>
+                <p class="card-text">${article.description}</p>
+                <a href="${article.url}" target="_blank" class="btn btn-primary">Read More</a>
+            </div>
+        `;
         // Add the news card to the news container
         newsContainer.appendChild(newsCard);
     });
@@ -71,7 +71,6 @@ function displayNews(articles) {
 document.addEventListener('DOMContentLoaded', () => {
     const categoryLinks = document.querySelectorAll('.category-link');
     categoryLinks.forEach((link) => {
-
         link.addEventListener('click', (e) => {
             const category = e.target.getAttribute('data-category');
             if (category && category.trim() !== '') {
