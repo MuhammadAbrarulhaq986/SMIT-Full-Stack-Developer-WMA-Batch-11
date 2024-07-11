@@ -2,22 +2,30 @@
 
 * {
   box-sizing: border-box;
-  /* margin: 2px;
-  padding: 2px; */
+  margin: 2px;
+  padding: 2px;
 }
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #ffffff; /* Use hex code for white */
-  background-color: #000000; /* Use hex code for black */
+  margin: auto;
+  padding: 10px;
+  background-image: url("./image/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+  background-color: #00000067;
 }
 
 /* Header Styles */
 
 header {
   text-shadow: -1px 2px 20px yellow;
-  background-color: #000000; /* Use hex code for black */
+  background-color: #00000041;
+  /* Use hex code for black */
   color: #ffffff; /* Use hex code for white */
   padding: 20px;
   text-align: center;
@@ -34,7 +42,7 @@ header h1 {
 
 nav ul {
   color: white;
-  background-color: darkred;
+  background-color: rgba(139, 0, 0, 0.4);
   text-shadow: -1px 2px 20px yellow;
   font-size: 18px;
   border-radius: 30px;
@@ -69,24 +77,30 @@ nav a:hover {
 
 #news-container {
   color: #ffffff; /* Use hex code for white */
-  background-color: #000000; /* Use hex code for black */
-  box-shadow: -1px 2px 30px darkred;
-  border: 1px solid darkred;
-  /* Use hex code for light gray */
-  max-width: 800px;
+  /* background-color: #000000; Use hex code for black */
+  border: none; /* Remove the border */ /* Add a subtle gradient */
+  max-width: 1200px; /* Increase the max width to accommodate multiple cards */
   margin: 40px auto;
-  padding: 20px;
+  padding: 30px;
+  font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+  display: flex; /* Add flexbox display */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: space-between; /* Distribute cards evenly */
 }
 
 /* News Card Styles */
 
 .card {
-  box-shadow: -1px 2px 20px yellow;
-  color: #ffffff; /* Use hex code for white */
-  background-color: #000000; /* Use hex code for black */
-  border-bottom: 1px solid #dddddd; /* Use hex code for light gray */
-  margin-bottom: 20px;
+  /* box-shadow: -1px 2px 20px yellow; */
+  /* Use hex code for white */
+  color: #ffffff;
+  background-color: #00000000;
+  /* Use hex code for black */
+  /* Use yellow for border */
+  border-bottom: 1px solid yellow;
+  margin: 20px; /* Add margin to create space between cards */
   padding: 20px;
+  width: calc(45% - 40px); /* Set the width to 45% of the container */
 }
 
 .card img {
@@ -98,7 +112,8 @@ nav a:hover {
 
 .card .card-body {
   color: #ffffff; /* Use hex code for white */
-  background-color: #000000; /* Use hex code for black */
+  background-color: #00000062;
+  /* Use hex code for black */
   padding: 20px;
 }
 
@@ -112,7 +127,7 @@ nav a:hover {
 .card .card-text {
   font-size: 18px;
   color: #ffffff; /* Use hex code for white */
-  background-color: #000000; /* Use hex code for black */
+  background-color: #00000046; /* Use hex code for black */
 }
 
 .card .btn {

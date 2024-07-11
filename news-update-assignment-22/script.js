@@ -1,4 +1,3 @@
-
 // API key for News API
 const apiKey = '537cbe11ca604f30b4debda136041914';
 
@@ -7,17 +6,23 @@ const newsContainer = document.getElementById('news-container');
 
 /**
  * Fetch news articles from News API
-//  * @param {string} category - Category of news to fetch (e.g. "general", "sports", etc.)
+ * @param {string} category - Category of news to fetch (e.g. "general", "sports", etc.)
  */
 async function fetchNews(category) {
+    if (!category || category.trim() === '') {
+        newsContainer.innerHTML = `<p>Please select a valid category.</p>`;
+        return;
+    }
     try {
         // Construct the API URL with the category and API key
-        const url = `https://newsapi.org/v2/top-headlines?q=${category}&sortBy=popularity&apiKey=${apiKey}`;
+        const url = `https://newsapi.org/v2/top-headlines?category=${category}&country=us&apiKey=${apiKey}`;
         // Fetch the data from the API
         const response = await fetch(url);
         if (!response.ok) {
             if (response.status === 426) {
                 throw new Error('The server refuses to perform the requested operation. Please check the API documentation and configuration.');
+            } else if (response.status === 404) {
+                throw new Error('Resource not found. Please check the API URL and try again.');
             } else {
                 throw new Error(`Error fetching news: ${response.statusText}`);
             }
@@ -33,12 +38,14 @@ async function fetchNews(category) {
     } catch (error) {
         // Log any errors to the console
         console.error('Error fetching news:', error);
+        // Display an error message to the user
+        newsContainer.innerHTML = `<p>Error: ${error.message}</p>`;
     }
 }
 
 /**
  * Display news articles in the news container
-//  * @param {array} articles - Array of news article objects
+ * @param {array} articles - Array of news article objects
  */
 function displayNews(articles) {
     // Clear the news container
@@ -48,13 +55,13 @@ function displayNews(articles) {
         const newsCard = document.createElement('div');
         newsCard.className = 'card mb-3';
         newsCard.innerHTML = `
-      <img src="${article.urlToImage}" class="card-img-top" alt="${article.title}">
-      <div class="card-body">
-        <h5 class="card-title">${article.title}</h5>
-        <p class="card-text">${article.description}</p>
-        <a href="${article.url}" target="_blank" class="btn btn-primary">Read More</a>
-      </div>
-    `;
+   <img src="${article.urlToImage}" class="card-img-top" alt="${article.title}">
+   <div class="card-body">
+     <h5 class="card-title">${article.title}</h5>
+     <p class="card-text">${article.description}</p>
+     <a href="${article.url}" target="_blank" class="btn btn-primary">Read More</a>
+   </div>
+ `;
         // Add the news card to the news container
         newsContainer.appendChild(newsCard);
     });
@@ -64,11 +71,21 @@ function displayNews(articles) {
 document.addEventListener('DOMContentLoaded', () => {
     const categoryLinks = document.querySelectorAll('.category-link');
     categoryLinks.forEach((link) => {
+
         link.addEventListener('click', (e) => {
             const category = e.target.getAttribute('data-category');
-            fetchNews(category);
+            if (category && category.trim() !== '') {
+                fetchNews(category);
+            } else {
+                console.error('Category is null or undefined');
+            }
         });
     });
     // Fetch general news by default
     fetchNews('general');
+
+    // Check for third-party cookie warning
+    if (navigator.userAgent.includes('Chrome')) {
+        console.warn('Third-party cookies will be blocked in future Chrome versions as part of Privacy Sandbox.');
+    }
 });
