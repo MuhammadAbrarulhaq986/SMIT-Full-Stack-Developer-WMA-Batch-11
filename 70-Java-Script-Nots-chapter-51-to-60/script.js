@@ -54,31 +54,61 @@
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // Function to swap the image with a specific id
-function swapPic() {
-    // Get the element with id "before" and change its source to forth.webp
-    document.getElementById("before").src = "./image/forth.webp";
-}
+// function swapPic() {
+//     // Get the element with id "before" and change its source to forth.webp
+//     document.getElementById("before").src = "./image/forth.webp";
+// }
 
 //   ************************************************************************************************************************************************************
 
-// Function to swap the image with a given id and new image source
-function swapPic(eId, newPic) {
-    // Get the element with the given id
-    const elem = document.getElementById(eId);
-    // Check if the element exists and is an image
-    if (elem && elem.tagName === 'IMG') {
-        // Change the source of the image
-        elem.src = newPic;
-    } else {
-        // Log an error if the element is not found or is not an image
-        console.error(`Element with id "${eId}" not found or is not an image`);
-    }
-}
+// // Function to swap the image with a given id and new image source
+// function swapPic(eId, newPic) {
+//     // Get the element with the given id
+//     const elem = document.getElementById(eId);
+//     // Check if the element exists and is an image
+//     if (elem && elem.tagName === 'IMG') {
+//         // Change the source of the image
+//         elem.src = newPic;
+//     } else {
+//         // Log an error if the element is not found or is not an image
+//         console.error(`Element with id "${eId}" not found or is not an image`);
+//     }
+// }
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
+//   ************************************************************************************************************************************************************
+
+//   ************************************************************************************************************************************************************
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+//   ************************************************************************************************************************************************************
 
 
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
