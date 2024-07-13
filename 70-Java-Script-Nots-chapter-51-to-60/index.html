@@ -357,23 +357,134 @@
     <!-- ************************************************************************* -->
     <!--* Example 3: Getting all images within a specific section  -->
     <!-- The section with id "gallery" that contains images -->
-    <section id="gallery">
-      <img src="image1.jpg" alt="Image 1" />
-      <img src="image2.jpg" alt="Image 2" />
-      <img src="image3.jpg" alt="Image 3" />
+    <!-- <section id="gallery">
+      <img src="./image/first.webp" alt="Image 1" />
+      <img src="./image/second.webp" alt="Image 2" />
+      <img src="./image/third.webp" alt="Image 3" />
     </section>
     <script>
       // Get the section element with id "gallery"
       var gallery = document.getElementById("gallery");
-
       // Get a collection of all img elements (images) within the section
       var images = gallery.getElementsByTagName("img");
-
       // Loop through each image and do something with it, like logging its src attribute
       for (var i = 0; i < images.length; i++) {
         console.log(images[i].src);
       }
-    </script>
+    </script> -->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- * Example 1: Accessing elements using getElementById and getElementsByTagName -->
+    <!-- HTML -->
+    <!-- <div id="myDiv">
+      <p>This is a paragraph.</p>
+      <p>This is another paragraph.</p>
+    </div> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      // Using getElementById to access the div element
+      var myDiv = document.getElementById("myDiv");
+      console.log(myDiv); // Output: <div id="myDiv">...</div>
+
+      // Using getElementsByTagName to access all paragraph elements
+      var paragraphs = document.getElementsByTagName("p");
+      console.log(paragraphs); // Output: HTMLCollection of 2 paragraph elements
+    </script> -->
+    <!-- ************************************************************************* -->
+    <!-- * Example 2: Understanding the Document Object Model (DOM) -->
+    <!-- HTML -->
+    <!-- <html>
+      <head>
+        <title>Simple Document</title>
+      </head>
+      <body>
+        <div>
+          <p>There's not much to this.</p>
+          <p>Nor to this.</p>
+        </div>
+      </body>
+    </html> -->
+    <!-- <script>
+      //  The DOM is an organization chart of the entire web page
+      console.log(document); // Output: The entire HTML document
+      // Accessing the html element
+      var htmlElement = document.documentElement;
+      console.log(htmlElement); // Output: <html>...</html>
+      // Accessing the body element
+      var bodyElement = document.body;
+      console.log(bodyElement); // Output: <body>...</body>
+      // Accessing the div element
+      // Get the first child element of the body (assuming it's a div element)
+      var divElement = document.body.children[0];
+      console.log(divElement); // Output: <div>...</div>
+      // Accessing the paragraph elements
+      var paragraphElements = divElement.children;
+      console.log(paragraphElements); // Output: HTMLCollection of 2 paragraph elements
+    </script> -->
+
+    <!-- ************************************************************************* -->
+    <!-- * Example 3: Understanding nodes in the DOM -->
+    <!-- HTML -->
+    <!-- <html>
+      <head>
+        <title>Simple Document</title>
+      </head>
+      <body>
+        <div>
+          <p>There's not much to this.</p>
+          <p>Nor to this.</p>
+        </div>
+      </body>
+    </html> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      // The document node is the top level node in the DOM tree
+      // It represents the entire HTML document
+      console.log(document.nodeType); // Output: 9 (DOCUMENT_NODE)
+
+      // The html element is an element node
+      // It is the root element of the HTML document
+      var htmlElement = document.documentElement;
+      console.log(htmlElement.nodeType); // Output: 1 (ELEMENT_NODE)
+
+      // The title element is an element node
+      // It is a child of the head element and contains the title of the page
+      var titleElement = document.head.children[0];
+      console.log(titleElement.nodeType); // Output: 1 (ELEMENT_NODE)
+
+      // The text node inside the title element
+      // It contains the actual text content of the title element
+      var titleTextNode = titleElement.childNodes[0];
+      console.log(titleTextNode.nodeType); // Output: 3 (TEXT_NODE)
+
+      // The div element is an element node
+      // It is a child of the body element and contains other elements
+      var divElement = document.body.children[0];
+      console.log(divElement.nodeType); // Output: 1 (ELEMENT_NODE)
+
+      // The paragraph elements are element nodes
+      // They are children of the div element and contain text content
+      var paragraphElements = divElement.children;
+      console.log(paragraphElements[0].nodeType); // Output: 1 (ELEMENT_NODE)
+      console.log(paragraphElements[1].nodeType); // Output: 1 (ELEMENT_NODE)
+
+      // The text nodes inside the paragraph elements
+      // They contain the actual text content of the paragraph elements
+      var paragraphTextNodes = paragraphElements[0].childNodes;
+      console.log(paragraphTextNodes[0].nodeType); // Output: 3 (TEXT_NODE)
+      console.log(paragraphTextNodes[1].nodeType); // Output: 3 (TEXT_NODE)
+      // Note: nodeType values are as follows:  
+      // 1: ELEMENT_NODE
+      // 3: TEXT_NODE
+      // 9: DOCUMENT_NODE
+      // and so on...
+    </script> -->
+
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <!-- ************************************************************************* -->
+
     <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <script src="script.js"></script>
   </body>
