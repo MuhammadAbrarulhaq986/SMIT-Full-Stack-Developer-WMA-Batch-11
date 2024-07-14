@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- HTML Markup --><!-- HTML Markup -->
+    <!-- <body>
+      <div id="cal">
+        <p>Southern Cal is sunny.</p>
+        <p>Northern Cal is rainy.</p>
+        <p>Eastern Cal is desert.</p>
+      </div>
+      <div id="ny">
+        <p>Urban NY is crowded.</p>
+        <p>Rural NY is sparse.</p>
+      </div>
+    </body> -->
+
+    <!-- JavaScript Code -->
+    <!-- <script>
+      // Targeting elements using getElementById
+      var calDiv = document.getElementById("cal"); // targets the element with id "cal"
+      var nyDiv = document.getElementById("ny"); // targets the element with id "ny"
+
+      // Targeting elements using getElementsByTagName
+      var paragraphs = document.getElementsByTagName("p"); // targets all <p> elements in the document
+      var contents = paragraphs[2].innerHTML; // targets the third paragraph and reads its contents
+
+      // Targeting elements within a specific div
+      var paragraphsInCalDiv = calDiv.getElementsByTagName("p"); // targets all <p> elements within the div with id "cal"
+      var contents = paragraphsInCalDiv[2].innerHTML; // targets the third paragraph within the div and reads its contents
+
+      var paragraphsInNyDiv = nyDiv.getElementsByTagName("p"); // targets all <p> elements within the div with id "ny"
+      var contents = paragraphsInNyDiv[1].innerHTML; // targets the second paragraph within the div and reads its contents
+
+      // Alternative way to target the same paragraph
+      var p = nyDiv.childNodes[1]; // targets the second <p> element within the div with id "ny"
+      var contents = p.innerHTML; // reads the contents of the targeted paragraph
+    </script> -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div id="parent">
+      <div id="div1">
+        <div id="div2">
+          <p>Chicago</p>
+          <p>Kansas City</p>
+          <p>St. Louis</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Example 1: Using firstChild and lastChild
+      var parentNode = document.getElementById("parent");
+      var firstChild = parentNode.firstChild;
+      var lastChild = parentNode.lastChild;
+      console.log("First Child:", firstChild);
+      console.log("Last Child:", lastChild);
+
+      // Example 2: Using parentNode
+      var kidNode = document.getElementById("div2");
+      var pNode = kidNode.parentNode;
+      console.log("Parent Node:", pNode);
+
+      // Example 3: Using nextSibling and previousSibling
+      var firstEl = document.getElementById("div1");
+      var secondEl = firstEl.nextSibling;
+      var nonexistentEl = firstEl.previousSibling;
+      console.log("Next Sibling:", secondEl);
+      console.log("Previous Sibling:", nonexistentEl);
+
+      // Example 4: Targeting a node with document.getElementById
+      var targetNode = document.getElementById("div2");
+      console.log("Target Node:", targetNode);
+    </script>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <script src="script.js"></script>
+  </body>
+</html>
