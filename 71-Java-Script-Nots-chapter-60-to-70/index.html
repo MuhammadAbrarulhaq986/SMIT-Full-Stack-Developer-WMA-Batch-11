@@ -42,8 +42,8 @@
       var p = nyDiv.childNodes[1]; // targets the second <p> element within the div with id "ny"
       var contents = p.innerHTML; // reads the contents of the targeted paragraph
     </script> -->
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <div id="parent">
+    <!-- !!! CHAPTER 62 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- <div id="parent">
       <div id="div1">
         <div id="div2">
           <p>Chicago</p>
@@ -51,9 +51,9 @@
           <p>St. Louis</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <script>
+    <!-- <script>
       // Example 1: Using firstChild and lastChild
       var parentNode = document.getElementById("parent");
       var firstChild = parentNode.firstChild;
@@ -76,7 +76,37 @@
       // Example 4: Targeting a node with document.getElementById
       var targetNode = document.getElementById("div2");
       console.log("Target Node:", targetNode);
-    </script>
+    </script> -->
+    <!-- !! CHAPTER 63 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- HTML -->
+    <!-- <div id="div1">
+      <h2>Do <em>not</em> hit!</h2>
+    </div> -->
+    <!-- <script>
+      // Get the parent element
+      var parent = document.getElementById("div1");
+      // Get the first child of the parent element
+      var target = parent.firstChild;
+      // Get the node type of the target node
+      var nType = target.nodeType;
+      console.log(`Node type: ${nType}`); // 3 for text node, 1 for element node
+      // Get the node name of the target node
+      var nName = target.nodeName;
+      console.log(`Node name: ${nName}`); // "H2" for the h2 element, "#text" for text node
+      // Get the node value of the target node (only for text nodes)
+      var nTextContent = target.nodeValue;
+      console.log(`Node value: ${nTextContent}`); // "Do " for the text node
+
+      // Standardize the case when testing for node names
+      if (target.nodeName.toLowerCase() === "h2") {
+        console.log("This is an h2 element");
+      }
+
+      // Check if the node is a text node
+      if (target.nodeName === "#text") {
+        console.log("This is a text node");
+      }
+    </script> -->
     <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <script src="script.js"></script>
   </body>
