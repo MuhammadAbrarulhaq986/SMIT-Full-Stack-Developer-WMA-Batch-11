@@ -107,7 +107,106 @@
         console.log("This is a text node");
       }
     </script> -->
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!--!!!! CHAPTER 64 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!-- HTML -->
+    <!-- <div id="d1">
+      <p>This is a paragraph</p>
+      <img src="./image/image1.webp" alt="Image 1" />
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+      <img src="./image/image2.webp" alt="Image 2" />
+      <p>This is another paragraph</p>
+    </div> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      // Get the parent node with the id "d1"
+      var parentNode = document.getElementById("d1");
+
+      // Get a collection of all the child nodes of the parent node
+      var nodeList = parentNode.childNodes;
+
+      // Get the number of items in the collection
+      var howManyKids = nodeList.length;
+
+      // Count the number of images within the div
+      var numberPics = 0;
+      for (var i = 0; i < howManyKids; i++) {
+        // Check if the node name is "img" (ignoring case)
+        if (nodeList[i].nodeName.toLowerCase() === "img") {
+          // Increment the image counter
+          numberPics++;
+        }
+      }
+
+      // Log the result
+      console.log("There are " + numberPics + " images within the div.");
+    </script> -->
+    <!--!!! CHAPTER 65 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- Attributes in HTML -->
+
+    <!-- Example 1: A simple anchor tag with an attribute -->
+    <!-- <p>
+      <a href="http://www.amazon.com">Shop</a>
+      <!-- In this example, href is an attribute of the <a> element, and its value is "http://www.amazon.com" -->
+    <!-- </p> -->
+
+    <!-- Example 2: Multiple attributes on an element -->
+    <!-- <div id="p1">
+      <p class="special">
+        <img src="./image/image1.webp" />
+        <span style="font-size: 24px"> -->
+    <!-- In this example, the <div> element has an attribute id with value "p1", 
+           the <p> element has an attribute class with value "special", 
+           the <img> element has an attribute src with value "images/slow-loris.png", 
+           and the <span> element has an attribute style with value "font-size:24px;" -->
+    <!-- </span>
+      </p>
+    </div> -->
+
+    <!-- Example 3: An image tag with multiple attributes -->
+    <!-- <p>
+      <img src="./image/dan.gif" alt="Dan" height="42" width="42" />
+      <!-- In this example, the <img> element has four attributes: src with value "dan.gif", 
+           alt with value "Dan", height with value "42", and width with value "42" -->
+    <!-- </p>   -->
+
+    <!-- Example 4: Using hasAttribute to check for an attribute -->
+    <!-- <script>
+      var target = document.getElementById("p1");
+      if (target) {
+        // Check if the element exists
+        var hasClass = target.hasAttribute("class");
+        console.log(hasClass); // true or false
+        /* In this example, we use hasAttribute to check if the element with id "p1" has an attribute called "class". 
+       If it does, hasClass will be true, otherwise it will be false */
+      } else {
+        console.error("Element with id 'p1' not found");
+      }
+    </script>
+
+    <!-- Example 5: Using getAttribute to read an attribute value -->
+    <!-- <div id="div1" class="some-class">Some content</div> -->
+
+    <!-- <script>
+      var target = document.getElementById("div1");
+      if (target) {
+        // Check if the element exists
+        var attVal = target.getAttribute("class");
+        console.log(attVal); // the value of the class attribute
+        /* In this example, we use getAttribute to read the value of the "class" attribute of the element with id "div1". 
+       The value will be stored in the attVal variable */
+
+        // Set a new value for the "class" attribute
+        target.setAttribute("class", "new-class");
+      } else {
+        console.error("Element with id 'div1' not found");
+      }
+    </script> -->
+
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     <script src="script.js"></script>
   </body>
 </html>
