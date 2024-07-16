@@ -206,6 +206,83 @@
       }
     </script> -->
 
+    <!--!!!!! CHAPTER 66 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+    <!-- HTML -->
+    <!-- <p id="p1" class="c1" onMouseover="chgColor(this);">This is a paragraph</p> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      // Define the chgColor function
+      function chgColor(element) {
+        element.style.color = "yellow";
+      }
+
+      // Get the collection of attributes for the element with id "p1"
+      var list = document.getElementById("p1").attributes;
+      // Get the number of attributes in the collection
+      var numOfItems = list.length;
+      console.log("Number of attributes: " + numOfItems);
+      // Get the name of the third attribute in the collection
+      var nName = list[2].nodeName;
+      console.log("Name of third attribute: " + nName);
+      // Get the value of the third attribute in the collection
+      var nValue = list[2].nodeValue;
+      console.log("Value of third attribute: " + nValue);
+    </script> -->
+    <!--!!!! CHAPTER 67 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--* We'll add our paragraph node here -->
+    <!-- <div id="container"></div> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      // Create a paragraph node
+      var nodeToAdd = document.createElement("p");
+      // Add a class attribute to the paragraph node
+      nodeToAdd.setAttribute("class", "regular");
+      // Create a text node with the content "Hello!"
+      var newTxt = document.createTextNode("Hello!");
+      // Add the text node to the paragraph node
+      nodeToAdd.appendChild(newTxt);
+      // Get the container element
+      var container = document.getElementById("container");
+      // Insert the paragraph node into the container
+      container.appendChild(nodeToAdd);
+    </script> -->
+
+    <!--!!!! CHAPTER 68  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!-- HTML -->
+    <!-- <div id="div1">
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+    </div> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      // Get the parent div element
+      var parentDiv = document.getElementById("div1");
+      // Create a new paragraph element
+      var newParagraph = document.createElement("p");
+      // Create the text to go in the paragraph
+      var t = document.createTextNode("Hello world!");
+      // Add the text to the paragraph
+      newParagraph.appendChild(t);
+
+      // Append the paragraph to the parent div (will be added at the end)
+      // parentDiv.appendChild(newParagraph);
+      // Instead, let's insert the paragraph at the beginning
+      var firstChild = parentDiv.firstChild;
+      parentDiv.insertBefore(newParagraph, firstChild);
+      // Or, let's insert the paragraph after the second child
+      var target = parentDiv.childNodes[1];
+      parentDiv.insertBefore(newParagraph, target.nextSibling);
+      // To remove a node, use removeChild
+      var nodeToRemove = parentDiv.childNodes[2];
+      parentDiv.removeChild(nodeToRemove);
+    </script> -->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
     <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     <script src="script.js"></script>
   </body>
