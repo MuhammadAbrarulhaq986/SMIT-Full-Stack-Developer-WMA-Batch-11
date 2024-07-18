@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <!-- ************************************************************************************************************************************************** -->
+    <!-- !!! CHAPTER 71 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <h1>Hosting Plan Calculator</h1>
+    <form>
+      <!--* Select a plan dropdown -->
+      <label for="plan">Select a plan:</label>
+      <select id="plan">
+        <option value="Basic">Basic</option>
+        <option value="Professional">Professional</option>
+        <option value="Ultimate">Ultimate</option>
+      </select>
+      <br /><br />
+      <!--* Discount percentage input field -->
+      <label for="discount">Discount percentage:</label>
+      <input type="number" id="discount" value="0.85" />
+      <br /><br />
+      <!--* Calculate Annual Charge button -->
+      <button type="button" onclick="calculateAnnualCharge()">
+        Calculate Annual Charge
+      </button>
+      <!--* Result paragraph -->
+      <p id="result"></p>
+    </form>
+
+    <script>
+      // Define the plans object, which contains three plans: Basic, Professional, and Ultimate
+      var plans = {
+        // Basic plan
+        Basic: {
+          name: "Basic",
+          price: 3.99,
+          space: 100,
+          transfer: 1000,
+          pages: 10,
+          discountMonths: [6, 7], // months when discount applies (June and July)
+          // Calculate annual charge with discount if applicable
+          calcAnnual: function (percentIfDisc) {
+            // Get the best price (original price or discounted price)
+            var bestPrice = this.price;
+            var currDate = new Date();
+            var thisMo = currDate.getMonth();
+            // Check if the current month is a discount month
+            for (var i = 0; i < this.discountMonths.length; i++) {
+              if (this.discountMonths[i] === thisMo) {
+                // Apply discount if it's a discount month
+                bestPrice = this.price * percentIfDisc;
+                break;
+              }
+            }
+            // Return the annual charge (best price multiplied by 12)
+            return bestPrice * 12;
+          },
+        },
+
+        // Professional plan
+        Professional: {
+          name: "Professional",
+          price: 5.99,
+          space: 500,
+          transfer: 5000,
+          pages: 50,
+          discountMonths: [6, 7, 11], // months when discount applies (June, July, and November)
+          // Calculate annual charge with discount if applicable
+          calcAnnual: function (percentIfDisc) {
+            // Get the best price (original price or discounted price)
+            var bestPrice = this.price;
+            var currDate = new Date();
+            var thisMo = currDate.getMonth();
+            // Check if the current month is a discount month
+            for (var i = 0; i < this.discountMonths.length; i++) {
+              if (this.discountMonths[i] === thisMo) {
+                // Apply discount if it's a discount month
+                bestPrice = this.price * percentIfDisc;
+                break;
+              }
+            }
+            // Return the annual charge (best price multiplied by 12)
+            return bestPrice * 12;
+          },
+        },
+
+        // Ultimate plan
+        Ultimate: {
+          name: "Ultimate",
+          price: 9.99,
+          space: 1000,
+          transfer: 10000,
+          pages: 100,
+          discountMonths: [6, 7], // months when discount applies (June and July)
+          // Calculate annual charge with discount if applicable
+          calcAnnual: function (percentIfDisc) {
+            // Get the best price (original price or discounted price)
+            var bestPrice = this.price;
+            var currDate = new Date();
+            var thisMo = currDate.getMonth();
+            // Check if the current month is a discount month
+            for (var i = 0; i < this.discountMonths.length; i++) {
+              if (this.discountMonths[i] === thisMo) {
+                // Apply discount if it's a discount month
+                bestPrice = this.price * percentIfDisc;
+                break;
+              }
+            }
+            // Return the annual charge (best price multiplied by 12)
+            return bestPrice * 12;
+          },
+        },
+      };
+
+      // Calculate Annual Charge function
+      function calculateAnnualCharge() {
+        // Get the selected plan and discount percentage from the HTML form
+        var plan = document.getElementById("plan").value;
+        var discount = parseFloat(document.getElementById("discount").value);
+
+        // Check if the discount percentage is valid (between 0 and 1)
+        if (discount <= 0 || discount > 1) {
+          // If not, show an alert with an error message
+          alert("Discount percentage should be between 0 and 1");
+          return;
+        }
+
+        // Calculate the annual charge using the selected plan's calcAnnual method
+        var annualCharge = plans[plan].calcAnnual(discount);
+
+        // Display the result in the #result paragraph
+        document.getElementById("result").innerHTML =
+          "The annual charge for the " +
+          plans[plan].name +
+          " plan is $" +
+          annualCharge.toFixed(2);
+      }
+    </script>
+    <!-- ************************************************************************************************************************************************** -->
+    <script src="script.js"></script>
+  </body>
+</html>
