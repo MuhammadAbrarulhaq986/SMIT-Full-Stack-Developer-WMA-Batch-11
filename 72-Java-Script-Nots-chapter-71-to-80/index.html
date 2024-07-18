@@ -9,29 +9,29 @@
   <body>
     <!-- ************************************************************************************************************************************************** -->
     <!-- !!! CHAPTER 71 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <h1>Hosting Plan Calculator</h1>
-    <form>
-      <!--* Select a plan dropdown -->
-      <label for="plan">Select a plan:</label>
+    <!-- <h1>Hosting Plan Calculator</h1> -->
+    <!-- <form> -->
+    <!--* Select a plan dropdown -->
+    <!-- <label for="plan">Select a plan:</label>
       <select id="plan">
         <option value="Basic">Basic</option>
         <option value="Professional">Professional</option>
         <option value="Ultimate">Ultimate</option>
-      </select>
-      <br /><br />
-      <!--* Discount percentage input field -->
-      <label for="discount">Discount percentage:</label>
-      <input type="number" id="discount" value="0.85" />
-      <br /><br />
-      <!--* Calculate Annual Charge button -->
-      <button type="button" onclick="calculateAnnualCharge()">
+      </select> -->
+    <br /><br />
+    <!--* Discount percentage input field -->
+    <!-- <label for="discount">Discount percentage:</label>
+      <input type="number" id="discount" value="0.85" /> -->
+    <br /><br />
+    <!--* Calculate Annual Charge button -->
+    <!-- <button type="button" onclick="calculateAnnualCharge()">
         Calculate Annual Charge
-      </button>
-      <!--* Result paragraph -->
-      <p id="result"></p>
-    </form>
+      </button> -->
+    <!--* Result paragraph -->
+    <!-- <p id="result"></p> -->
+    <!-- </form> -->
 
-    <script>
+    <!-- <script>
       // Define the plans object, which contains three plans: Basic, Professional, and Ultimate
       var plans = {
         // Basic plan
@@ -139,7 +139,67 @@
           " plan is $" +
           annualCharge.toFixed(2);
       }
-    </script>
+    </script> -->
+    <!-- !!! CHAPTER 72 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- <h1>Hosting Plans</h1>
+    <ul id="plans"></ul> -->
+
+    <!-- <script>
+      // Constructor function to create hosting plans
+      function Plan(name, price, space, transfer, pages) {
+        // Assign properties to the object
+        this.name = name;
+        this.price = price;
+        this.space = space;
+        this.transfer = transfer;
+        this.pages = pages;
+      }
+
+      // Create objects for each hosting plan
+      var plan1 = new Plan("Basic", 3.99, 100, 1000, 10);
+      var plan2 = new Plan("Premium", 5.99, 500, 5000, 50);
+      var plan3 = new Plan("Ultimate", 9.99, 2000, 20000, 500);
+
+      // Display the hosting plans
+      var plansList = document.getElementById("plans");
+      plansList.innerHTML = "";
+      plansList.innerHTML +=
+        "<li>" +
+        plan1.name +
+        ": $" +
+        plan1.price +
+        " (Space: " +
+        plan1.space +
+        "MB, Transfer: " +
+        plan1.transfer +
+        "MB, Pages: " +
+        plan1.pages +
+        ")</li>";
+      plansList.innerHTML +=
+        "<li>" +
+        plan2.name +
+        ": $" +
+        plan2.price +
+        " (Space: " +
+        plan2.space +
+        "MB, Transfer: " +
+        plan2.transfer +
+        "MB, Pages: " +
+        plan2.pages +
+        ")</li>";
+      plansList.innerHTML +=
+        "<li>" +
+        plan3.name +
+        ": $" +
+        plan3.price +
+        " (Space: " +
+        plan3.space +
+        "MB, Transfer: " +
+        plan3.transfer +
+        "MB, Pages: " +
+        plan3.pages +
+        ")</li>";
+    </script> -->
     <!-- ************************************************************************************************************************************************** -->
     <script src="script.js"></script>
   </body>
