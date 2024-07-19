@@ -200,6 +200,108 @@
         plan3.pages +
         ")</li>";
     </script> -->
+
+    <!-- !!! CHAPTER 73 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <!--* This is an HTML element that will display the output of our JavaScript code -->
+    <div id="output"></div>
+
+    <script>
+      // This is a constructor function that creates a new Plan object
+      function Plan(name, price, space, transfer, pages, discountMonths) {
+        // These are the properties of the Plan object
+        this.name = name;
+        this.price = price;
+        this.space = space;
+        this.transfer = transfer;
+        this.pages = pages;
+        this.discountMonths = discountMonths;
+
+        // This is a method of the Plan object that calculates the annual price
+        this.calcAnnual = function (percentIfDisc) {
+          // Initialize the best price to the regular price
+          var bestPrice = this.price;
+          // Get the current date and month
+          var currDate = new Date();
+          var thisMo = currDate.getMonth();
+          // Check if the current month is in the discount months array
+          for (var i = 0; i < this.discountMonths.length; i++) {
+            if (this.discountMonths[i] === thisMo) {
+              // If it is, apply the discount to the price
+              bestPrice = this.price * percentIfDisc;
+              break;
+            }
+          }
+          // Return the annual price (best price multiplied by 12)
+          return bestPrice * 12;
+        };
+      }
+
+      // Example 1: Creating objects with a constructor function
+      // Create three new Plan objects using the constructor function
+      var p1 = new Plan("Basic", 3.99, 100, 1000, 10, [6, 7]);
+      var p2 = new Plan("Premium", 5.99, 500, 5000, 50, [6, 7, 11]);
+      var p3 = new Plan("Ultimate", 9.99, 2000, 20000, 500, [6, 7]);
+
+      // Call the calcAnnual method on one of the objects
+      var annualPrice = p2.calcAnnual(0.85);
+      // Display the result in the output div
+      document.getElementById("output").innerHTML +=
+        "Annual price for Premium plan: $" + annualPrice.toFixed(2) + "<br>";
+
+      // Example 2: One-off object creation with a method
+      // Create a single object with a method
+      var p = {
+        name: "Basic",
+        price: 3.99,
+        space: 100,
+        transfer: 1000,
+        pages: 10,
+        discountMonths: [6, 7],
+        calcAnnual: function (percentIfDisc) {
+          // This method is similar to the one in the constructor function
+          var bestPrice = this.price;
+          var currDate = new Date();
+          var thisMo = currDate.getMonth();
+          for (var i = 0; i < this.discountMonths.length; i++) {
+            if (this.discountMonths[i] === thisMo) {
+              bestPrice = this.price * percentIfDisc;
+              break;
+            }
+          }
+          return bestPrice * 12;
+        },
+      };
+
+      // Call the method on the object
+      var annualPrice = p.calcAnnual(0.85);
+      // Display the result in the output div
+      document.getElementById("output").innerHTML +=
+        "Annual price for Basic plan: $" + annualPrice.toFixed(2) + "<br>";
+
+      // Example 3: Using a constructor function to create multiple objects with the same method
+      // Create an array to store multiple Plan objects
+      var plans = [];
+      // Create three new Plan objects using the constructor function
+      plans.push(new Plan("Basic", 3.99, 100, 1000, 10, [6, 7]));
+      plans.push(new Plan("Premium", 5.99, 500, 5000, 50, [6, 7, 11]));
+      plans.push(new Plan("Ultimate", 9.99, 2000, 20000, 500, [6, 7]));
+
+      // Call the method on each object and display the results
+      var output = "";
+      for (var i = 0; i < plans.length; i++) {
+        var annualPrice = plans[i].calcAnnual(0.85);
+        output +=
+          "Annual price for " +
+          plans[i].name +
+          " plan: $" +
+          annualPrice.toFixed(2) +
+          "<br>";
+      }
+      // Display the results in the output div
+      document.getElementById("output").innerHTML += output;
+    </script>
+
     <!-- ************************************************************************************************************************************************** -->
     <script src="script.js"></script>
   </body>
