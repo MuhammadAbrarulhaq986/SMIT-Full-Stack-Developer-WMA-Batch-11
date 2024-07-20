@@ -303,7 +303,7 @@
     </script> -->
     <!-- !!! CHAPTER 74 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <!-- * HTML Table Example -->
-    <table>
+    <!-- <table>
       <tr>
         <th>Object</th>
         <th>name</th>
@@ -336,7 +336,7 @@
         <td>true</td>
         <td>324</td>
       </tr>
-    </table>
+    </table> -->
     <!-- * Example 1: Shared Method using Prototype -->
     <!-- <script>
       // Define a constructor function
@@ -395,7 +395,7 @@
       console.log(plan3.cancellable); // Output: true
     </script> -->
     <!-- * Example 3: Overriding a Prototype Property -->
-    <script>
+    <!-- <script>
       // Define a constructor function
       function Plan(name, price, discountMonths) {
         this.name = name;
@@ -414,6 +414,75 @@
       console.log(plan1.cancellable); // Output: false
       console.log(plan2.cancellable); // Output: true
       console.log(plan3.cancellable); // Output: true
+    </script> -->
+
+    <!-- !!! CHAPTER 75 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <h1>Checking for Properties and Methods</h1>
+    <div id="plan1">
+      <h2 id="name"></h2>
+      <p id="price"></p>
+      <p id="space"></p>
+      <p id="transfer"></p>
+      <p id="pages"></p>
+      <p id="discountMonths"></p>
+    </div>
+
+    <script>
+      // Define the object
+      var plan1 = {
+        name: "Basic",
+        price: 3.99,
+        space: 100,
+        transfer: 1000,
+        pages: 10,
+        discountMonths: [1, 2, 3],
+        calcAnnual: function () {
+          return this.price * 12;
+        },
+      };
+
+      // Update the HTML with the object's properties
+      document.getElementById("name").innerHTML = plan1.name;
+      document.getElementById("price").innerHTML = "Price: " + plan1.price;
+      document.getElementById("space").innerHTML =
+        "Space: " + plan1.space + " MB";
+      document.getElementById("transfer").innerHTML =
+        "Transfer: " + plan1.transfer + " GB";
+      document.getElementById("pages").innerHTML = "Pages: " + plan1.pages;
+      document.getElementById("discountMonths").innerHTML =
+        "Discount months: " + plan1.discountMonths;
+
+      // Check if an object has a particular property
+      var gotTheProperty = "price" in plan1; // true
+      console.log(gotTheProperty); // Output: true
+
+      var gotTheProperty = "location" in plan1; // false
+      console.log(gotTheProperty); // Output: false
+
+      // Check if an object has a particular method
+      var gotTheProperty = "calcAnnual" in plan1; // true
+      console.log(gotTheProperty); // Output: true
+
+      // Get a list of an object's properties
+      var listOfProperties = [];
+      for (var prop in plan1) {
+        listOfProperties.push(prop);
+      }
+      console.log(listOfProperties); // Output: ["name", "price", "space", "transfer", "pages", "discountMonths", "calcAnnual"]
+
+      // Get a list of an object's own properties (excluding inherited properties)
+      var listOfProperties = [];
+      for (var prop in plan1) {
+        if (plan1.hasOwnProperty(prop)) {
+          listOfProperties.push(prop);
+        }
+      }
+      console.log(listOfProperties); // Output: ["name", "price", "space", "transfer", "pages", "discountMonths", "calcAnnual"]
+
+      // Test a literal property name
+      var isOwnedProperty = plan1.hasOwnProperty("price"); // true
+      console.log(isOwnedProperty); // Output: true
     </script>
     <!-- ************************************************************************************************************************************************** -->
     <script src="script.js"></script>
