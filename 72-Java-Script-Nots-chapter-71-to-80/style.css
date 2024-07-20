@@ -3,7 +3,8 @@ body {
   background: rgb(0, 46, 44);
   background: radial-gradient(circle, rgb(0, 52, 50) 0%, rgb(0, 123, 101) 100%);
   color: white;
-  text-shadow: -30px 1px 30px yellow;
+  text-shadow: -2px 1px 15px yellow;
+  box-shadow: -2px 1px 15px yellow;
   font-size: 20px;
   font-weight: 600;
   margin: 5px;

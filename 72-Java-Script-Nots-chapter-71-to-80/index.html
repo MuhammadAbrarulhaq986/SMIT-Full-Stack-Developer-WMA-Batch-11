@@ -204,8 +204,8 @@
     <!-- !!! CHAPTER 73 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
     <!--* This is an HTML element that will display the output of our JavaScript code -->
-    <div id="output"></div>
-
+    <!-- <div id="output"></div> -->
+    <!-- 
     <script>
       // This is a constructor function that creates a new Plan object
       function Plan(name, price, space, transfer, pages, discountMonths) {
@@ -300,8 +300,121 @@
       }
       // Display the results in the output div
       document.getElementById("output").innerHTML += output;
-    </script>
+    </script> -->
+    <!-- !!! CHAPTER 74 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- * HTML Table Example -->
+    <table>
+      <tr>
+        <th>Object</th>
+        <th>name</th>
+        <th>price</th>
+        <th>discountMonths</th>
+        <th>cancellable</th>
+        <th>calcAnnual()</th>
+      </tr>
+      <tr>
+        <td>plan1</td>
+        <td>Basic</td>
+        <td>10</td>
+        <td>[0, 1, 2]</td>
+        <td>false</td>
+        <td>108</td>
+      </tr>
+      <tr>
+        <td>plan2</td>
+        <td>Premium</td>
+        <td>20</td>
+        <td>[3, 4, 5]</td>
+        <td>true</td>
+        <td>216</td>
+      </tr>
+      <tr>
+        <td>plan3</td>
+        <td>Enterprise</td>
+        <td>30</td>
+        <td>[6, 7, 8]</td>
+        <td>true</td>
+        <td>324</td>
+      </tr>
+    </table>
+    <!-- * Example 1: Shared Method using Prototype -->
+    <!-- <script>
+      // Define a constructor function
+      function Plan(name, price, discountMonths) {
+        this.name = name;
+        this.price = price;
+        this.discountMonths = discountMonths;
+      }
 
+      // Define a prototype method
+      Plan.prototype.calcAnnual = function (percentIfDisc) {
+        var bestPrice = this.price;
+        var currDate = new Date();
+        var thisMo = currDate.getMonth();
+        for (var i = 0; i < this.discountMonths.length; i++) {
+          if (this.discountMonths[i] === thisMo) {
+            bestPrice = this.price * percentIfDisc;
+            break;
+          }
+        }
+        return bestPrice * 12;
+      };
+
+      // Create objects using the constructor
+
+      var plan1 = new Plan("Basic", 10, [0, 1, 2]);
+      var plan2 = new Plan("Premium", 20, [3, 4, 5]);
+      var plan3 = new Plan("Enterprise", 30, [6, 7, 8]);
+
+      // Call the shared method on each object
+      console.log(plan1.calcAnnual(0.9)); // Output: 108
+      console.log(plan2.calcAnnual(0.9)); // Output: 216
+      console.log(plan3.calcAnnual(0.9)); // Output: 324
+    </script> -->
+    <!-- ************************************************************************************************************************************************** -->
+    <!-- * Example 2: Shared Property using Prototype -->
+    <!-- <script>
+      // Define a constructor function
+      function Plan(name, price, discountMonths) {
+        this.name = name;
+        this.price = price;
+        this.discountMonths = discountMonths;
+      }
+
+      // Define a prototype property
+      Plan.prototype.cancellable = true;
+
+      // Create objects using the constructor
+      var plan1 = new Plan("Basic", 10, [0, 1, 2]);
+      var plan2 = new Plan("Premium", 20, [3, 4, 5]);
+      var plan3 = new Plan("Enterprise", 30, [6, 7, 8]);
+
+      // Access the shared property on each object
+      console.log(plan1.cancellable); // Output: true
+      console.log(plan2.cancellable); // Output: true
+      console.log(plan3.cancellable); // Output: true
+    </script> -->
+    <!-- * Example 3: Overriding a Prototype Property -->
+    <script>
+      // Define a constructor function
+      function Plan(name, price, discountMonths) {
+        this.name = name;
+        this.price = price;
+        this.discountMonths = discountMonths;
+      }
+      // Define a prototype property
+      Plan.prototype.cancellable = true;
+      // Create objects using the constructor
+      var plan1 = new Plan("Basic", 10, [0, 1, 2]);
+      var plan2 = new Plan("Premium", 20, [3, 4, 5]);
+      var plan3 = new Plan("Enterprise", 30, [6, 7, 8]);
+      // Override the prototype property for one object
+      plan1.cancellable = false;
+      // Access the property on each object
+      console.log(plan1.cancellable); // Output: false
+      console.log(plan2.cancellable); // Output: true
+      console.log(plan3.cancellable); // Output: true
+    </script>
     <!-- ************************************************************************************************************************************************** -->
     <script src="script.js"></script>
   </body>
