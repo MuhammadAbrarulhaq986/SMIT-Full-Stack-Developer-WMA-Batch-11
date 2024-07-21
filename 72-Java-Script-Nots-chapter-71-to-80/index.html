@@ -418,7 +418,7 @@
 
     <!-- !!! CHAPTER 75 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-    <h1>Checking for Properties and Methods</h1>
+    <!-- <h1>Checking for Properties and Methods</h1>
     <div id="plan1">
       <h2 id="name"></h2>
       <p id="price"></p>
@@ -426,9 +426,9 @@
       <p id="transfer"></p>
       <p id="pages"></p>
       <p id="discountMonths"></p>
-    </div>
+    </div> -->
 
-    <script>
+    <!-- <script>
       // Define the object
       var plan1 = {
         name: "Basic",
@@ -483,7 +483,99 @@
       // Test a literal property name
       var isOwnedProperty = plan1.hasOwnProperty("price"); // true
       console.log(isOwnedProperty); // Output: true
-    </script>
+    </script> -->
+    <!-- !!! CHAPTER 76 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- <script>
+      // Getting the Current Location
+      // Get the full URL of the current page
+      var whereWeAt = window.location.href;
+      console.log(whereWeAt); // Output: "http://www.mybeautifulsite.com/products/page33.html#humidifier"
+      // Get the domain name of the current page
+      var theDomain = window.location.hostname;
+      console.log(theDomain); // Output: "www.mybeautifulsite.com"
+      // Get the path of the current page
+      var thePath = window.location.pathname;
+      console.log(thePath); // Output: "/products/page33.html"
+      // Get the anchor of the current page
+      var theAnchor = window.location.hash;
+      console.log(theAnchor); // Output: "#humidifier"
+
+
+      // Directing the Browser to a New Location
+      // Direct the browser to a new URL
+      window.location.href = "http://www.google.com/1.html";
+
+      // Direct the browser to the home page of the current site
+      window.location.href = "http://www.google.com";
+
+      // Direct the browser to an anchor on a new page
+      window.location.href = "http://www.google.com/1.html#section9";
+
+      // Direct the browser to a new page on the current site
+      var currentSite = window.location.hostname;
+      var destination = "http://" + currentSite + "/wow.html";
+      window.location.href = destination;
+
+      // Direct the browser to an anchor on the current page
+      var currentSite = window.location.hostname;
+      var currentPath = window.location.pathname;
+      var destination = "http://" + currentSite + currentPath + "#humidifier";
+      window.location.href = destination;
+
+
+      // Alternative Ways to Direct the Browser
+      // Omitting window is legal, but including it is more common
+      location.href = "http://www.google.com/1.html";
+      // Omitting href is legal when detecting the URL, but including it is preferred
+      var currentUrl = window.location;
+      console.log(currentUrl); // Output: "http://www.mybeautifulsite.com/products/page33.html#humidifier"
+      // Using document.URL as an alternative to window.location.href
+      var currentUrl = document.URL;
+      console.log(currentUrl); // Output: "http://www.mybeautifulsite.com/products/page33.html#humidifier"
+    </script> -->
+    <!-- !!! CHAPTER 77 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <!-- <script>
+      // Example 1: Directing the browser to a new URL using window.location.assign()
+      // Direct the browser to the home page of me.com
+      // window.location.assign("http://www.google.com");
+      // Output: The browser will navigate to http://www.me.com
+
+      // Example 2: Directing the browser to a new URL with an anchor using window.location.assign()
+      // Direct the browser to the anchor #guarantee on the lojack.html page of the site me.com
+      // window.location.assign("http://www.google.com");
+      // Output: The browser will navigate to http://www.me.com/lojack.html#guarantee
+
+      // Example 3: Directing the browser to a new URL and modifying the browser history using window.location.replace()
+      // Direct the browser to the anchor #guarantee on the lojack.html page of the site me.com
+      // and remove the current page from the browser history
+      // window.location.replace("http://www.google.com");
+      // Output: The browser will navigate to http://www.me.com/lojack.html#guarantee
+      // and the user will not be able to go back to the original page using the back button
+
+      // Example 4: Reloading the current page from the server using window.location.reload()
+      // Reload the current page from the server
+      // window.location.reload(true);
+      // Output: The browser will reload the current page from the server
+
+      // Example 5: Reloading the current page from the cache using window.location.reload()
+      // Reload the current page from the cache
+      // window.location.reload(false);
+      // Output: The browser will reload the current page from the cache if it has been cached
+
+      // Example 6: Reloading the current page without specifying the source using window.location.reload()
+      // Reload the current page
+      // window.location.reload();
+      // Output: The browser will reload the current page from the cache if it has been cached, otherwise it will load from the server
+
+      // Example 7: Reloading the current page using window.location.href
+      // Reload the current page
+      // window.location.href = window.location.href;
+      // Output: The browser will reload the current page, but it doesn't allow specifying whether to load from the server or cache
+      //
+    </script> -->
+    <!-- !!! CHAPTER 78 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
     <!-- ************************************************************************************************************************************************** -->
     <script src="script.js"></script>
   </body>
