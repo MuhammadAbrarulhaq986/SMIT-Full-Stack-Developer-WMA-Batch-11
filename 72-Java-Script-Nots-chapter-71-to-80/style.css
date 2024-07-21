@@ -10,3 +10,22 @@ body {
   margin: 5px;
   padding: 5px;
 }
+/* Button styling */
+button {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+button:hover {
+  background-color: black;
+}
+
+img {
+  width: 250px;
+  height: 260px;
+}

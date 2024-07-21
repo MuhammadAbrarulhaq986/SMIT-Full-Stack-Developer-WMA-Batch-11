@@ -575,7 +575,98 @@
       //
     </script> -->
     <!-- !!! CHAPTER 78 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- <h1>Browser Control Example</h1> -->
+    <!-- <script>
+      // Go back one step in the browser history, like pressing the Backspace key or clicking the back button
+      // history.back();
 
+      // Go forward one step in the browser history, like pressing alt-right-arrow or clicking the forward button
+      // history.forward();
+
+      // Go back three steps in the browser history, like pressing the Backspace key three times
+      // history.go(-3);
+
+      // Go forward two steps in the browser history
+      // history.go(2);
+
+      // Go back one step in the browser history, alternative way
+      // history.go(-1);
+
+      // Go forward one step in the browser history, alternative way
+      // history.go(1);
+
+      // Get the URL of the page where the link was clicked to get to the current page
+      var whereUserCameFrom = document.referrer;
+      console.log(whereUserCameFrom); // output: the URL of the page where the link was clicked
+
+      // Note: if the user got to the page through a bookmark or by entering the URL in the address bar,
+      // document.referrer will be an empty string ""
+      if (whereUserCameFrom === "") {
+        console.log("User did not come from a link");
+      } else {
+        console.log("User came from a link");
+      }
+    </script> -->
+
+    <!-- !!! CHAPTER 79 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <h1>Open a Popup Window</h1>
+    <button onclick="openPopup()">Open Popup</button>
+
+    <script>
+      // Function to open a popup window
+      function openPopup() {
+        // Open a new window and assign it a handle (variable)
+        var monkeyWindow = window.open();
+
+        // Create HTML content to fill the window
+        var windowContent =
+          "<h1>Capuchin monkey</h1><img src='./image/wall.webp'style=''width=320,height=280'><p>The word capuchin derives from a group of friars<br>named the Order of Friars Minor Capuchin who wear<br>brown robes with large hoods covering their heads.</p>";
+
+        // Fill the window with the HTML content using the write method
+        monkeyWindow.document.write(windowContent);
+      }
+
+      // Function to close the popup window
+      function closePopup() {
+        monkeyWindow.close();
+      }
+    </script>
+
+    <!-- !!! CHAPTER 80 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <h1>Controlling Window Size and Location</h1>
+    <p>
+      Click the buttons to open new windows with specified sizes and locations.
+    </p>
+
+    <!-- Button to open a new window with a specified URL, name, and size -->
+    <button
+      onclick="window.open('./../01-introduction-to-html/index.html', 'win1', 'width=420,height=380')"
+    >
+      Open monk.html in a new window (420x380)
+    </button>
+
+    <!-- Button to open a new window with a specified URL, name, size, and position -->
+    <button
+      onclick="window.open('./../01-introduction-to-html/index.html', '', 'width=420,height=380,left=200,top=100')"
+    >
+      Open new window (420x380) at position (200,100)
+    </button>
+
+    <!-- Link to open a new window with a specified URL and name -->
+    <p>
+      <a href="./../01-introduction-to-html/index.html" target="win1"
+        >Open monk.html in a new window (target="win1")</a
+      >
+    </p>
+
+    <script>
+      // Assigning parameters to a variable
+      var windowSpecs =
+        "'./../01-introduction-to-html/index.html', 'faq', 'width=420,height=380,left=200,top=100'";
+      var faqPage = window.open(windowSpecs);
+    </script>
     <!-- ************************************************************************************************************************************************** -->
     <script src="script.js"></script>
   </body>
