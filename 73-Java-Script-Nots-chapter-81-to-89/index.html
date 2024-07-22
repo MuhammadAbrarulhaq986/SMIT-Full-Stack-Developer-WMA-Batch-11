@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <!-- ************************************************************************************************************************************************************************ -->
+    <!--!!!! CHAPTER No: 81   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- Example 1: Basic Popup Blocker Test -->
+    <!-- <h2>Example 1: Basic Popup Blocker Test</h2> -->
+    <!-- 
+  This script checks if a popup blocker is enabled by attempting to open a new window.
+  If the window cannot be opened, it alerts the user to disable their popup blocker.
+-->
+    <!-- <script>
+  function checkForPopBlocker1() {
+    // Attempt to open a new window with a size of 100x100
+    var testPop = window.open("", "", "width=100,height=100");
+    // If the window cannot be opened, alert the user
+    if (testPop === null) {
+      alert("Please disable your popup blocker.");
+    } else {
+      // If the window can be opened, close it immediately
+      testPop.close();
+    }
+  }
+</script> -->
+    <!-- <button onclick="checkForPopBlocker1()">Run Basic Test</button> -->
+
+    <!-- <h2>Example 2: Cross-Browser Compatible Popup Blocker Test</h2> -->
+    <!-- 
+  This script is similar to the first example, but it checks for both null and undefined
+  to ensure compatibility with different browsers.
+-->
+    <!-- <script>
+      function checkForPopBlocker2() {
+        // Attempt to open a new window with a size of 100x100
+        var testPop = window.open("", "", "width=100,height=100");
+        // If the window cannot be opened, alert the user
+        if (testPop === null || typeof testPop === "undefined") {
+          alert("Please disable your popup blocker.");
+        } else {
+          // If the window can be opened, close it immediately
+          testPop.close();
+        }
+      }
+    </script> -->
+    <!-- <button onclick="checkForPopBlocker2()">Run Cross-Browser Test</button> -->
+
+    <!-- <h2>Example 3: Testing for Popup Blockers with a Custom Message</h2> -->
+    <!-- 
+  This script is similar to the first example, but it displays a custom message
+  when the popup blocker is detected.
+-->
+    <!-- <script>
+      function checkForPopBlocker3() {
+        // Attempt to open a new window with a size of 100x100
+        var testPop = window.open("", "", "width=100,height=100");
+        // If the window cannot be opened, alert the user with a custom message
+        if (testPop === null) {
+          alert(
+            "It looks like your popup blocker is enabled. Please disable it to access our site's features."
+          );
+        } else {
+          // If the window can be opened, close it immediately
+          testPop.close();
+        }
+      }
+    </script> -->
+    <!-- <button onclick="checkForPopBlocker3()">Run Custom Message Test</button> -->
+
+    <!-- <h2>Example 4: Running the Test on Page Load</h2> -->
+    <!-- 
+  This script runs the popup blocker test automatically when the page loads.
+-->
+    <!-- <script>
+      function checkForPopBlocker4() {
+        // Attempt to open a new window with a size of 100x100
+        var testPop = window.open("", "", "width=100,height=100");
+        // If the window cannot be opened, alert the user
+        if (testPop === null || typeof testPop === "undefined") {
+          alert("Please disable your popup blocker.");
+        } else {
+          // If the window can be opened, close it immediately
+          testPop.close();
+        }
+      }
+    </script> -->
+    <!-- <script>
+      // Run the test automatically when the page loads
+      window.onload = checkForPopBlocker4;
+    </script> -->
+    <!-- This test will run automatically when the page loads -->
+
+    <!--!!!! CHAPTER No: 82   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <!-- ************************************************************************************************************************************************************************ -->
+    <script src="script.js"></script>
+  </body>
+</html>
