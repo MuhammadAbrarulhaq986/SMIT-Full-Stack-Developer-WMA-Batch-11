@@ -28,3 +28,15 @@ button:active {
   transform: translateY(2px);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+form {
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+  text-shadow: -2px 2px 10px green;
+  color: white;
+  width: auto;
+  height: auto;
+  background-color: maroon;
+  box-shadow: -2px 2px 10px black;
+}

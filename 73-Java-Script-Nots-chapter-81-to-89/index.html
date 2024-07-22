@@ -96,6 +96,92 @@
     <!-- This test will run automatically when the page loads -->
 
     <!--!!!! CHAPTER No: 82   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!--* Example 1: Basic Form Validation -->
+    <!-- The form with an onSubmit event handler that calls the checkForLastName function -->
+    <!-- <form onSubmit="return checkForLastName();"> -->
+    <!-- The input field for the last name -->
+    <!-- <label for="lastNameField">Please enter your last name:</label>
+      <input type="text" id="lastNameField" /> -->
+    <!-- The submit button -->
+    <!-- <input type="submit" value="Submit Form" />
+    </form> -->
+
+    <!-- The JavaScript function that checks for a valid last name -->
+    <!-- <script>
+      function checkForLastName() {
+        // Get the input field element
+        var lastNameField = document.getElementById("lastNameField");
+        // Check if the field is empty
+        if (lastNameField.value.length === 0) {
+          // Alert the user to enter a last name
+          alert("Please enter your last name");
+          // Prevent the form from submitting
+          return false;
+        }
+      }
+    </script> -->
+
+    <!-- * Example 2: Adding Focus to the Field -->
+    <!-- The form with an onSubmit event handler that calls the checkForLastName function -->
+    <!-- <form onSubmit="return checkForLastName();"> -->
+    <!-- The input field for the last name -->
+    <!-- <label for="lastNameField">Please enter your last name:</label>
+      <input type="text" id="lastNameField" /> -->
+    <!-- The submit button -->
+    <!-- <input type="submit" value="Submit Form" />
+    </form> -->
+
+    <!-- The JavaScript function that checks for a valid last name and adds focus to the field -->
+    <!-- <script>
+      function checkForLastName() {
+        // Get the input field element
+        var lastNameField = document.getElementById("lastNameField");
+
+        // Check if the field is empty
+        if (lastNameField.value.length === 0) {
+          // Alert the user to enter a last name
+          alert("Please enter your last name");
+          // Focus on the field
+          lastNameField.focus();
+          // Prevent the form from submitting
+          return false;
+        }
+      }
+    </script> -->
+
+    <!-- * Example 3: Adding a Yellow Background to the Field -->
+    <!-- The form with an onSubmit event handler that calls the checkForLastName function -->
+    <!-- <form onSubmit="return checkForLastName();"> -->
+    <!-- <!-- The input field for the last name -->
+    <!-- <label for="lastNameField">Please enter your last name:</label>
+      <input type="text" id="lastNameField" /> -->
+    <!-- The submit button -->
+    <!-- <input type="submit" value="Submit Form" />
+    </form> -->
+
+    <!-- The JavaScript function that checks for a valid last name, adds focus to the field, and changes the background color -->
+    <!-- <script>
+      function checkForLastName() {
+        // Get the input field element
+        var lastNameField = document.getElementById("lastNameField");
+
+        // Check if the field is empty
+        if (lastNameField.value.length === 0) {
+          // Alert the user to enter a last name
+          alert("Please enter your last name");
+          // Focus on the field
+          lastNameField.focus();
+          // Change the background color to yellow
+          lastNameField.style.background = "yellow";
+          // Prevent the form from submitting
+          return false;
+        } else {
+          // Restore the background color to white
+          lastNameField.style.background = "white";
+        }
+      }
+    </script> -->
+    <!--!!!! CHAPTER No: 83  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
     <!-- ************************************************************************************************************************************************************************ -->
     <script src="script.js"></script>
