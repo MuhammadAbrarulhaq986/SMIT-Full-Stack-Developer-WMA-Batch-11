@@ -182,6 +182,191 @@
       }
     </script> -->
     <!--!!!! CHAPTER No: 83  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!--* Example 1: Basic Form Validation with Drop-downs -->
+    <!--* The form with a select-a-state field -->
+    <!-- <form onSubmit="return checkForSelection();">
+      <select id="states"> -->
+    <!-- The first option is selected by default -->
+    <!-- <option value="" selected="selected">SELECT A STATE</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option></select
+      >&nbsp;&nbsp; -->
+    <!--* &nbsp; is an HTML entity that represents a non-breaking space (NBSP). It's used to insert a space between words or characters that shouldn't be separated by a line break. -->
+    <!-- <input type="submit" value="Submit Form" />
+    </form> -->
+
+    <!-- The JavaScript function to validate the form -->
+    <!-- <script>
+      function checkForSelection() {
+        // Get the select element by its ID
+        var statesSelect = document.getElementById("states");
+
+        // Check if the user hasn't made a selection (selectedIndex === 0)
+        if (statesSelect.selectedIndex === 0) {
+          // Display an alert asking the user to select a state
+          alert("Please select a state.");
+
+          // Return false to cancel the form submission
+          return false;
+        }
+      }
+    </script> -->
+
+    <!-- ************************************************************************************************************************************************************************ -->
+    <!-- * Example 2: Revised Function with Parameter and Variable -->
+    <!-- The form with a select-a-state field -->
+    <!-- <form onSubmit="return checkForSelection('states');">
+      <select id="states"> -->
+    <!-- The first option is selected by default -->
+    <!-- <option value="" selected="selected">SELECT A STATE</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option></select
+      >&nbsp;&nbsp;
+      <input type="submit" value="Submit Form" />
+    </form> -->
+
+    <!-- The JavaScript function to validate the form -->
+    <!-- <script>
+      function checkForSelection(selecID) {
+        // Get the select element by its ID using the parameter
+        var target = document.getElementById(selecID);
+
+        // Check if the user hasn't made a selection (selectedIndex === 0)
+        if (target.selectedIndex === 0) {
+          // Display an alert asking the user to select a state
+          alert("Please select a state.");
+
+          // Return false to cancel the form submission
+          return false;
+        }
+      }
+    </script> -->
+
+    <!--!!!! CHAPTER No: 84  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- * Example 1: Simple Form with Radio Buttons -->
+    <!-- The form with radio buttons -->
+    <!-- <form onSubmit="return validateRadios();">
+      <input type="radio" name="r1" value="cat" /> Cat<br />
+      <input type="radio" name="r1" value="bat" /> Bat<br />
+      <input type="radio" name="r1" value="hat" /> Hat<br />
+      <input type="submit" value="Submit Form" />
+    </form> -->
+
+    <!-- The JavaScript function to validate the radio buttons -->
+    <!-- <script>
+      function validateRadios() {
+        // Get all radio buttons with the name "r1"
+        var radios = document.getElementsByName("r1");
+
+        // Loop through the radio buttons
+        for (var i = 0; i < radios.length; i++) {
+          // Check if the current radio button is checked
+          if (radios[i].checked) {
+            // If a radio button is checked, return true to submit the form
+            return true;
+          }
+        }
+
+        // If no radio button is checked, display an alert and return false to cancel the form submission
+        alert("Please check one.");
+        return false;
+      }
+    </script> -->
+    <!-- ************************************************************************************************************************************************************************ -->
+    <!-- * Example 2: Form with Radio Buttons using a Parameter -->
+    <!-- The form with radio buttons -->
+    <!-- <form onSubmit="return validateRadios('r1');">
+      <input type="radio" name="r1" value="cat" /> Cat<br />
+      <input type="radio" name="r1" value="bat" /> Bat<br />
+      <input type="radio" name="r1" value="hat" /> Hat<br />
+      <input type="submit" value="Submit Form" />
+    </form> -->
+
+    <!-- The JavaScript function to validate the radio buttons with a parameter -->
+    <!-- <script>
+      function validateRadios(ename) {
+        // Get all radio buttons with the specified name
+        var radios = document.getElementsByName(ename);
+
+        // Loop through the radio buttons
+        for (var i = 0; i < radios.length; i++) {
+          // Check if the current radio button is checked
+          if (radios[i].checked) {
+            // If a radio button is checked, return true to submit the form
+            return true;
+          }
+        }
+
+        // If no radio button is checked, display an alert and return false to cancel the form submission
+        alert("Please check one.");
+        return false;
+      }
+    </script> -->
+
+    <!--!!!! CHAPTER No: 85  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- * Example 1: Basic ZIP Code Validation -->
+    <!-- HTML -->
+    <!-- <form>
+      <label for="zip">Enter your ZIP code:</label>
+      <input type="text" id="zip" maxlength="5" />
+      <input type="submit" value="Submit" />
+    </form> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      function validateZIP() {
+        // Get the value of the ZIP code field
+        var numChars = document.getElementById("zip").value.length;
+
+        // Check if the length is less than 5
+        if (numChars < 5) {
+          alert("Please enter a 5-digit code.");
+          return false; // Cancel form submission
+        }
+      }
+    </script> -->
+    <!-- ************************************************************************************************************************************************************************ -->
+    <!-- * Example 2: ZIP Code Validation with Number Check -->
+    <!-- HTML -->
+    <!-- <form>
+      <label for="zip">Enter your ZIP code:</label>
+      <input type="text" id="zip" maxlength="5" />
+      <input type="submit" value="Submit" />
+    </form> -->
+
+    <!-- JavaScript -->
+    <!-- <script>
+      function validateZIP() {
+        // Get the value of the ZIP code field
+        var valueEntered = document.getElementById("zip").value;
+        var numChars = valueEntered.length;
+
+        // Check if the length is less than 5
+        if (numChars < 5) {
+          alert("Please enter a 5-digit code.");
+          return false; // Cancel form submission
+        }
+
+        // Check if all characters are numbers
+        for (var i = 0; i <= 4; i++) {
+          // Extract the current character at index i
+          var thisChar = parseInt(valueEntered[i]);
+          // Check if the character is not a number (NaN = Not a Number)
+          if (isNaN(thisChar)) {
+            // Alert the user to enter only numbers
+            alert("Please enter only numbers.");
+            // Cancel the form submission
+            return false;
+          }
+        }
+      }
+    </script> -->
+
+    <!--!!!! CHAPTER No: 86  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
     <!-- ************************************************************************************************************************************************************************ -->
     <script src="script.js"></script>
