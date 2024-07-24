@@ -98,3 +98,10 @@ input[type="radio"]:checked + span {
 input[type="radio"] + br {
   margin-bottom: 10px;
 }
+
+.code-example {
+  color: white;
+  background-color: #000000;
+  padding: 10px;
+  border: 2px solid #9a4f4f;
+}

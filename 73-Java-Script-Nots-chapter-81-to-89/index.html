@@ -368,6 +368,187 @@
 
     <!--!!!! CHAPTER No: 86  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
+    <!-- The HTML form -->
+    <!-- <form id="email-form"> -->
+    <!-- Label and input field for email address -->
+    <!-- <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /> -->
+    <!-- Submit button with onclick event that calls multiple validation functions -->
+    <!-- <input
+        type="submit"
+        value="Submit"
+        onclick="return validateEmailExample1() && validateEmailExample2() && validateEmailExample3() && validateEmailExample4()"
+      />
+    </form> -->
+
+    <!--* Example 1: Checking for spaces in an email address -->
+    <!-- <script>
+      function validateEmailExample1() {
+        // Get the entered email address
+        var eEntered = document.getElementById("email").value;
+        // Check if the email address contains spaces
+        if (eEntered.indexOf(" ") !== -1) {
+          // Alert the user if spaces are found
+          alert("No spaces allowed in address");
+          return false;
+        }
+        // Return true if no spaces are found
+        return true;
+      }
+    </script> -->
+
+    <!--* Example 2: Checking for the @ symbol and dot in an email address -->
+    <!-- <script>
+      function validateEmailExample2() {
+        // Get the entered email address
+        var eEntered = document.getElementById("email").value;
+        // Initialize a flag to indicate if the address is legal
+        var addressIsLegal = true;
+        // Check if the email address contains spaces
+        if (eEntered.indexOf(" ") !== -1) {
+          addressIsLegal = false;
+        }
+        // Check if the @ symbol is in the correct position
+        if (
+          eEntered.indexOf("@") < 1 ||
+          eEntered.indexOf("@") > eEntered.length - 5
+        ) {
+          addressIsLegal = false;
+        }
+        // Alert the user if the address is not legal
+        if (!addressIsLegal) {
+          alert("Please correct email address");
+          return false;
+        }
+        // Return true if the address is legal
+        return true;
+      }
+    </script> -->
+
+    <!--* Example 3: Checking for the dot and characters following it -->
+    <!-- <script>
+      function validateEmailExample3() {
+        // Get the entered email address
+        var eEntered = document.getElementById("email").value;
+        // Initialize a flag to indicate if the address is legal
+        var addressIsLegal = true;
+        // Check if the email address contains spaces
+        if (eEntered.indexOf(" ") !== -1) {
+          addressIsLegal = false;
+        }
+        // Check if the @ symbol is in the correct position
+        if (
+          eEntered.indexOf("@") < 1 ||
+          eEntered.indexOf("@") > eEntered.length - 5
+        ) {
+          addressIsLegal = false;
+        }
+        // Check if the dot is in the correct position and has at least 2 characters following it
+        if (
+          eEntered.indexOf(".") - eEntered.indexOf("@") < 2 ||
+          eEntered.indexOf(".") > eEntered.length - 3
+        ) {
+          addressIsLegal = false;
+        }
+        // Alert the user if the address is not legal
+        if (!addressIsLegal) {
+          alert("Please correct email address");
+          return false;
+        }
+        // Return true if the address is legal
+        return true;
+      }
+    </script> -->
+
+    <!--* Example 4: Using a regular expression to validate an email address -->
+    <!-- <script>
+      function validateEmailExample4() {
+        // Get the entered email address
+        var eEntered = document.getElementById("email").value;
+        // Define a regular expression pattern for email addresses
+        var regex = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]{2,4}$/;
+        // Check if the email address matches the regular expression pattern
+        if (!eEntered.match(regex)) {
+          // Alert the user if the address does not match the pattern
+          alert("Please correct email address");
+          return false;
+        }
+        // Return true if the address matches the pattern
+        return true;
+      }
+    </script> -->
+    <!--!!!! CHAPTER No: 87  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- <h1>Try and Catch Example</h1>
+    <p>
+      Try and catch are two related keywords in JavaScript that help you handle
+      errors and exceptions in your code.
+    </p>
+
+    <h2>Example 1: Catching a Simple Error</h2>
+    <button onclick="greetWorld()">Click me to see the error</button>
+    <div class="code-example">
+      <code>
+        function greetWorld() { try { var greeting = "Hello world!";
+        alert(greeting); // fixed typo: changed "aler" to "alert" } catch (err)
+        { alert(err); } }
+      </code>
+    </div> -->
+    <!-- * <p> In this example, the <code>try</code> block contains code that attempts to display an alert with a greeting message. However, there is an intentional typo in the <code>alert</code> function name (<code>aler</code> instead of <code>alert</code>). When the code is executed, JavaScript will throw an error, which is caught by the <code>catch</code> block. The error message is then displayed in an alert box.</p> -->
+    <!-- <script>
+      function greetWorld() {
+        try {
+          var greeting = "Hello world!";
+          alert(greeting); // fixed typo: changed "aler" to "alert"
+        } catch (err) {
+          alert(err);
+        }
+      }
+    </script> -->
+    <!-- 
+    <h2>Example 2: Catching a Variable Error</h2>
+    <button onclick="addNumbers(2, 3)">Click me to see another error</button>
+    <div class="code-example">
+      <code>
+        function addNumbers(a, b) { try { var result = a + b; // fixed error:
+        changed "c" to "b" alert(result); } catch (err) { alert(err); } }
+      </code>
+    </div> -->
+    <!--* <p> In this example, the <code>try</code> block attempts to add two numbers, but one of the variables (<code>c</code>) is not defined. When the code is executed, JavaScript will throw an error, which is caught by the <code>catch</code> block. The error message is then displayed in an alert  box. </p> -->
+    <!-- <script>
+      function addNumbers(a, b) {
+        try {
+          var result = a + b; // fixed error: changed "c" to "b"
+          alert(result);
+        } catch (err) {
+          alert(err);
+        }
+      }
+    </script> -->
+    <!-- 
+    <h2>Example 3: Catching a Syntax Error</h2>
+    <button onclick="parseJson()">Click me to see a syntax error</button>
+    <div class="code-example">
+      <code>
+        function parseJson() { try { var json = '{"name": "John", "age": 30}';
+        // fixed error: added closing brace var obj = JSON.parse(json);
+        alert(obj.name); } catch (err) { alert(err); } }
+      </code>
+    </div> -->
+    <!--* <p> In this example, the <code>try</code> block attempts to parse a JSON string, but the string is malformed (missing closing brace). When the code is executed, JavaScript will throw a syntax error, which is caught by the <code>catch</code> block. The error message is then displayed in an alert box. </p> -->
+    <!-- <script>
+      function parseJson() {
+        try {
+          var json = '{"name": "John", "age": 30}'; // fixed error: added closing brace
+          var obj = JSON.parse(json);
+          alert(obj.name);
+        } catch (err) {
+          alert(err);
+        }
+      }
+    </script> -->
+
+    <!--!!!! CHAPTER No: 88  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
     <!-- ************************************************************************************************************************************************************************ -->
     <script src="script.js"></script>
   </body>
