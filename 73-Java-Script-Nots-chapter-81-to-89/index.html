@@ -548,7 +548,165 @@
     </script> -->
 
     <!--!!!! CHAPTER No: 88  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- <h1>JavaScript Try-Catch Examples</h1>
 
+    <h2>Password Validation</h2>
+    <form onSubmit="return checkPassword();">
+      Enter a password<br />
+      (8-12 characters, at least 1 number, no spaces)<br />
+      <input type="text" id="f1" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Custom Error Messages</h2>
+    <button onClick="checkAge()">Check Age</button>
+
+    <h2>Throwing a Number</h2>
+    <button onClick="checkScore()">Check Score</button>
+
+    <h2>Throwing a Boolean</h2>
+    <button onClick="checkPermission()">Check Permission</button> -->
+
+    <!-- <script>
+      // EX.1: Password Validation
+      function checkPassword() {
+        try {
+          var pass = document.getElementById("f1").value;
+          // Check password length
+          if (pass.length < 8) {
+            throw "Please enter at least 8 characters.";
+          }
+          // Check for spaces
+          if (pass.indexOf(" ") !== -1) {
+            throw "No spaces in the password, please.";
+          }
+          // Check for at least one number
+          var numberSomewhere = false;
+          for (var i = 0; i < pass.length; i++) {
+            if (!isNaN(pass.substring(i, i + 1))) {
+              numberSomewhere = true;
+              break;
+            }
+          }
+          if (!numberSomewhere) {
+            throw "Include at least 1 number.";
+          }
+        } catch (err) {
+          alert(err);
+        }
+      }
+
+      // EX.2: Custom Error Messages
+      function checkAge() {
+        try {
+          var userInput = prompt("Enter your age:");
+          if (userInput < 18) {
+            throw "You must be at least 18 years old.";
+          }
+          if (userInput > 120) {
+            throw "That's not a valid age.";
+          }
+        } catch (err) {
+          alert(err);
+        }
+      }
+
+      // EX.3: Throwing a Number
+      function checkScore() {
+        try {
+          var score = 50;
+          if (score < 60) {
+            throw 1; // Throw a number
+          }
+        } catch (err) {
+          if (err === 1) {
+            alert("You failed the test.");
+          }
+        }
+      }
+
+      // EX.4: Throwing a Boolean
+      function checkPermission() {
+        try {
+          var isAdmin = false;
+          if (!isAdmin) {
+            throw false; // Throw a Boolean
+          }
+        } catch (err) {
+          if (!err) {
+            alert("You don't have permission to access this page.");
+          }
+        }
+      }
+    </script> -->
+    <!--!!!! CHAPTER No: 89  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <h1>Handling Events within JavaScript</h1>
+    <section>
+      <h2>Inline Event Handling (less desirable)</h2>
+      <input type="button" value="Click" onClick="sayHello();" />
+    </section>
+    <section>
+      <h2>Separate JavaScript and HTML (recommended)</h2>
+      <input type="button" value="Click" id="button1" />
+    </section>
+    <section>
+      <h2>Swapping Images on Mouse Over</h2>
+      <img id="i12" src="./image/lol2.webp" alt="Image 1" />
+    </section>
+    <section>
+      <h2>Validating Email Address on Form Submission</h2>
+      <form id="form5">
+        <input type="email" name="email" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <script>
+      // Get the element by its ID
+      var b1 = document.getElementById("button1");
+
+      // Assign the event handler to the element's onclick property
+      b1.onclick = sayHello;
+
+      // Function code (same for both inline and scripted event handling)
+      function sayHello() {
+        alert("Hi there.");
+      }
+
+      // Swapping images on mouse over
+      var targetImg = document.getElementById("i12");
+      var originalSrc = targetImg.src;
+      targetImg.onmouseover = swapPic;
+      targetImg.onmouseout = swapBack;
+
+      function swapPic() {
+        // Swap the image
+        targetImg.src = "./image/lol.webp";
+      }
+
+      function swapBack() {
+        // Swap back to the original image
+        targetImg.src = originalSrc;
+      }
+
+      // Validating email address on form submission
+      var emailFrm = document.getElementById("form5");
+      emailFrm.onsubmit = valEmail;
+
+      function valEmail(event) {
+        // Get the email input element
+        var emailInput = emailFrm.querySelector("input[type='email']");
+
+        // Check if the email address is valid
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(emailInput.value)) {
+          alert("Invalid email address!");
+          event.preventDefault();
+        } else {
+          alert("Email address validated!");
+        }
+      }
+    </script>
     <!-- ************************************************************************************************************************************************************************ -->
     <script src="script.js"></script>
   </body>
