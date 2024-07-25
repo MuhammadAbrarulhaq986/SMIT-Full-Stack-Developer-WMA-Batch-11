@@ -1,5 +1,4 @@
 body {
-  font-size: 80%;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
   background-color: white;
@@ -88,7 +87,7 @@ h2 {
   border: 2px solid black;
   margin: 10px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -108,7 +107,7 @@ h2 {
   margin: 10px;
   padding: 10px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: rgb(1, 22, 25);
@@ -126,7 +125,7 @@ h2 {
   margin: 10px;
   padding: 10px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: rgb(1, 22, 25);
@@ -148,7 +147,28 @@ h2 {
   margin: 10px;
   padding: 10px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: rgb(1, 22, 25);
+  background: linear-gradient(
+    103deg,
+    rgba(1, 22, 25, 1) 0%,
+    rgba(0, 6, 6, 1) 99%
+  );
+}
+.JS_ES6_Feacher > a > i {
+  text-shadow: -2px 1px 20px goldenrod;
+}
+
+.JS_ES6_Feacher {
+  text-shadow: -2px 1px 20px goldenrod;
+  color: white;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: rgb(1, 22, 25);
