@@ -81,7 +81,6 @@ const arrowFunc3 = (a, b) => a + b;
 // Call the arrow function with arguments 4 and 7
 console.log(arrowFunc3(4, 7)); // Output: 11
 
-// Total examples: 5
 // Example 6: Object methods
 // Define an object with a method
 const obj2 = {
@@ -161,3 +160,14 @@ try {
 } catch (err) {
     console.log(err.message); // Output: "Something went wrong!"
 }
+
+//* Object Destructuring: Extracts object properties into variables.
+//* Ternary Operator: Concise conditional statement.
+//* Arrow Function: Shorthand function expression.
+//* Arrow Function with Parameters: Passes values to arrow functions.
+//* Function vs Arrow Function: Different this binding and usage.
+//* Object methods: Functions attached to objects.
+//* Classes: Blueprint for creating objects.
+//* Inheritance: Classes inherit properties and behavior.
+//* Async / Await: Simplifies asynchronous code.
+//* Try / Catch: Handles runtime errors and exceptions.
