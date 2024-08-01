@@ -70,7 +70,7 @@ function fetchWeather() {
       
       // Display forecast for each day of the week
       // Display forecast for each day of the week
-const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const today = new Date().getDay();
 
 forecastList.innerHTML = ''; // clear the forecast list
