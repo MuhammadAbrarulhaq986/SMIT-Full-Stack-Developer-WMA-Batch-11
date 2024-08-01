@@ -28,6 +28,7 @@ h1 {
   margin: auto;
   background-color: #0000007e;
   box-shadow: -1px 2px 30px orange;
+  width: 300px;
 }
 
 .card-img-top {
@@ -80,7 +81,7 @@ h1 {
 .list-group-item:last-child {
   border-bottom: none;
 }
-
+/* 
 button {
   background-color: orangered;
   color: white;
@@ -97,4 +98,36 @@ button:hover {
   border: 2px solid orangered;
   color: orangered;
   opacity: 0.8;
+} */
+
+.show-details-btn,
+.update-product-btn,
+.delete-product-btn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-shadow: -2px 2px 10px black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.show-details-btn:hover,
+.update-product-btn:hover,
+.delete-product-btn:hover {
+  background-color: orangered;
+  text-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.show-details-btn:active,
+.update-product-btn:active,
+.delete-product-btn:active {
+  background-color: darkorange;
+  transform: translateY(2px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

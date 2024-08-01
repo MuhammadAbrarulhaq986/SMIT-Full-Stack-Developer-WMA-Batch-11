@@ -1,6 +1,6 @@
 //* Default Parameters
 // ==================
-// Default parameters are used to provide a default value to a function parameter when no value is passed.
+//* Default parameters are used to provide a default value to a function parameter when no value is passed.
 
 function calculateDiscount(price = 1000, percentage = 20) {
     // Calculate the discount
@@ -14,8 +14,7 @@ console.log("after discount " + calculateDiscount(1000));
 
 //* Shallow Copy
 // ============
-// A shallow copy of an object is a new object that contains the same properties as the original object,
-// but the properties are not cloned. Instead, the new object contains references to the same properties as the original object.
+//* A shallow copy of an object is a new object that contains the same properties as the original object, but the properties are not cloned. Instead, the new object contains references to the same properties as the original object.
 
 const user = {
     name: "salman",
@@ -44,7 +43,7 @@ console.log("userCopy", userCopy);
 
 //* Deep Copy
 // ==========
-// To create a deep copy of an object, where all properties are cloned, you can use the spread operator recursively.
+//* To create a deep copy of an object, where all properties are cloned, you can use the spread operator recursively.
 
 const userDeepCopy = {
     ...user,
