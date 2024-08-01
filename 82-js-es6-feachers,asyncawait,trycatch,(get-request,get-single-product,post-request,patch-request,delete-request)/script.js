@@ -1,12 +1,15 @@
 // * GET Request
 // Get all products
 async function getProducts() {
+    // Try to fetch products from API
     try {
         const res = await fetch("https://dummyjson.com/products");
         const data = await res.json();
         console.log(data);
+        // Append products to DOM
         appendToDOM(data.products);
     } catch (err) {
+        // Catch and log any errors
         console.log("Error fetching products:", err);
     }
 }
@@ -14,24 +17,27 @@ async function getProducts() {
 // Call getProducts on window load
 window.addEventListener("load", getProducts);
 
-// *GET Single Product
+// * GET Single Product
 // Get single product by ID
 async function getSingleProduct(productId) {
+    // Try to fetch single product from API
     try {
         const res = await fetch(`https://dummyjson.com/products/${productId}`);
         const data = await res.json();
         console.log(data);
     } catch (err) {
+        // Catch and log any errors
         console.log("Error fetching single product:", err);
     }
 }
 
 // Call getSingleProduct on button click
-// <button onclick="getSingleProduct(1)">Show details</button>
+// { <button onclick="getSingleProduct(1)">Show details</button> }
 
 // *POST Request
 // Create a new product
 async function createProduct() {
+    // Try to create a new product
     try {
         const newProduct = {
             title: "New Product",
@@ -40,6 +46,7 @@ async function createProduct() {
             description: "New product description",
         };
 
+        // Send POST request to API
         const res = await fetch("https://dummyjson.com/products", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -49,6 +56,7 @@ async function createProduct() {
         const data = await res.json();
         console.log(data);
     } catch (err) {
+        // Catch and log any errors
         console.log("Error creating product:", err);
     }
 }
@@ -59,6 +67,7 @@ async function createProduct() {
 // * PATCH Request
 // Update a product
 async function updateProduct(productId) {
+    // Try to update a product
     try {
         const updatedProduct = {
             title: "Updated Product",
@@ -67,6 +76,7 @@ async function updateProduct(productId) {
             description: "Updated product description",
         };
 
+        // Send PATCH request to API
         const res = await fetch(`https://dummyjson.com/products/${productId}`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
@@ -76,6 +86,7 @@ async function updateProduct(productId) {
         const data = await res.json();
         console.log(data);
     } catch (err) {
+        // Catch and log any errors
         console.log("Error updating product:", err);
     }
 }
@@ -86,7 +97,9 @@ async function updateProduct(productId) {
 // *DELETE Request
 // Delete a product
 async function deleteProduct(productId) {
+    // Try to delete a product
     try {
+        // Send DELETE request to API
         const res = await fetch(`https://dummyjson.com/products/${productId}`, {
             method: "DELETE",
         });
@@ -94,6 +107,7 @@ async function deleteProduct(productId) {
         const data = await res.json();
         console.log(data);
     } catch (err) {
+        // Catch and log any errors
         console.log("Error deleting product:", err);
     }
 }
@@ -101,13 +115,13 @@ async function deleteProduct(productId) {
 // Call deleteProduct on button click
 // <button onclick="deleteProduct(1)">Delete product</button>
 
-
 // *Append to DOM
 // Append products to DOM
 const appendToDOM = (products) => {
     const list = document.getElementById("list");
     let html = "";
 
+    // Loop through products and create HTML
     products.forEach((product) => {
         html += `
         <div class="card" style="width: 18rem;">
@@ -125,5 +139,6 @@ const appendToDOM = (products) => {
       `;
     });
 
+    // Set innerHTML of list element
     list.innerHTML = html;
 };
