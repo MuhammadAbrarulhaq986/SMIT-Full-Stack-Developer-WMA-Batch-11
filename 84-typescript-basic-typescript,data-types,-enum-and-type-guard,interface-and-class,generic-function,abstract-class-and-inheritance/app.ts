@@ -1,3 +1,19 @@
+//* Data Types: Define the type of value a variable can hold, such as number, string, or boolean.
+//
+//* Enum: A way to define a set of named values, like a collection of constants.
+//
+//* Type Guard: A function that narrows the type of a value within a specific scope.
+//
+//* Interface: A blueprint for an object, defining its properties, methods, and their types.
+//
+//* Class: A blueprint for creating objects that contain data and functions that operate on that data.
+//
+//* Generic Function: A function that can work with multiple types of data, using type parameters to define the type.
+//
+//* Abstract Class: A class that cannot be instantiated on its own and is meant to be inherited by other classes
+//
+//* Inheritance: A mechanism where a class can inherit properties and behavior from another class.
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //* Example 1: Basic TypeScript
 // Get a button element from the HTML document
 const btn: HTMLButtonElement = document.querySelector(
@@ -96,8 +112,7 @@ console.log(animal.name);
 console.log(animal.age);
 console.log(animal.runningSpeed);
 
-// Example 5: Generic Function
-
+//* Example 5: Generic Function
 // Define a generic function to merge two objects
 const merge = <T, U>(obj1: T, obj2: U): T & U => {
   return { ...obj1, ...obj2 };
@@ -109,8 +124,7 @@ const merged = merge({ a: 1, b: 2 }, { c: 3, d: 4 });
 // Log the merged object
 console.log(merged);
 
-// Example 6: Abstract Class and Inheritance
-
+//* Example 6: Abstract Class and Inheritance
 // Define an abstract class for species
 abstract class Species {
   constructor(public id: number, public name: string, public age: number) {}

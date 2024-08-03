@@ -24,6 +24,23 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+//* Data Types: Define the type of value a variable can hold, such as number, string, or boolean.
+//
+//* Enum: A way to define a set of named values, like a collection of constants.
+//
+//* Type Guard: A function that narrows the type of a value within a specific scope.
+//
+//* Interface: A blueprint for an object, defining its properties, methods, and their types.
+//
+//* Class: A blueprint for creating objects that contain data and functions that operate on that data.
+//
+//* Generic Function: A function that can work with multiple types of data, using type parameters to define the type.
+//
+//* Abstract Class: A class that cannot be instantiated on its own and is meant to be inherited by other classes
+//
+//* Inheritance: A mechanism where a class can inherit properties and behavior from another class.
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//* Example 1: Basic TypeScript
 // Get a button element from the HTML document
 var btn = document.querySelector("button");
 // Define a function to add two numbers
@@ -36,7 +53,7 @@ btn.addEventListener("click", function () {
     // Call the sum function with the values of the input elements
     alert(sum(Number(num1.value), Number(num2.value)));
 });
-// Example 2: Data Types
+//* Example 2: Data Types
 // Define a variable with a number data type
 var num = 1;
 // Define a variable with a string data type
@@ -89,7 +106,7 @@ console.log(animal.id);
 console.log(animal.name);
 console.log(animal.age);
 console.log(animal.runningSpeed);
-// Example 5: Generic Function
+//* Example 5: Generic Function
 // Define a generic function to merge two objects
 var merge = function (obj1, obj2) {
     return __assign(__assign({}, obj1), obj2);
@@ -98,7 +115,7 @@ var merge = function (obj1, obj2) {
 var merged = merge({ a: 1, b: 2 }, { c: 3, d: 4 });
 // Log the merged object
 console.log(merged);
-// Example 6: Abstract Class and Inheritance
+//* Example 6: Abstract Class and Inheritance
 // Define an abstract class for species
 var Species = /** @class */ (function () {
     function Species(id, name, age) {
