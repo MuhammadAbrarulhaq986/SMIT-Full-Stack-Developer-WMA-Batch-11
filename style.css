@@ -18,21 +18,7 @@ body {
   font-weight: 700;
   font-size: 30px;
 }
-.htmlone {
-  color: orangered;
-  font-weight: 700;
-  font-size: 30px;
-}
-.cssone {
-  color: aqua;
-  font-weight: 700;
-  font-size: 30px;
-}
-.JavaScriptOne {
-  /* color: yellow; */
-  font-weight: 700;
-  font-size: 30px;
-}
+
 span {
   color: yellow;
   font-weight: 700;
@@ -100,6 +86,12 @@ h2 {
   );
 }
 
+.htmlone {
+  color: orangered;
+  font-weight: 700;
+  font-size: 30px;
+}
+
 .html {
   text-shadow: -5px 1px 25px orangered;
   color: white;
@@ -118,6 +110,12 @@ h2 {
   );
 }
 
+.cssone {
+  color: aqua;
+  font-weight: 700;
+  font-size: 30px;
+}
+
 .css {
   text-shadow: -5px 1px 25px blue;
   color: white;
@@ -134,6 +132,12 @@ h2 {
     rgba(1, 22, 25, 1) 0%,
     rgba(0, 6, 6, 1) 99%
   );
+}
+
+.JavaScriptOne {
+  /* color: yellow; */
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .java-script > a > i {
@@ -165,6 +169,30 @@ h2 {
   text-shadow: -2px 1px 20px goldenrod;
   color: white;
   border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: rgb(1, 22, 25);
+  background: linear-gradient(
+    103deg,
+    rgba(1, 22, 25, 1) 0%,
+    rgba(0, 6, 6, 1) 99%
+  );
+}
+
+.tsone {
+  color: rgb(0, 106, 255);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.ts {
+  color: white;
+  border: 2px solid black;
+  text-shadow: -5px 1px 25px rgb(0, 0, 121);
   margin: 10px;
   padding: 10px;
   font-weight: 600;
