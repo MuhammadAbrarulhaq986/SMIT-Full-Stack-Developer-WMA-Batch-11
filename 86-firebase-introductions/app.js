@@ -1,3 +1,4 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
 import {
@@ -8,19 +9,23 @@ import {
     signOut,
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBwUGFOvRStlWLgn9Jm1Ku_GsDhi_LYFV8",
-    authDomain: "first-progect-6b8e0.firebaseapp.com",
-    projectId: "first-progect-6b8e0",
-    storageBucket: "first-progect-6b8e0.appspot.com",
-    messagingSenderId: "1058345053336",
-    appId: "1:1058345053336:web:7eb7ca0249d46f703074ed"
+    apiKey: "AIzaSyCIDxVzTbR94J31CCNY8ufrj8beu7KSuOE",
+    authDomain: "my-first-project-2c12b.firebaseapp.com",
+    databaseURL: "https://my-first-project-2c12b-default-rtdb.firebaseio.com",
+    projectId: "my-first-project-2c12b",
+    storageBucket: "my-first-project-2c12b.appspot.com",
+    messagingSenderId: "478886753904",
+    appId: "1:478886753904:web:7b186f354dd70dbbc566b5"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const auth = getAuth(app);
 
+const auth = getAuth(app);
 
 const auth_container = document.getElementById("auth_container");
 const dashboard = document.getElementById("dashboard");
@@ -32,6 +37,7 @@ const user_info = document.getElementById("user_info");
 const signup_btn = document.getElementById("btn");
 const signin_btn = document.getElementById("signin_btn");
 const logout_btn = document.getElementById("logout");
+
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -80,6 +86,7 @@ const createUser = () => {
             // ..
         });
 };
+
 
 const signInUser = async () => {
     const email = signin_email.value;

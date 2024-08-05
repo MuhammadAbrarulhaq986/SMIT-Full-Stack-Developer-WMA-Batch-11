@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <div id="auth_container" class="black glow">
+      <h1>Sign Up</h1>
+      <input id="signup_email" type="email" placeholder="email" />
+      <input id="signup_password" type="password" placeholder="password" />
+      <button id="btn">sign up</button>
+      <h1>Sign In</h1>
+      <input id="signin_email" type="email" placeholder="email" />
+      <input id="signin_password" type="password" placeholder="password" />
+      <button id="signin_btn">sign in</button>
+    </div>
+    <div class="black glow" id="dashboard" style="display: none">
+      <p id="user_info"></p>
+      <button id="logout">Logout</button>
+    </div>
+
+    <script type="module" src="app.js"></script>
+    <!-- <div class="form">
+        <input type="text" id="email" placeholder="email" />
+        <input type="password" id="password" placeholder="password" />
+        <button id="signup">SignUp</button>
+        <button id="signin">SignIn</button>
+      </div> -->
+  </body>
+</html>
