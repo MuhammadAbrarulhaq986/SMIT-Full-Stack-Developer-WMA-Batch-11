@@ -1,83 +1,109 @@
-// Import the necessary functions from the Firebase SDKs
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 import {
-    getFirestore, // Get the Firestore database
-    collection, // Get a reference to a collection in the database
-    addDoc, // Add a new document to a collection
-} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
-import {
-    getStorage, // Get the Firebase Storage instance
-    ref, // Get a reference to a file in Storage
-    uploadBytes, // Upload a file to Storage
-    getDownloadURL, // Get the download URL for a file in Storage
-} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js";
-
+    getFirestore,
+    collection,
+    addDoc,
+    getDocs,
+    doc,
+    deleteDoc,
+} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyC8EkvhllVhaNwI_cH-9tpJRHR18kHgiVs",
-    authDomain: "my-second-progect-eb4ba.firebaseapp.com",
-    databaseURL: "https://my-second-progect-eb4ba-default-rtdb.firebaseio.com",
-    projectId: "my-second-progect-eb4ba",
-    storageBucket: "my-second-progect-eb4ba.appspot.com",
-    messagingSenderId: "381419426435",
-    appId: "1:381419426435:web:98e07e3b4bcd993d4441b6"
+    apiKey: "AIzaSyB-OB-QOWFYgyFWddRRZ5z4nZKKliQslX0",
+    authDomain: "my-first-project-2b43e.firebaseapp.com",
+    databaseURL: "https://my-first-project-2b43e-default-rtdb.firebaseio.com",
+    projectId: "my-first-project-2b43e",
+    storageBucket: "my-first-project-2b43e.appspot.com",
+    messagingSenderId: "135639093489",
+    appId: "1:135639093489:web:dafaf6c9c45d6434fd1950"
 };
 
-// Initialize the Firebase app
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Get references to the Firestore database, analytics, and storage
-const db = getFirestore(app);
+const auth = getAuth(app);
 const analytics = getAnalytics(app);
-const storage = getStorage(app);
+const db = getFirestore(app);
+console.log(db);
+let todosCollection = collection(db, "todos");
 
-// Get a reference to the "products" collection in the database
-const productsCollection = collection(db, "products");
+// Getting html element through dom
+const todo_input = document.getElementById("todo_input");
+const add_todo = document.getElementById("add_todo");
+const todo_list = document.getElementById("todo_list");
+add_todo.addEventListener("click", addtodo);
+getTodo();
 
-// Log the storage instance to the console
-console.log(storage);
+// creating a function for adding todos through addDoc method in firestore collecction
+async function addtodo() {
+    try {
+        const obj = {
+            todo: todo_input.value,
+            createdAt: new Date().toISOString(),
+        };
+        todo_input.value = "";
+        const docRef = await addDoc(todosCollection, obj);
+        console.log("Todo Added");
+        getTodo();
+    } catch (e) {
+        alert("Message on error", e);
+    }
+}
 
-// Get references to the file input and save button elements
-const fileInput = document.getElementById("file-inp");
-const save = document.getElementById("save");
+// creating a function for retrieve todos data through getDocs method
+async function getTodo() {
+    try {
+        const querySnapshot = await getDocs(todosCollection);
+        todo_list.innerHTML = "";
+        querySnapshot.forEach((doc) => {
+            // console.log(`${doc.id} `);
+            const { todo, createdAt } = doc.data();
+            const element = `<li id=${doc.id
+                }>Name : ${todo} ....... Date : ${new Date(
+                    createdAt
+                ).toLocaleDateString()}</li>`;
+            todo_list.innerHTML += element;
+            console.log(todo, createdAt);
+        });
+        todo_list.childNodes.forEach((e) => e.addEventListener("click", delTodo));
+    } catch (error) {
+        alert(error);
+    }
+}
 
-// Add an event listener to the save button
-save.addEventListener("click", () => {
-    // Log the selected files to the console
-    console.log(fileInput.files);
+// creating a function for deleting todo items from todoList through
 
-    // Check if a file has been selected
-    if (!fileInput.files.length) {
-        // If not, alert the user to select a file
-        return alert("Please choose a file to upload");
+async function delTodo() {
+    try {
+        const docId = this.id;
+        const docCollection = doc(db, "todos", docId);
+        const docRef = await deleteDoc(docCollection);
+        console.log("Document item deleted", docRef);
+        getTodo();
+
+    } catch (e) {
+        alert(e)
     }
 
-    // Get a reference to the selected file
-    const file = fileInput.files[0];
+}
 
-    // Create a reference to the file in Storage
-    const storageRef = ref(storage, file.name);
+// async function addTodo() {
+//     try {
+//         const docRef = await addDoc(todosCollection,{
+//                name: "Ada",
+//            });
 
-    // Upload the file to Storage
-    uploadBytes(storageRef, file)
-        .then((snapshot) => {
-            // Get the download URL for the uploaded file
-            getDownloadURL(storageRef).then((url) => {
-                // Add a new document to the "products" collection with the file's metadata
-                addDoc(productsCollection, {
-                    title: "Roses",
-                    price: 30,
-                    descript: "Roses are fresh",
-                    image: url,
-                });
-
-                // Log the download URL to the console
-                console.log(url, "-->");
-            });
-        })
-        .catch((err) => {
-            // Log any errors to the console
-            console.log(err, "======");
-        });
-});
+//         //-------------------- default code imported from firestore docs ----------------------
+//         // const docRef = await addDoc(collection(db, "users"), {
+//         //   first: "Ada",
+//         //   last: "Lovelace",
+//         //   born: 1815
+//         // });
+//         console.log("Document written with ID: ", docRef.id);
+//       } catch (e) {
+//         console.error("Error adding document: ", e);
+//         alert(e);
+//       }
+// }

@@ -6,13 +6,12 @@ import { getDatabase, set, get, ref } from "https://www.gstatic.com/firebasejs/1
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCIDxVzTbR94J31CCNY8ufrj8beu7KSuOE",
-    authDomain: "my-first-project-2c12b.firebaseapp.com",
-    databaseURL: "https://my-first-project-2c12b-default-rtdb.firebaseio.com",
-    projectId: "my-first-project-2c12b",
-    storageBucket: "my-first-project-2c12b.appspot.com",
-    messagingSenderId: "478886753904",
-    appId: "1:478886753904:web:7b186f354dd70dbbc566b5"
+    apiKey: "AIzaSyB-OB-QOWFYgyFWddRRZ5z4nZKKliQslX0",
+    authDomain: "my-first-project-2b43e.firebaseapp.com",
+    projectId: "my-first-project-2b43e",
+    storageBucket: "my-first-project-2b43e.appspot.com",
+    messagingSenderId: "135639093489",
+    appId: "1:135639093489:web:dafaf6c9c45d6434fd1950"
 };
 
 // Initialize Firebase
