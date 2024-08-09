@@ -1,7 +1,11 @@
+/* Global Styles */
+
 body {
   background-color: darkolivegreen;
   font-family: Arial, sans-serif;
 }
+
+/* Form Styles */
 
 .form {
   max-width: 400px;
@@ -40,6 +44,8 @@ body {
 }
 
 .form button[type="button"] {
+  margin-left: 90px;
+  margin-top: 10px;
   background-color: rgb(0, 0, 0);
   color: white;
   text-shadow: -2px 2px 10px black;
@@ -58,26 +64,24 @@ body {
   text-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-.update_Data {
-  visibility: hidden;
-}
 
-.show {
-  visibility: visible;
-}
+/* Table Styles */
 
 .table {
+  background-color: darkgoldenrod;
   margin: 20px auto;
-  width: 60%;
+  width: auto;
   border-collapse: collapse;
+  font-weight: 600;
 }
 
 .table table {
   width: 100%;
+  border: 2px solid black;
 }
 
 .table tr td {
-  border: 1px solid #ccc;
+  box-shadow: -2px 5px 10px black;
   padding: 5px 10px;
   text-align: left;
 }
@@ -100,7 +104,7 @@ body {
 }
 
 .table .del {
-  background: #6c0606;
+  background: rgb(166, 0, 0);
   color: #fff;
 }
 
@@ -109,8 +113,10 @@ body {
   color: #fff;
 }
 
+/* Notification Styles */
+
 #notification {
-  background: #87ceeb;
+  background: lightgreen;
   width: 100%;
   display: block;
   text-align: center;
@@ -119,4 +125,14 @@ body {
   font-weight: bold;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Styles */
+
+.update_Data {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
 }
