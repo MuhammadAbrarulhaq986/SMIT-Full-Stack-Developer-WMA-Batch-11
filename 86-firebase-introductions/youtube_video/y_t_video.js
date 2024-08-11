@@ -24,7 +24,7 @@ function writeUserData(userID, name, email) {
         email: email,
     });
 }
-writeUserData(4, "johan", "joh@gmail.com");
+writeUserData(1, "johan", "joh@gmail.com");
 
 console.log("Good");
 
