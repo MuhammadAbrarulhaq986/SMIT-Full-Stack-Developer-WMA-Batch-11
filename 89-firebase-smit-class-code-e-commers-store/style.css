@@ -1,0 +1,83 @@
+@import "flowbite";
+
+nav {
+  background-color: #ffffff; /* bg-white */
+  border-color: #e5e7eb; /* border-gray-200 */
+}
+
+nav.dark {
+  background-color: #212529; /* dark:bg-gray-900 */
+}
+
+nav > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1280px; /* max-w-screen-xl */
+  padding: 1rem; /* p-4 */
+}
+
+nav > div > a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* space-x-3 */
+  direction: rtl; /* rtl:space-x-reverse */
+}
+
+nav > div > a > img {
+  height: 2rem; /* h-8 */
+}
+
+nav > div > a > span {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  white-space: nowrap;
+  color: #ffffff; /* dark:text-white */
+}
+
+nav > div > a + a {
+  font-size: 1rem; /* text-sm */
+  color: #6b7280; /* text-gray-500 */
+  text-decoration: none;
+}
+
+nav > div > a + a:hover {
+  text-decoration: underline;
+}
+
+nav > div > div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* space-x-6 */
+  direction: rtl; /* rtl:space-x-reverse */
+}
+
+nav > div > div > a {
+  font-size: 1rem; /* text-sm */
+  color: #2563eb; /* text-blue-600 */
+  text-decoration: none;
+}
+
+nav > div > div > a:hover {
+  text-decoration: underline;
+}
+
+nav > div > div > a#status {
+  color: #3498db; /* dark:text-blue-500 */
+}
+
+h1 {
+  font-size: 2rem; /* no explicit CSS, but assumed to be a default h1 style */
+}
+
+/* button#logout { */
+/* no explicit CSS, but assumed to be a default button style */
+/* } */
+
+#products_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
