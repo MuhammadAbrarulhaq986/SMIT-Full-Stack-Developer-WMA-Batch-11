@@ -37,7 +37,7 @@ h2 {
 }
 
 #signin_form {
-  text-shadow: -5px 1px 10px orange;
+  text-shadow: -5px 1px 10px gold;
   color: black;
   background-color: rgba(0, 0, 0, 0.408);
   font-weight: 600;
@@ -59,6 +59,7 @@ h2 {
 #sign {
   font-size: 20px;
   font-weight: 600;
+  text-shadow: -5px 1px 10px gold;
   color: black;
   font-weight: bold;
 }
@@ -75,7 +76,6 @@ h2 {
 button {
   background-color: rgb(0, 0, 0);
   text-shadow: -5px 1px 10px orange;
-
   color: white;
   text-shadow: -2px 2px 10px black;
   margin-left: 130px;
