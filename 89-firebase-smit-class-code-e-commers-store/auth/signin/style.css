@@ -1,35 +1,103 @@
 body {
+  margin: auto;
+  padding: 10px;
+  background-image: url("../../image/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  
-}
-
-h1,
-h2 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  background-attachment: fixed;
+  background-color: #f7f7f7;
 }
 
 h1 {
+  color: black;
+  text-shadow: -5px 1px 10px orange;
+  background-color: rgba(0, 0, 0, 0.281);
+  text-align: center;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   font-weight: bold;
-  color: black;
 }
 
 h2 {
+  color: black;
+  text-shadow: -5px 1px 10px orange;
+  background-color: rgba(0, 0, 0, 0.281);
+  text-align: center;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: 700;
-  color: black;
-  margin-top: 10px;
+  margin-top: -1px;
 }
 
 #signin_form {
-  color: white;
-  background-color: black;
-  font-size: 18px;
+  text-shadow: -5px 1px 10px orange;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.408);
+  font-weight: 600;
+  font-size: 25px;
+  border-radius: 20px;
   align-items: center;
   width: 650px;
-  height: 260px;
+  height: 290px;
   padding: 10px;
+  margin-top: 10px;
+}
+.mb-5 > label {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#sign {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  font-weight: bold;
+}
+#sign > a {
+  font-size: 20px;
+  color: rgb(0, 217, 255);
+  font-weight: 600;
+}
+#sign > a:hover {
+  font-size: 21px;
+  color: lawngreen;
+}
+
+button {
+  background-color: rgb(0, 0, 0);
+  text-shadow: -5px 1px 10px orange;
+
+  color: white;
+  text-shadow: -2px 2px 10px black;
+  margin-left: 130px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: orange;
+  text-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  background-color: orangered;
+  transform: translateY(2px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
