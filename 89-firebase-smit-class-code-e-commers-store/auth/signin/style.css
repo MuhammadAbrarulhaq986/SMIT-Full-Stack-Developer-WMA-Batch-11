@@ -73,12 +73,13 @@ h2 {
   color: lawngreen;
 }
 
-button {
+button[type="submit"] {
   background-color: rgb(0, 0, 0);
   text-shadow: -5px 1px 10px orange;
   color: white;
   text-shadow: -2px 2px 10px black;
-  margin-left: 130px;
+  width: 100%;
+  /* margin-left: 100px; */
   margin-top: 15px;
   border: none;
   border-radius: 10px;
@@ -87,16 +88,15 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%;
 }
 
-button:hover {
+button[type="submit"]:hover {
   background-color: orange;
-  text-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: -2px 5px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-button:active {
+button[type="submit"]:active {
   background-color: orangered;
   transform: translateY(2px);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
