@@ -9,18 +9,35 @@ body {
   background-attachment: fixed;
   background-color: #f7f7f7;
   color: black;
-} /* background-color: gray; */
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.058);
+  color: white;
+  text-shadow: -1px 2px 15px black;
+  box-shadow: -1px 2px 15px black;
+  font-weight: bold;
+}
+
+#phone {
+  font-size: 18px;
+  text-shadow: -1px 2px 15px yellow;
+}
+#logout {
+  font-size: 18px;
+  color: white;
+  text-shadow: -1px 2px 15px yellow;
+}
 
 .black {
   position: relative;
-  /* margin: 10% auto 0; */
-  width: 120px;
-  height: 40px;
-  padding: 2px;
-  margin: auto;
-  text-align: center;
   color: white;
   background: linear-gradient(0deg, rgb(54, 54, 54), black);
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  text-align: center;
 }
 .glow::before,
 .glow::after {
@@ -43,7 +60,7 @@ body {
   background-size: 400%;
   width: calc(100% + 10px);
   height: calc(100% + 10px);
-  border-radius: 10px;
+  border-radius: 20px;
   z-index: -1;
   animation: animate 20s linear infinite;
 }
@@ -63,4 +80,15 @@ body {
   100% {
     background-position: 0 0;
   }
+}
+
+h1 {
+  color: #f7f7f7;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow: -1px 2px 15px black;
+  text-shadow: -1px 2px 15px yellow;
+  width: 250px;
+  padding: 5px;
+  margin: 5px;
 }
