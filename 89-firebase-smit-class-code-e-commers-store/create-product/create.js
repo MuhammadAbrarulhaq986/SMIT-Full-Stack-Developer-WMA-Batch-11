@@ -6,7 +6,7 @@ import {
     addDoc,
     db,
     collection,
-} from "../utils/firebase-config.js";
+} from "../utils/firebase-config";
 
 const product_form = document.getElementById("product_form");
 

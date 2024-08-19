@@ -9,7 +9,7 @@ import {
     getDocs,
     onAuthStateChanged,
     signOut,
-} from "./utils/firebase-config.js";
+} from "./utils/firebase-config";
 
 // Function to retrieve all products from Firebase database
 const getAllProducts = async () => {
