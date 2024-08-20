@@ -6,7 +6,7 @@ import {
     doc,
     collection,
     createUserWithEmailAndPassword,
-} from "../../utils/firebase-config";
+} from "../../utils/firebase-config.js";
 
 const singup_form = document.getElementById("singup_form");
 

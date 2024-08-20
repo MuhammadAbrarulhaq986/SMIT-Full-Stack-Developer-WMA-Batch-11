@@ -1,7 +1,7 @@
 import {
     auth,
     signInWithEmailAndPassword,
-} from "../../utils/firebase-config";
+} from "../../utils/firebase-config.js";
 
 const signin_form = document.getElementById("signin_form");
 

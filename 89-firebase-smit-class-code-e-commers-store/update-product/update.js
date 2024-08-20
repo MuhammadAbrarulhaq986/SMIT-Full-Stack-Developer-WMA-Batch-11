@@ -8,7 +8,7 @@ import {
     collection,
     getDoc,
     doc,
-} from "../utils/firebase-config";
+} from "../utils/firebase-config.js";
 
 const product_form = document.getElementById("product_form");
 const searchParams = new URLSearchParams(window.location.href);
