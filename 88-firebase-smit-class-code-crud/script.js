@@ -14,14 +14,13 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDWaEGuaZbXjEZXHSEWnucBLWOJ8IhFQJw",
-    authDomain: "crudapp-2ae91.firebaseapp.com",
-    projectId: "crudapp-2ae91",
-    storageBucket: "crudapp-2ae91.appspot.com",
-    messagingSenderId: "775317614518",
-    appId: "1:775317614518:web:62d26b9ad5ef5b42415b17"
+    apiKey: "AIzaSyB-OB-QOWFYgyFWddRRZ5z4nZKKliQslX0",
+    authDomain: "my-first-project-2b43e.firebaseapp.com",
+    projectId: "my-first-project-2b43e",
+    storageBucket: "my-first-project-2b43e.appspot.com",
+    messagingSenderId: "135639093489",
+    appId: "1:135639093489:web:dafaf6c9c45d6434fd1950"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
