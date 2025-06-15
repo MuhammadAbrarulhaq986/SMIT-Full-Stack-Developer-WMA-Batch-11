@@ -1,271 +1,286 @@
+/* Base Styles with Neon Glow */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Rajdhani", "Arial", sans-serif;
   letter-spacing: 2px;
-  background-color: white;
-  background-image: url(background.jpg);
+  background-color: #0a0a0a;
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(0, 80, 80, 0.1) 0%,
+      transparent 20%
+    ),
+    radial-gradient(circle at 90% 80%, rgba(0, 80, 80, 0.1) 0%, transparent 20%),
+    url(background.jpg);
+  background-attachment: fixed;
   text-align: center;
-  line-height: 2.5;
-}
-
-.title {
-  font-size: 35px;
-  text-shadow: -5px 1px 25px rgb(0, 162, 157);
-}
-
-.assignmentOne {
+  line-height: 2;
   color: white;
-  text-shadow: -5px 1px 25px rgb(4, 255, 0);
-  font-weight: 700;
-  font-size: 30px;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-span {
-  font-weight: 700;
+/* Neon Title with Pulsing Animation */
+.title {
+  font-size: 3.5rem;
+  text-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9;
+  /*color: #00fff9;*/
+  animation: pulse 2s infinite alternate;
+  margin: 2rem 0;
+  position: relative;
+  display: inline-block;
 }
-.live {
-  color: red;
-  font-weight: 700;
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #00fff9, transparent);
+  box-shadow: 0 0 10px #00fff9;
 }
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9;
+  }
+  100% {
+    text-shadow: 0 0 15px #00fff9, 0 0 30px #00fff9, 0 0 45px #00fff9;
+  }
+}
+
+/* Project Grid Layout */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Neon Project Cards */
+.assignment,
+.html,
+.css,
+.java-script,
+.JS_ES6_Feacher,
+.ts,
+.fb,
+.react {
+  border: none;
+  border-radius: 8px;
+  margin: 0;
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Rajdhani", sans-serif;
+  background: rgba(5, 15, 20, 0.8);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.2);
+}
+
+/* Unique Neon Colors for Each Tech Category */
+.assignment {
+  border-top: 3px solid #00ff00;
+}
+.html {
+  border-top: 3px solid #ff4500;
+}
+.css {
+  border-top: 3px solid #00bfff;
+}
+.java-script {
+  border-top: 3px solid #ffff00;
+}
+.JS_ES6_Feacher {
+  border-top: 3px solid #ffd700;
+}
+.ts {
+  border-top: 3px solid #007acc;
+}
+.fb {
+  border-top: 3px solid #ff851b;
+}
+.react {
+  border-top: 3px solid #00d8ff;
+}
+
+/* Hover Effects */
+.assignment:hover,
+.html:hover,
+.css:hover,
+.java-script:hover,
+.JS_ES6_Feacher:hover,
+.ts:hover,
+.fb:hover,
+.react:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 200, 255, 0.4), 0 0 30px rgba(0, 200, 255, 0.2);
+}
+
+/* Section Headers with Neon Underline */
+.assignmentOne,
+.htmlone,
+.cssone,
+.JavaScriptOne,
+.tsone,
+.fbone,
+.reactone {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.assignmentOne::after,
+.htmlone::after,
+.cssone::after,
+.JavaScriptOne::after,
+.tsone::after,
+.fbone::after,
+.reactone::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: currentColor;
+  box-shadow: 0 0 10px currentColor;
+}
+
+/* Neon Color Coding */
+.assignmentOne {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff0040;
+}
+.htmlone {
+  color: #ff4500;
+  text-shadow: 0 0 10px #ff450040;
+}
+.cssone {
+  color: #00bfff;
+  text-shadow: 0 0 10px #00bfff40;
+}
+.JavaScriptOne {
+  color: #ffff00;
+  text-shadow: 0 0 10px #ffff0040;
+}
+.tsone {
+  color: #007acc;
+  text-shadow: 0 0 10px #007acc40;
+}
+.fbone {
+  color: #ff851b;
+  text-shadow: 0 0 10px #ff851b40;
+}
+.reactone {
+  color: #00d8ff;
+  text-shadow: 0 0 10px #00d8ff40;
+}
+
+/* Links with Neon Glow */
 a {
-  /* text-shadow: -1px 2px 20px rgb(0, 255, 255); */
   color: white;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 6px 18px 5px 18px;
-  text-align: center;
-  margin: auto;
-  padding: auto;
-  /* added this line */
+  padding: 8px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-a > b {
-  color: aqua;
-}
-
-a:hover,
-a.on {
-  color: white;
-  /* font-size: 20px; */
-  font-weight: 800;
-  border-radius: 20px;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(103deg, rgb(11, 126, 0) 0%, rgb(0, 111, 111) 99%);
-}
-
-h1 {
-  color: aqua;
-  margin: 10px;
-  padding: 10px;
-}
-
-h2 {
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 10px;
-  padding: 10px;
-}
-
-.assignment {
-  text-shadow: -5px 1px 25px rgb(0, 255, 255);
-  color: white;
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
-  background: rgb(1, 22, 25);
+a::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
   background: linear-gradient(
-    103deg,
-    rgba(1, 22, 25, 1) 0%,
-    rgba(0, 6, 6, 1) 99%
+    45deg,
+    #005a53,
+    #7a00ff,
+    #005a53,
+    #7a00ff,
+    #005a53
   );
+  background-size: 400%;
+  border-radius: 30px;
+  opacity: 0;
+  transition: 0.5s;
 }
 
-.htmlone {
-  color: orangered;
+a:hover::before {
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+a:hover {
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px currentColor;
+}
+
+/* Live Demo Indicator */
+.live {
+  color: #ff0000;
   font-weight: 700;
-  font-size: 30px;
+  animation: blink 1.5s infinite;
 }
 
-.html {
-  text-shadow: -5px 1px 25px orangered;
-  color: white;
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(
-    103deg,
-    rgba(1, 22, 25, 1) 0%,
-    rgba(0, 6, 6, 1) 99%
-  );
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: 0 0 10px #ff0000;
+  }
 }
 
-.cssone {
-  color: aqua;
-  font-weight: 700;
-  font-size: 30px;
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
 
-.css {
-  text-shadow: -5px 1px 25px blue;
-  color: white;
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(
-    103deg,
-    rgba(1, 22, 25, 1) 0%,
-    rgba(0, 6, 6, 1) 99%
-  );
-}
+  .title {
+    font-size: 2.5rem;
+  }
 
-.JavaScriptOne {
-  /* color: yellow; */
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.java-script > a > i {
-  text-shadow: -5px 1px 25px rgb(152, 152, 0);
-}
-
-.java-script {
-  text-shadow: -5px 1px 25px rgb(136, 163, 0);
-  color: white;
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(
-    103deg,
-    rgba(1, 22, 25, 1) 0%,
-    rgba(0, 6, 6, 1) 99%
-  );
-}
-.JS_ES6_Feacher > a > i {
-  text-shadow: -2px 1px 20px goldenrod;
-}
-.JavaScriptOne {
-  color: yellow;
-}
-
-.JS_ES6_Feacher {
-  text-shadow: -2px 1px 20px goldenrod;
-  color: white;
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(
-    103deg,
-    rgba(1, 22, 25, 1) 0%,
-    rgba(0, 6, 6, 1) 99%
-  );
-}
-
-.tsone {
-  color: rgb(0, 106, 255);
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.ts > a > b {
-  color: aqua;
-  text-shadow: -2px 1px 20px blue;
-}
-
-.ts {
-  color: white;
-  border: 2px solid black;
-  text-shadow: -5px 1px 25px rgb(0, 0, 121);
-  margin: 10px;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(
-    103deg,
-    rgba(1, 22, 25, 1) 0%,
-    rgba(0, 6, 6, 1) 99%
-  );
-}
-
-.fbone {
-  color: goldenrod;
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.fb > a > b {
-  color: goldenrod;
-}
-
-.fb {
-  color: white;
-  /* border: 2px solid black; */
-  text-shadow: -2px 1px 15px red;
-  margin: 10px;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(
-    103deg,
-    rgba(1, 22, 25, 1) 0%,
-    rgba(0, 6, 6, 1) 99%
-  );
-}
-.reactone {
-  color: rgb(0, 159, 159);
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.react > a > b {
-  color: aqua;
-  /* text-shadow: -2px 1px 15px darkblue; */
-}
-
-.react {
-  color: white;
-  /* border: 2px solid black; */
-  text-shadow: -2px 1px 15px rgb(0, 0, 255);
-  margin: 10px;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(
-    103deg,
-    rgba(1, 22, 25, 1) 0%,
-    rgba(0, 6, 6, 1) 99%
-  );
+  .assignmentOne,
+  .htmlone,
+  .cssone,
+  .JavaScriptOne,
+  .tsone,
+  .fbone,
+  .reactone {
+    font-size: 2rem;
+  }
 }
