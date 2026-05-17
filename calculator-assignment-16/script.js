@@ -65,12 +65,28 @@ function btnClicker(str) {
 }
 //  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function result() {
-    let finalResult = eval(currentDisplay);
+    //let finalResult = eval(currentDisplay);
     if (currentDisplay === "") {
-        finalResult = 0;
-        displayScreen.innerHTML = finalResult;
+        //finalResult = 0;
+        displayScreen.innerHTML = 0;
         return;
     }
-    displayScreen.innerHTML = finalResult;
-    currentDisplay = "";
+    //displayScreen.innerHTML = finalResult;
+    //currentDisplay = "";
+
+    try {
+        let formattedExpression = currentDisplay.replace(/%/g, "/100");
+        let finalResult = eval(formattedExpression);
+
+        displayScreen.innerHTML = finalResult;
+        currentDisplay = finalResult.toString();
+    } catch (error) {
+        displayScreen.innerHTML = "Error";
+        currentDisplay = ""
+    }
+
+}
+function clearInput() {
+    currentDisplay = currentDisplay.slice(0, -1);
+    displayScreen.innerHTML = currentDisplay || "0";
 }

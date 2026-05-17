@@ -9,6 +9,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgb(48, 2, 48);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
@@ -35,6 +40,7 @@ body {
   border-radius: 30px;
   overflow-x: hidden;
   /* border: 2px solid red; */
+  overflow-x: auto; /* Allows horizontal scrolling for long numbers */
 }
 
 .button-container {
@@ -68,4 +74,12 @@ body {
 
 #btn-zero {
   width: 160px;
+}
+/* CHANGE THIS: */
+#change,
+#btn-zero {
+  color: white;
+  background: rgba(0, 0, 0, 0.242);
+  box-shadow: -1px 5px 15px rgb(255, 0, 0);
+  border: none;
 }
